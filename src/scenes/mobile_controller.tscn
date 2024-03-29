@@ -1,0 +1,42 @@
+[gd_scene load_steps=9 format=3 uid="uid://c2y0m814g60q0"]
+
+[ext_resource type="Texture2D" uid="uid://dwar225ypf70k" path="res://src/art/ui/left-button-normal.png" id="1_vn1v3"]
+[ext_resource type="Texture2D" uid="uid://bkdqpsj0ob5pw" path="res://src/art/ui/left-button-pressed.png" id="2_h1mn0"]
+[ext_resource type="Texture2D" uid="uid://oq8dgy2gbofd" path="res://src/art/ui/right-button-normal.png" id="3_f6hi2"]
+[ext_resource type="Texture2D" uid="uid://d2ji2nrxkig88" path="res://src/art/ui/right-button-pressed.png" id="4_xq82p"]
+[ext_resource type="Texture2D" uid="uid://0f3fecgxye5n" path="res://src/art/ui/close-btn-1.png" id="5_pasai"]
+[ext_resource type="Texture2D" uid="uid://2mc121abrxjq" path="res://src/art/ui/close-btn-2.png" id="6_mdun2"]
+[ext_resource type="Texture2D" uid="uid://bcgpg22bxh25g" path="res://src/art/ui/jump-normal.png" id="7_vybei"]
+[ext_resource type="Texture2D" uid="uid://deh4a5ju13n3v" path="res://src/art/ui/jump-pressed.png" id="8_tnnjt"]
+
+[node name="mobile_controller" type="CanvasLayer"]
+
+[node name="Left" type="TouchScreenButton" parent="."]
+position = Vector2(88, 464)
+scale = Vector2(5, 5)
+texture_normal = ExtResource("1_vn1v3")
+texture_pressed = ExtResource("2_h1mn0")
+passby_press = true
+action = "ui_left"
+
+[node name="Right" type="TouchScreenButton" parent="."]
+position = Vector2(216, 464)
+scale = Vector2(5, 5)
+texture_normal = ExtResource("3_f6hi2")
+texture_pressed = ExtResource("4_xq82p")
+passby_press = true
+action = "ui_right"
+
+[node name="Attack" type="TouchScreenButton" parent="."]
+position = Vector2(856, 472)
+scale = Vector2(5, 5)
+texture_normal = ExtResource("5_pasai")
+texture_pressed = ExtResource("6_mdun2")
+action = "attack"
+
+[node name="Jump" type="TouchScreenButton" parent="."]
+position = Vector2(984, 472)
+scale = Vector2(5, 5)
+texture_normal = ExtResource("7_vybei")
+texture_pressed = ExtResource("8_tnnjt")
+action = "ui_accept"

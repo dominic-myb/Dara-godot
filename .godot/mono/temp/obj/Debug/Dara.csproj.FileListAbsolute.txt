@@ -1,0 +1,17 @@
+C:\GodotProjects\Dara\.godot\mono\temp\bin\Debug\Dara.deps.json
+C:\GodotProjects\Dara\.godot\mono\temp\bin\Debug\Dara.runtimeconfig.json
+C:\GodotProjects\Dara\.godot\mono\temp\bin\Debug\Dara.dll
+C:\GodotProjects\Dara\.godot\mono\temp\bin\Debug\Dara.pdb
+C:\GodotProjects\Dara\.godot\mono\temp\bin\Debug\GodotSharp.dll
+C:\GodotProjects\Dara\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+C:\GodotProjects\Dara\.godot\mono\temp\obj\Debug\Dara.csproj.AssemblyReference.cache
+C:\GodotProjects\Dara\.godot\mono\temp\obj\Debug\Dara.GeneratedMSBuildEditorConfig.editorconfig
+C:\GodotProjects\Dara\.godot\mono\temp\obj\Debug\Dara.AssemblyInfoInputs.cache
+C:\GodotProjects\Dara\.godot\mono\temp\obj\Debug\Dara.AssemblyInfo.cs
+C:\GodotProjects\Dara\.godot\mono\temp\obj\Debug\Dara.csproj.CoreCompileInputs.cache
+C:\GodotProjects\Dara\.godot\mono\temp\obj\Debug\Dara.csproj.CopyComplete
+C:\GodotProjects\Dara\.godot\mono\temp\obj\Debug\Dara.dll
+C:\GodotProjects\Dara\.godot\mono\temp\obj\Debug\refint\Dara.dll
+C:\GodotProjects\Dara\.godot\mono\temp\obj\Debug\Dara.pdb
+C:\GodotProjects\Dara\.godot\mono\temp\obj\Debug\Dara.genruntimeconfig.cache
+C:\GodotProjects\Dara\.godot\mono\temp\obj\Debug\ref\Dara.dll
