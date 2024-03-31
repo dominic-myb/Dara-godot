@@ -23,6 +23,10 @@ window/stretch/mode="canvas_items"
 
 project/assembly_name="Dara"
 
+[filesystem]
+
+import/blender/enabled=false
+
 [input_devices]
 
 pointing/emulate_touch_from_mouse=true

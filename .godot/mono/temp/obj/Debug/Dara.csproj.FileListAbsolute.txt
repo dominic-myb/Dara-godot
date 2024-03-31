@@ -15,3 +15,4 @@ C:\GodotProjects\Dara\.godot\mono\temp\obj\Debug\refint\Dara.dll
 C:\GodotProjects\Dara\.godot\mono\temp\obj\Debug\Dara.pdb
 C:\GodotProjects\Dara\.godot\mono\temp\obj\Debug\Dara.genruntimeconfig.cache
 C:\GodotProjects\Dara\.godot\mono\temp\obj\Debug\ref\Dara.dll
+C:\GodotProjects\Dara\.godot\mono\temp\obj\Debug\Dara.sourcelink.json
