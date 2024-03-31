@@ -1,14 +1,14 @@
 [gd_scene load_steps=7 format=3 uid="uid://dimmeotfqtbf1"]
 
-[ext_resource type="Script" path="res://src/scripts/main.cs" id="1_dr8ie"]
 [ext_resource type="Texture2D" uid="uid://bwycwdfpchkf0" path="res://src/art/ui/play-btn.png" id="1_h885i"]
+[ext_resource type="Script" path="res://src/scripts/main.gd" id="1_hhic2"]
 [ext_resource type="Texture2D" uid="uid://cu7c43em5q3kb" path="res://src/art/ui/play-press.png" id="2_7hwm5"]
 [ext_resource type="Texture2D" uid="uid://lhcwi1jdyoxk" path="res://src/art/ui/exit-btn.png" id="3_wclfu"]
 [ext_resource type="Texture2D" uid="uid://bnyoxcj0px35t" path="res://src/art/ui/exit-press.png" id="4_uo84y"]
 [ext_resource type="PackedScene" uid="uid://q1wt5q2gmwqc" path="res://src/scenes/BG.tscn" id="6_18ywi"]
 
 [node name="Main" type="Node2D"]
-script = ExtResource("1_dr8ie")
+script = ExtResource("1_hhic2")
 
 [node name="Play" type="TouchScreenButton" parent="."]
 position = Vector2(409, 229)

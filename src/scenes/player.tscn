@@ -1,6 +1,6 @@
 [gd_scene load_steps=69 format=3 uid="uid://brvmsonn1blsn"]
 
-[ext_resource type="Script" path="res://src/scripts/Player.cs" id="1_soh65"]
+[ext_resource type="Script" path="res://src/scripts/player.gd" id="1_rhqor"]
 [ext_resource type="Texture2D" uid="uid://br3vd2elc0ryr" path="res://src/art/player/dara_attack.png" id="2_82pyf"]
 [ext_resource type="Texture2D" uid="uid://b2swycx4tkvpr" path="res://src/art/player/dara_sprite.png" id="3_gu6vt"]
 [ext_resource type="Texture2D" uid="uid://chjh0e1s1frpu" path="res://src/art/player/dara_move.png" id="4_cdno5"]
@@ -503,7 +503,7 @@ _data = {
 
 [node name="Player" type="CharacterBody2D"]
 position = Vector2(604, 184)
-script = ExtResource("1_soh65")
+script = ExtResource("1_rhqor")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-1, 6)
@@ -515,6 +515,8 @@ frame = 1
 shape = SubResource("CapsuleShape2D_ox0gu")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+limit_left = 0
+limit_top = 0
 
 [node name="mobile_controller" parent="." instance=ExtResource("5_5tfqr")]
 
