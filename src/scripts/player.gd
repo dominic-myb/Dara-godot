@@ -5,6 +5,8 @@ const JUMP_VELOCITY = -500.0
 var health = 10
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 @onready var anim = get_node("AnimationPlayer")
+func _ready():
+	anim.play("Idle")
 func _physics_process(delta):
 	
 	if not is_on_floor():
@@ -27,3 +29,15 @@ func _physics_process(delta):
 		if velocity.y == 0:
 			anim.play("Idle")
 	move_and_slide()
+func _take_damage(damage):
+	health -= damage
+	if health <= 0:
+		_death()
+	return health
+func _death():
+	get_node("AnimatedSprite2D").play("Attack")
+	#await not working
+	await get_node("AnimatedSprite2D").animation_finished
+	_remove_player()
+func _remove_player():
+	get_tree().change_scene_to_file("res://src/scenes/main.tscn")

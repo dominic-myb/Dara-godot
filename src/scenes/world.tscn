@@ -94,6 +94,12 @@ position = Vector2(560, 198)
 [node name="Octopus" parent="Enemies" instance=ExtResource("5_qxbrh")]
 position = Vector2(890, 235)
 
+[node name="Octopus2" parent="Enemies" instance=ExtResource("5_qxbrh")]
+position = Vector2(998, 379)
+
+[node name="Octopus3" parent="Enemies" instance=ExtResource("5_qxbrh")]
+position = Vector2(747, 359)
+
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Hp" type="Label" parent="CanvasLayer"]
