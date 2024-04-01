@@ -13,7 +13,7 @@ func _ready():
 	get_node("AnimatedSprite2D").play("Idle")
 func _physics_process(delta):
 	velocity.y += gravity * delta
-	if inRange == true and not isDead:
+	if not isDead and inRange:
 		anim.play("Move")
 		player = get_node("../../Player/Player")
 		var direction = (player.position - self.position).normalized()
@@ -38,25 +38,29 @@ func _on_player_detection_body_exited(body):
 
 func _on_player_death_body_entered(body):
 	if body.name == "Player":
-		_death()
+		death()
 
 func _on_player_collision_body_entered(body):
 	if body.name == "Player":
 		velocity.x = 0
-		player._take_damage(3)
-		_death()
+		player.take_damage(3)
+		death()
 		
-func _take_damage(damage):
+func take_damage(damage):
 	health -= damage
 	#hurt animation
 	#hurt sfx
 	if health <= 0:
 		#loot out
-		_death()
+		death()
 	return health
 
-func _death():
+func death():
 	isDead = true
+	Game.gold += 5
+	Utils.saveGame()
+	get_node("PlayerCollision").queue_free()
+	get_node("PlayerDeath").queue_free()
 	anim.play("Death")
 	await anim.animation_finished
 	self.queue_free()
