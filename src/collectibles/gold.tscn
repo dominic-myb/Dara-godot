@@ -1,76 +1,91 @@
-[gd_scene load_steps=10 format=3 uid="uid://c0owdxcvyxq7x"]
+[gd_scene load_steps=12 format=3 uid="uid://c0owdxcvyxq7x"]
 
 [ext_resource type="Texture2D" uid="uid://6e4ts04ttna8" path="res://src/art/items/coin.png" id="1_tkgbi"]
 
-[sub_resource type="GDScript" id="GDScript_vt014"]
+[sub_resource type="GDScript" id="GDScript_6b53g"]
 script/source = "extends Area2D
-#var gravity = ProjectSettings.get_setting(\"physics/2d/default_gravity\")
-func _physics_process(delta):
-	get_node(\"AnimatedSprite2D\").play(\"Idle\")
+
 func _on_body_entered(body):
 	if body.name == \"Player\":
 		Game.gold += 5
-		var tween = get_tree().create_tween()
-		tween.tween_property(self, \"position\", position - Vector2(0,100), 0.4)
-		tween.tween_property(self, \"modulate:a\", 0, 0.4)
-		tween.tween_callback(queue_free)
-		Utils.saveGame()
+		queue_free()
 "
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_co1kt"]
-radius = 8.0
+[sub_resource type="CircleShape2D" id="CircleShape2D_xndiy"]
+radius = 20.025
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_gx64v"]
+[sub_resource type="GDScript" id="GDScript_sumpk"]
+script/source = "extends CharacterBody2D
+
+var gravity = ProjectSettings.get_setting(\"physics/2d/default_gravity\")
+@onready var anim = $AnimatedSprite2D
+func _ready():
+	anim.play(\"default\")
+func _physics_process(delta):
+	if not is_on_floor():
+		velocity.y += gravity * delta
+	move_and_slide()
+"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_w8dwr"]
+radius = 0.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g23ul"]
 atlas = ExtResource("1_tkgbi")
 region = Rect2(0, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_3nebu"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_eukej"]
 atlas = ExtResource("1_tkgbi")
 region = Rect2(16, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_cu8c3"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_w13lr"]
 atlas = ExtResource("1_tkgbi")
 region = Rect2(32, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_mfjun"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_yksai"]
 atlas = ExtResource("1_tkgbi")
 region = Rect2(48, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_eyoe1"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_80ksc"]
 atlas = ExtResource("1_tkgbi")
 region = Rect2(64, 0, 16, 16)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_0n6sn"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_5a2pk"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_gx64v")
+"texture": SubResource("AtlasTexture_g23ul")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_3nebu")
+"texture": SubResource("AtlasTexture_eukej")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_cu8c3")
+"texture": SubResource("AtlasTexture_w13lr")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_mfjun")
+"texture": SubResource("AtlasTexture_yksai")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_eyoe1")
+"texture": SubResource("AtlasTexture_80ksc")
 }],
 "loop": true,
-"name": &"Idle",
+"name": &"default",
 "speed": 5.0
 }]
 
-[node name="Gold" type="Area2D"]
-script = SubResource("GDScript_vt014")
+[node name="Area2D" type="Area2D"]
+script = SubResource("GDScript_6b53g")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_co1kt")
+shape = SubResource("CircleShape2D_xndiy")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_0n6sn")
-animation = &"Idle"
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = SubResource("GDScript_sumpk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("CircleShape2D_w8dwr")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+sprite_frames = SubResource("SpriteFrames_5a2pk")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

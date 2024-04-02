@@ -6,8 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cxlou3itf1ucr" path="res://src/art/background/bg-0.png" id="3_a47o8"]
 [ext_resource type="PackedScene" uid="uid://wiuee4t3i30c" path="res://src/scenes/octopus.tscn" id="5_qxbrh"]
 [ext_resource type="Texture2D" uid="uid://b051ioerhoypo" path="res://src/art/background/bg-1.png" id="5_qyudc"]
-[ext_resource type="Script" path="res://src/scenes/moving_layer.gd" id="7_43duq"]
-[ext_resource type="PackedScene" uid="uid://c0owdxcvyxq7x" path="res://src/collectibles/gold.tscn" id="7_yk86k"]
+[ext_resource type="Script" path="res://src/scripts/moving_layer.gd" id="7_43duq"]
 [ext_resource type="Texture2D" uid="uid://bpuycuqfj534r" path="res://src/art/background/bg-3.png" id="9_eibci"]
 [ext_resource type="Texture2D" uid="uid://ckmchucfnc55l" path="res://src/art/background/bg-2.png" id="10_1i7x8"]
 [ext_resource type="PackedScene" uid="uid://c2y0m814g60q0" path="res://src/scenes/mobile_controller.tscn" id="11_q1q8h"]
@@ -18,7 +17,7 @@ texture = ExtResource("1_fddb5")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-60, -62, 61, -60, 60, 62, -60, 61)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1m3xa"]
 texture = ExtResource("1_p7c6p")
@@ -71,29 +70,30 @@ sources/0 = SubResource("TileSetAtlasSource_m74pn")
 [sub_resource type="GDScript" id="GDScript_jrhs6"]
 script/source = "extends Label
 
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	text = \"HP: \" + str(Game.playerHP)
 "
 
 [sub_resource type="GDScript" id="GDScript_suar2"]
 script/source = "extends Label
 
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	text = \"Gold: \" + str(Game.gold)
+"
+
+[sub_resource type="GDScript" id="GDScript_hwbfv"]
+script/source = "extends Node2D
+
+var Gold = preload(\"res://src/collectibles/gold.tscn\")
+
+func _on_timer_timeout():
+	var goldTemp = Gold.instantiate()
+	var rng = RandomNumberGenerator.new()
+	var ranint = rng.randi_range(10, 400)
+	goldTemp.position = Vector2(ranint, 780)
+	get_node(\"GameItems\").add_child(goldTemp)
+func gold_drop():
+	pass
 "
 
 [node name="World" type="Node2D"]
@@ -146,9 +146,12 @@ text = "Gold"
 script = SubResource("GDScript_suar2")
 
 [node name="Collectibles" type="Node2D" parent="."]
+script = SubResource("GDScript_hwbfv")
 
-[node name="Gold" parent="Collectibles" instance=ExtResource("7_yk86k")]
-position = Vector2(326, 164)
+[node name="Timer" type="Timer" parent="Collectibles"]
+autostart = true
+
+[node name="GameItems" type="Node2D" parent="Collectibles"]
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
@@ -160,6 +163,7 @@ script = ExtResource("7_43duq")
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 position = Vector2(960, 540)
 texture = ExtResource("3_a47o8")
+metadata/_edit_lock_ = true
 
 [node name="ParallaxLayer1" type="ParallaxLayer" parent="ParallaxBackground"]
 motion_scale = Vector2(0, 0)
@@ -197,3 +201,5 @@ position = Vector2(960, 581)
 texture = ExtResource("5_qyudc")
 
 [node name="mobile_controller" parent="." instance=ExtResource("11_q1q8h")]
+
+[connection signal="timeout" from="Collectibles/Timer" to="Collectibles" method="_on_timer_timeout"]
