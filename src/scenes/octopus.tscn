@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://wiuee4t3i30c"]
+[gd_scene load_steps=34 format=3 uid="uid://wiuee4t3i30c"]
 
 [ext_resource type="Script" path="res://src/scripts/octopus.gd" id="1_n72ad"]
 [ext_resource type="Texture2D" uid="uid://3qnrpryj2onv" path="res://src/art/enemies/octo_attack.png" id="2_8t736"]
@@ -201,13 +201,10 @@ animations = [{
 size = Vector2(79, 61)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ap22a"]
-radius = 436.898
+radius = 457.832
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wm0vf"]
 size = Vector2(57, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_btpsj"]
-size = Vector2(98.5, 42)
 
 [node name="Octopus" type="CharacterBody2D"]
 script = ExtResource("1_n72ad")
@@ -233,13 +230,6 @@ shape = SubResource("CircleShape2D_ap22a")
 position = Vector2(0, -74)
 shape = SubResource("RectangleShape2D_wm0vf")
 
-[node name="PlayerCollision" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerCollision"]
-position = Vector2(-8, -37)
-shape = SubResource("RectangleShape2D_btpsj")
-
 [connection signal="body_entered" from="PlayerDetection" to="." method="_on_player_detection_body_entered"]
 [connection signal="body_exited" from="PlayerDetection" to="." method="_on_player_detection_body_exited"]
 [connection signal="body_entered" from="PlayerDeath" to="." method="_on_player_death_body_entered"]
-[connection signal="body_entered" from="PlayerCollision" to="." method="_on_player_collision_body_entered"]

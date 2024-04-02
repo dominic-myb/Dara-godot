@@ -1,28 +1,134 @@
-[gd_scene load_steps=7 format=3 uid="uid://dimmeotfqtbf1"]
+[gd_scene load_steps=13 format=3 uid="uid://dimmeotfqtbf1"]
 
 [ext_resource type="Texture2D" uid="uid://bwycwdfpchkf0" path="res://src/art/ui/play-btn.png" id="1_h885i"]
 [ext_resource type="Script" path="res://src/scripts/main.gd" id="1_hhic2"]
 [ext_resource type="Texture2D" uid="uid://cu7c43em5q3kb" path="res://src/art/ui/play-press.png" id="2_7hwm5"]
-[ext_resource type="Texture2D" uid="uid://lhcwi1jdyoxk" path="res://src/art/ui/exit-btn.png" id="3_wclfu"]
-[ext_resource type="Texture2D" uid="uid://bnyoxcj0px35t" path="res://src/art/ui/exit-press.png" id="4_uo84y"]
+[ext_resource type="Texture2D" uid="uid://ddhlckwdkagr" path="res://src/art/ui/quit-btn.png" id="4_kabnj"]
+[ext_resource type="Texture2D" uid="uid://d3frh1r8wnjdl" path="res://src/art/ui/load-btn.png" id="4_t2l5p"]
+[ext_resource type="Texture2D" uid="uid://dcprpugk7kdc4" path="res://src/art/ui/quit-press.png" id="5_fp7hj"]
+[ext_resource type="Texture2D" uid="uid://yj78vfs58sda" path="res://src/art/ui/load-press.png" id="5_x84w5"]
 [ext_resource type="PackedScene" uid="uid://q1wt5q2gmwqc" path="res://src/scenes/BG.tscn" id="6_18ywi"]
+
+[sub_resource type="Animation" id="Animation_2kgiw"]
+resource_name = "Load"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Load:texture_normal")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("4_t2l5p")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../Load:texture_pressed")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("5_x84w5")]
+}
+
+[sub_resource type="Animation" id="Animation_3i75s"]
+resource_name = "Play"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture_normal")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_h885i")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:texture_pressed")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_7hwm5")]
+}
+
+[sub_resource type="Animation" id="Animation_2gysk"]
+resource_name = "Quit"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Quit:texture_normal")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("4_kabnj")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../Quit:texture_pressed")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("5_fp7hj")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ysl6n"]
+_data = {
+"Load": SubResource("Animation_2kgiw"),
+"Play": SubResource("Animation_3i75s"),
+"Quit": SubResource("Animation_2gysk")
+}
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_hhic2")
 
 [node name="Play" type="TouchScreenButton" parent="."]
-position = Vector2(409, 229)
-scale = Vector2(0.5, 0.5)
+position = Vector2(410, 159)
+scale = Vector2(4, 4)
 texture_normal = ExtResource("1_h885i")
 texture_pressed = ExtResource("2_7hwm5")
 
-[node name="Exit" type="TouchScreenButton" parent="."]
+[node name="Load" type="TouchScreenButton" parent="."]
+position = Vector2(410, 270)
+scale = Vector2(4, 4)
+texture_normal = ExtResource("4_t2l5p")
+texture_pressed = ExtResource("5_x84w5")
+
+[node name="Quit" type="TouchScreenButton" parent="."]
 position = Vector2(408, 380)
-scale = Vector2(0.5, 0.5)
-texture_normal = ExtResource("3_wclfu")
-texture_pressed = ExtResource("4_uo84y")
+scale = Vector2(4, 4)
+texture_normal = ExtResource("4_kabnj")
+texture_pressed = ExtResource("5_fp7hj")
 
 [node name="BG" parent="." instance=ExtResource("6_18ywi")]
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../Play")
+libraries = {
+"": SubResource("AnimationLibrary_ysl6n")
+}
+
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
-[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="Load" to="." method="_on_load_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

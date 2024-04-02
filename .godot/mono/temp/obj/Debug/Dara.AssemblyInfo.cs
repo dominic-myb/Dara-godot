@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Dara")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+75d950e06db3096084e42b512202cbb2425a5986")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+83e37c2f0eac8176d79588b11b1729e10499a047")]
 [assembly: System.Reflection.AssemblyProductAttribute("Dara")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Dara")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
