@@ -2,13 +2,13 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-uid="uid://dwp0sq8kypdjj"
-path="res://.godot/imported/Cold_wind_sound_effect(128k).mp3-bc6ba52ae82734844934b1067ff01b31.mp3str"
+uid="uid://b1b44d3e3ax2t"
+path="res://.godot/imported/Cold_wind_sound_effect(128k).mp3-35f5577d9d053fca2ca5382c04afcc3d.mp3str"
 
 [deps]
 
-source_file="res://Ailes/Cold_wind_sound_effect(128k).mp3"
-dest_files=["res://.godot/imported/Cold_wind_sound_effect(128k).mp3-bc6ba52ae82734844934b1067ff01b31.mp3str"]
+source_file="res://ailes/Cold_wind_sound_effect(128k).mp3"
+dest_files=["res://.godot/imported/Cold_wind_sound_effect(128k).mp3-35f5577d9d053fca2ca5382c04afcc3d.mp3str"]
 
 [params]
 
