@@ -6,3 +6,6 @@ res://src/collectibles/gold.tscn
 res://global/game.gd
 res://src/scripts/main.gd
 res://global/utils.gd
+res://src/scenes/world_sea.tscn
+res://src/scripts/octopus.gd
+res://src/scenes/octopus.tscn
