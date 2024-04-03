@@ -1,18 +1,18 @@
 [gd_scene load_steps=17 format=3 uid="uid://ct264jpfayvc0"]
 
-[ext_resource type="PackedScene" uid="uid://brvmsonn1blsn" path="res://src/scenes/player.tscn" id="1_1ck36"]
-[ext_resource type="Texture2D" uid="uid://cnmvcmm6kqfcv" path="res://src/art/tilesets/water-tile.png" id="1_fddb5"]
-[ext_resource type="Texture2D" uid="uid://b05wyn4roccbb" path="res://src/art/tilesets/tileset.png" id="1_p7c6p"]
-[ext_resource type="Texture2D" uid="uid://cxlou3itf1ucr" path="res://src/art/background/bg-0.png" id="3_a47o8"]
-[ext_resource type="PackedScene" uid="uid://wiuee4t3i30c" path="res://src/scenes/octopus.tscn" id="5_qxbrh"]
-[ext_resource type="Texture2D" uid="uid://b051ioerhoypo" path="res://src/art/background/bg-1.png" id="5_qyudc"]
-[ext_resource type="Script" path="res://src/scripts/moving_layer.gd" id="7_43duq"]
-[ext_resource type="Texture2D" uid="uid://bpuycuqfj534r" path="res://src/art/background/bg-3.png" id="9_eibci"]
-[ext_resource type="Texture2D" uid="uid://ckmchucfnc55l" path="res://src/art/background/bg-2.png" id="10_1i7x8"]
-[ext_resource type="PackedScene" uid="uid://c2y0m814g60q0" path="res://src/scenes/mobile_controller.tscn" id="11_q1q8h"]
+[ext_resource type="Texture2D" uid="uid://cnmvcmm6kqfcv" path="res://src/art/tilesets/water-tile.png" id="1_eqclx"]
+[ext_resource type="Texture2D" uid="uid://b05wyn4roccbb" path="res://src/art/tilesets/tileset.png" id="2_fxx2x"]
+[ext_resource type="PackedScene" uid="uid://brvmsonn1blsn" path="res://src/scenes/player.tscn" id="3_hdnbe"]
+[ext_resource type="PackedScene" uid="uid://wiuee4t3i30c" path="res://src/scenes/octopus.tscn" id="4_gjva8"]
+[ext_resource type="Script" path="res://src/scripts/moving_layer.gd" id="5_phg8e"]
+[ext_resource type="Texture2D" uid="uid://cxlou3itf1ucr" path="res://src/art/background/bg-0.png" id="6_kdt7a"]
+[ext_resource type="Texture2D" uid="uid://b051ioerhoypo" path="res://src/art/background/bg-1.png" id="7_i138h"]
+[ext_resource type="Texture2D" uid="uid://bpuycuqfj534r" path="res://src/art/background/bg-3.png" id="8_divak"]
+[ext_resource type="Texture2D" uid="uid://ckmchucfnc55l" path="res://src/art/background/bg-2.png" id="9_58o2m"]
+[ext_resource type="PackedScene" uid="uid://c2y0m814g60q0" path="res://src/scenes/mobile_controller.tscn" id="10_tb20s"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m74pn"]
-texture = ExtResource("1_fddb5")
+texture = ExtResource("1_eqclx")
 0:0/size_in_atlas = Vector2i(8, 8)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
@@ -20,7 +20,7 @@ texture = ExtResource("1_fddb5")
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-60, -62, 61, -60, 60, 62, -60, 61)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1m3xa"]
-texture = ExtResource("1_p7c6p")
+texture = ExtResource("2_fxx2x")
 1:1/0 = 0
 1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 1:1/0/physics_layer_0/angular_velocity = 0.0
@@ -106,18 +106,18 @@ layer_0/tile_data = PackedInt32Array(3407872, 327681, 3, 3407873, 327681, 3, 340
 
 [node name="Player" type="Node2D" parent="."]
 
-[node name="Player" parent="Player" instance=ExtResource("1_1ck36")]
+[node name="Player" parent="Player" instance=ExtResource("3_hdnbe")]
 position = Vector2(560, 198)
 
 [node name="Enemies" type="Node2D" parent="."]
 
-[node name="Octopus" parent="Enemies" instance=ExtResource("5_qxbrh")]
+[node name="Octopus" parent="Enemies" instance=ExtResource("4_gjva8")]
 position = Vector2(890, 235)
 
-[node name="Octopus2" parent="Enemies" instance=ExtResource("5_qxbrh")]
+[node name="Octopus2" parent="Enemies" instance=ExtResource("4_gjva8")]
 position = Vector2(998, 379)
 
-[node name="Octopus3" parent="Enemies" instance=ExtResource("5_qxbrh")]
+[node name="Octopus3" parent="Enemies" instance=ExtResource("4_gjva8")]
 position = Vector2(747, 359)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -158,11 +158,11 @@ autostart = true
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 motion_scale = Vector2(0, 0)
 motion_mirroring = Vector2(1920, 0)
-script = ExtResource("7_43duq")
+script = ExtResource("5_phg8e")
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 position = Vector2(960, 540)
-texture = ExtResource("3_a47o8")
+texture = ExtResource("6_kdt7a")
 metadata/_edit_lock_ = true
 
 [node name="ParallaxLayer1" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -171,7 +171,7 @@ motion_mirroring = Vector2(1920, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer1"]
 position = Vector2(960, 578)
-texture = ExtResource("5_qyudc")
+texture = ExtResource("7_i138h")
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
 motion_scale = Vector2(0, 0)
@@ -179,7 +179,7 @@ motion_mirroring = Vector2(1920, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
 position = Vector2(960, 556)
-texture = ExtResource("9_eibci")
+texture = ExtResource("8_divak")
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
 motion_scale = Vector2(0, 0)
@@ -187,7 +187,7 @@ motion_mirroring = Vector2(1920, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
 position = Vector2(960, 647)
-texture = ExtResource("10_1i7x8")
+texture = ExtResource("9_58o2m")
 
 [node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
 layer = 1
@@ -198,8 +198,8 @@ motion_mirroring = Vector2(1920, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground2/ParallaxLayer"]
 position = Vector2(960, 581)
-texture = ExtResource("5_qyudc")
+texture = ExtResource("7_i138h")
 
-[node name="mobile_controller" parent="." instance=ExtResource("11_q1q8h")]
+[node name="mobile_controller" parent="." instance=ExtResource("10_tb20s")]
 
 [connection signal="timeout" from="Collectibles/Timer" to="Collectibles" method="_on_timer_timeout"]

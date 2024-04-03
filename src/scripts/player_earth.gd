@@ -1,16 +1,16 @@
 extends CharacterBody2D
 
+var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+@onready var player_sprite = $AnimatedSprite2D
+@onready var player_anim = $AnimationPlayer
 const SPEED = 700.0
 const JUMP_VELOCITY = -500.0
-var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
-@onready var playerSprite = $AnimatedSprite2D
-@onready var anim = $AnimationPlayer
-var isDead = false
+var is_alive = true
 
 func _ready(): 
-	anim.play("Idle")
+	player_anim.play("Idle")
 func _physics_process(delta):
-	if not isDead:
+	if is_alive:
 		if not is_on_floor():
 			velocity.y += gravity * delta
 
@@ -19,29 +19,30 @@ func _physics_process(delta):
 			
 		var direction = Input.get_axis("ui_left", "ui_right")
 		if direction == -1:
-			playerSprite.flip_h = true
+			player_sprite.flip_h = true
 		elif direction == 1:
-			playerSprite.flip_h = false
+			player_sprite.flip_h = false
+
+		if velocity == Vector2.ZERO:
+			player_anim.play("Idle")
+		else:
+			player_anim.play("Move")
 
 		if direction:
 			velocity.x = direction * SPEED
-			if velocity.y == 0:
-				anim.play("Move")
 		else:
 			velocity.x = move_toward(velocity.x, 0, 35)
-			if velocity.y == 0:
-				anim.play("Idle")
 		move_and_slide()
 
 func take_damage(damage):
 	Game.playerHP -= damage
 	if Game.playerHP <= 0:
-		isDead = true
+		is_alive = false
 		death()
 	return Game.playerHP
 
 func death():
-	playerSprite.play("Attack")
-	await playerSprite.animation_finished
+	player_sprite.play("Attack")
+	await player_sprite.animation_finished
 	get_tree().change_scene_to_file("res://src/scenes/main.tscn")
 
