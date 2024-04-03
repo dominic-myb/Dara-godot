@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ch27omrvbndh2"
+path="res://.godot/imported/mixkit-liquid-bubble-3000.wav-2ff3d73849568f7f339a32a20ffc4aeb.sample"
+
+[deps]
+
+source_file="res://ailes/effect sound/mixkit-liquid-bubble-3000.wav"
+dest_files=["res://.godot/imported/mixkit-liquid-bubble-3000.wav-2ff3d73849568f7f339a32a20ffc4aeb.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://doviadl0kmpyp"
+path="res://.godot/imported/Voice_Female_V2_Pain_Mono_02.wav-692b3a36f673d8b5855a5c10b891d658.sample"
+
+[deps]
+
+source_file="res://ailes/effect sound/Voice_Female_Jump&Land/Voice_Female_Pain/Voice_Female_V2_Pain_Mono_02.wav"
+dest_files=["res://.godot/imported/Voice_Female_V2_Pain_Mono_02.wav-692b3a36f673d8b5855a5c10b891d658.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

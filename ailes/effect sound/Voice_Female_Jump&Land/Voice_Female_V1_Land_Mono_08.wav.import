@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d1pckn7yx7sx0"
+path="res://.godot/imported/Voice_Female_V1_Land_Mono_08.wav-e605fd54ce0399aa89c7ea4ca5705bc0.sample"
+
+[deps]
+
+source_file="res://ailes/effect sound/Voice_Female_Jump&Land/Voice_Female_V1_Land_Mono_08.wav"
+dest_files=["res://.godot/imported/Voice_Female_V1_Land_Mono_08.wav-e605fd54ce0399aa89c7ea4ca5705bc0.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

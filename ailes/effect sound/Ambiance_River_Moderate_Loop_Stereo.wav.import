@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b5qd2ml7ds7v3"
+path="res://.godot/imported/Ambiance_River_Moderate_Loop_Stereo.wav-dcf20b89b3d184d20ecb5895de444403.sample"
+
+[deps]
+
+source_file="res://ailes/effect sound/Ambiance_River_Moderate_Loop_Stereo.wav"
+dest_files=["res://.godot/imported/Ambiance_River_Moderate_Loop_Stereo.wav-dcf20b89b3d184d20ecb5895de444403.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dcde0atqlvpi1"
+path="res://.godot/imported/Ambiance_Forest_Birds_Loop_Stereo.wav-b38ab9961a7d4cf57dc6a53cad0ec4fa.sample"
+
+[deps]
+
+source_file="res://ailes/effect sound/Ambiance_Forest_Birds_Loop_Stereo.wav"
+dest_files=["res://.godot/imported/Ambiance_Forest_Birds_Loop_Stereo.wav-b38ab9961a7d4cf57dc6a53cad0ec4fa.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bbbk2uctqtyhd"
+path="res://.godot/imported/mixkit-completion-of-a-level-2063.wav-7744466e7aa7f85fade385b7ee579481.sample"
+
+[deps]
+
+source_file="res://ailes/effect sound/mixkit-completion-of-a-level-2063.wav"
+dest_files=["res://.godot/imported/mixkit-completion-of-a-level-2063.wav-7744466e7aa7f85fade385b7ee579481.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

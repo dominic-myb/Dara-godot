@@ -7,7 +7,7 @@ func _ready():
 func _on_play_pressed():
 	get_node("AnimationPlayer").play("Play")
 	await get_node("AnimationPlayer").animation_finished
-	get_tree().change_scene_to_file("res://src/scenes/sea_world.tscn")
+	get_tree().change_scene_to_file("res://src/scenes/world_sea.tscn")
 
 func _on_load_pressed():
 	get_node("AnimationPlayer").play("Load")

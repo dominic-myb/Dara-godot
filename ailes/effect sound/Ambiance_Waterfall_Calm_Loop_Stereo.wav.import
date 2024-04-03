@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dghl7ayhvdnsj"
+path="res://.godot/imported/Ambiance_Waterfall_Calm_Loop_Stereo.wav-4946c1c566a5285fedb702367d67888c.sample"
+
+[deps]
+
+source_file="res://ailes/effect sound/Ambiance_Waterfall_Calm_Loop_Stereo.wav"
+dest_files=["res://.godot/imported/Ambiance_Waterfall_Calm_Loop_Stereo.wav-4946c1c566a5285fedb702367d67888c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cmpd71ojl0jud"
+path="res://.godot/imported/Voice_Female_V1_Effort_Mono_06.wav-88f626153a3b6f43461645bc4b6ce5e5.sample"
+
+[deps]
+
+source_file="res://ailes/effect sound/Voice_Female_Effort/Voice_Female_V1_Effort_Mono_06.wav"
+dest_files=["res://.godot/imported/Voice_Female_V1_Effort_Mono_06.wav-88f626153a3b6f43461645bc4b6ce5e5.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

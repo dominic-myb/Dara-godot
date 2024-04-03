@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cjtkb6npgdc1y"
+path="res://.godot/imported/Ambiance_Nature_Meadow_Birds_Flies_Calm_Loop_Stereo.wav-592be9a2af88a3465c3ae90a34d39b80.sample"
+
+[deps]
+
+source_file="res://ailes/effect sound/Ambiance_Nature_Meadow_Birds_Flies_Calm_Loop_Stereo.wav"
+dest_files=["res://.godot/imported/Ambiance_Nature_Meadow_Birds_Flies_Calm_Loop_Stereo.wav-592be9a2af88a3465c3ae90a34d39b80.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

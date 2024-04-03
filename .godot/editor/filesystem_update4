@@ -1,5 +1,8 @@
 res://src/scenes/sea_world.tscn
 res://src/scripts/BG.gd
-res://src/scenes/main.tscn
+res://src/scripts/player_earth.gd
 res://src/scenes/player.tscn
-res://src/scenes/octopus.tscn
+res://src/collectibles/gold.tscn
+res://global/game.gd
+res://src/scripts/main.gd
+res://global/utils.gd

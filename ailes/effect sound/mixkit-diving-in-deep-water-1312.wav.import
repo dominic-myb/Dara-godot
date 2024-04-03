@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bm4k77rex1oqk"
+path="res://.godot/imported/mixkit-diving-in-deep-water-1312.wav-3ba351d5eea54f2af30ab1404dd1c499.sample"
+
+[deps]
+
+source_file="res://ailes/effect sound/mixkit-diving-in-deep-water-1312.wav"
+dest_files=["res://.godot/imported/mixkit-diving-in-deep-water-1312.wav-3ba351d5eea54f2af30ab1404dd1c499.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
