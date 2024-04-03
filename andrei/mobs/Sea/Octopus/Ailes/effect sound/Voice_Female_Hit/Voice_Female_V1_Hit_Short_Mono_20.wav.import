@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d11vglim6qhcn"
+path="res://.godot/imported/Voice_Female_V1_Hit_Short_Mono_20.wav-e011cb85a7712aed8519db343108e627.sample"
+
+[deps]
+
+source_file="res://andrei/mobs/Sea/Octopus/Ailes/effect sound/Voice_Female_Hit/Voice_Female_V1_Hit_Short_Mono_20.wav"
+dest_files=["res://.godot/imported/Voice_Female_V1_Hit_Short_Mono_20.wav-e011cb85a7712aed8519db343108e627.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

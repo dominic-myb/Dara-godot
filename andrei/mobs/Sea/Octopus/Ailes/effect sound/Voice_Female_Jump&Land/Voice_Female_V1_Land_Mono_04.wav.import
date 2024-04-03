@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://h61hhfdhnqwb"
+path="res://.godot/imported/Voice_Female_V1_Land_Mono_04.wav-25db843ca0580a04d81e293718e6491c.sample"
+
+[deps]
+
+source_file="res://andrei/mobs/Sea/Octopus/Ailes/effect sound/Voice_Female_Jump&Land/Voice_Female_V1_Land_Mono_04.wav"
+dest_files=["res://.godot/imported/Voice_Female_V1_Land_Mono_04.wav-25db843ca0580a04d81e293718e6491c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

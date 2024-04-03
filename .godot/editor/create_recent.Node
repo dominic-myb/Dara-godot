@@ -1,8 +1,10 @@
-Marker2D
-Area2D
-TileMap
-Node2D
+CanvasLayer
+Panel
 CollisionShape2D
+Area2D
+Node2D
+Marker2D
+TileMap
 AnimatedSprite2D
 CharacterBody2D
 RigidBody2D
@@ -11,4 +13,3 @@ TouchScreenButton
 AnimationPlayer
 AnimationTree
 Sprite2D
-ParallaxLayer

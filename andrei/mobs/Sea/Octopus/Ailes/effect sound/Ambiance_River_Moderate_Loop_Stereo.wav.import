@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://csrtdk2awm1ly"
+path="res://.godot/imported/Ambiance_River_Moderate_Loop_Stereo.wav-e5f3cff8e9bbd158ad546e1a601c2210.sample"
+
+[deps]
+
+source_file="res://andrei/mobs/Sea/Octopus/Ailes/effect sound/Ambiance_River_Moderate_Loop_Stereo.wav"
+dest_files=["res://.godot/imported/Ambiance_River_Moderate_Loop_Stereo.wav-e5f3cff8e9bbd158ad546e1a601c2210.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://4khp1mwxkgsw"
+path="res://.godot/imported/mixkit-footsteps-in-the-forest-ground-1230.wav-183395b2048f8c023af1ec1cd36cfbe8.sample"
+
+[deps]
+
+source_file="res://andrei/sounds/Land_sound effects/mixkit-footsteps-in-the-forest-ground-1230.wav"
+dest_files=["res://.godot/imported/mixkit-footsteps-in-the-forest-ground-1230.wav-183395b2048f8c023af1ec1cd36cfbe8.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

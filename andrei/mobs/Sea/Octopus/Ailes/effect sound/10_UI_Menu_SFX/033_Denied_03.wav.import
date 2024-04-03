@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dcuianee7xuk8"
+path="res://.godot/imported/033_Denied_03.wav-03768ce5f2e7d89453846b0490f82549.sample"
+
+[deps]
+
+source_file="res://andrei/mobs/Sea/Octopus/Ailes/effect sound/10_UI_Menu_SFX/033_Denied_03.wav"
+dest_files=["res://.godot/imported/033_Denied_03.wav-03768ce5f2e7d89453846b0490f82549.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

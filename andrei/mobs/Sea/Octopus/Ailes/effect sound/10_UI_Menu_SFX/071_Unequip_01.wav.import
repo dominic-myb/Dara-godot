@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://by56uoer2dxnp"
+path="res://.godot/imported/071_Unequip_01.wav-9d1beaca006fa3b3e99e12000199892c.sample"
+
+[deps]
+
+source_file="res://andrei/mobs/Sea/Octopus/Ailes/effect sound/10_UI_Menu_SFX/071_Unequip_01.wav"
+dest_files=["res://.godot/imported/071_Unequip_01.wav-9d1beaca006fa3b3e99e12000199892c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

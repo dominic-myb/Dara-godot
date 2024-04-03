@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ccott2h5tovw4"
+path="res://.godot/imported/070_Equip_10.wav-5fc592ae767d7293125e825881aa5f39.sample"
+
+[deps]
+
+source_file="res://andrei/sounds/UI_sound effects/10_UI_Menu_SFX/070_Equip_10.wav"
+dest_files=["res://.godot/imported/070_Equip_10.wav-5fc592ae767d7293125e825881aa5f39.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

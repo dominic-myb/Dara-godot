@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://djrkvmn7dssae"
+path="res://.godot/imported/092_Pause_04.wav-0d45a3d626bc167f6c7f022fba0c356d.sample"
+
+[deps]
+
+source_file="res://andrei/mobs/Sea/Octopus/Ailes/effect sound/10_UI_Menu_SFX/092_Pause_04.wav"
+dest_files=["res://.godot/imported/092_Pause_04.wav-0d45a3d626bc167f6c7f022fba0c356d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

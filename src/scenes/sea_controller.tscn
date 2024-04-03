@@ -1,0 +1,48 @@
+[gd_scene load_steps=9 format=3 uid="uid://dnavkpaej84vr"]
+
+[ext_resource type="Texture2D" uid="uid://dwar225ypf70k" path="res://src/art/ui/left-button-normal.png" id="1_02qcd"]
+[ext_resource type="Texture2D" uid="uid://bkdqpsj0ob5pw" path="res://src/art/ui/left-button-pressed.png" id="2_8stqk"]
+[ext_resource type="Texture2D" uid="uid://oq8dgy2gbofd" path="res://src/art/ui/right-button-normal.png" id="3_ai0ux"]
+[ext_resource type="Texture2D" uid="uid://d2ji2nrxkig88" path="res://src/art/ui/right-button-pressed.png" id="4_a334l"]
+[ext_resource type="Texture2D" uid="uid://gisdrp0vqexo" path="res://src/art/ui/down-normal.png" id="5_csp5s"]
+[ext_resource type="Texture2D" uid="uid://divo22nhh6xqy" path="res://src/art/ui/down-pressed.png" id="6_8oj5b"]
+[ext_resource type="Texture2D" uid="uid://bcgpg22bxh25g" path="res://src/art/ui/jump-normal.png" id="7_rs5ir"]
+[ext_resource type="Texture2D" uid="uid://deh4a5ju13n3v" path="res://src/art/ui/jump-pressed.png" id="8_hia54"]
+
+[node name="SeaController" type="CanvasLayer"]
+
+[node name="Left" type="TouchScreenButton" parent="."]
+modulate = Color(1, 1, 1, 0.392157)
+position = Vector2(73, 410)
+scale = Vector2(5, 5)
+texture_normal = ExtResource("1_02qcd")
+texture_pressed = ExtResource("2_8stqk")
+passby_press = true
+action = "ui_left"
+
+[node name="Right" type="TouchScreenButton" parent="."]
+modulate = Color(1, 1, 1, 0.392157)
+position = Vector2(245, 410)
+scale = Vector2(5, 5)
+texture_normal = ExtResource("3_ai0ux")
+texture_pressed = ExtResource("4_a334l")
+passby_press = true
+action = "ui_right"
+
+[node name="Down" type="TouchScreenButton" parent="."]
+modulate = Color(1, 1, 1, 0.392157)
+position = Vector2(160, 503)
+scale = Vector2(5, 5)
+texture_normal = ExtResource("5_csp5s")
+texture_pressed = ExtResource("6_8oj5b")
+passby_press = true
+action = "ui_down"
+
+[node name="Up" type="TouchScreenButton" parent="."]
+modulate = Color(1, 1, 1, 0.392157)
+position = Vector2(158, 325)
+scale = Vector2(5, 5)
+texture_normal = ExtResource("7_rs5ir")
+texture_pressed = ExtResource("8_hia54")
+passby_press = true
+action = "ui_up"

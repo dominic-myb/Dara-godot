@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://m2jo25ivo8c"
+path="res://.godot/imported/001_Hover_01.wav-07555fab7d6b66b3cab5b0c0d7115418.sample"
+
+[deps]
+
+source_file="res://andrei/mobs/Sea/Octopus/Ailes/effect sound/10_UI_Menu_SFX/001_Hover_01.wav"
+dest_files=["res://.godot/imported/001_Hover_01.wav-07555fab7d6b66b3cab5b0c0d7115418.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -11,22 +11,23 @@ func _physics_process(delta):
 	if not is_on_floor():
 		velocity.y += gravity * delta * 0.5
 
-	var x_direction = Input.get_axis("ui_left", "ui_right")
+	var h_direction = Input.get_axis("ui_left", "ui_right")
 	var v_direction = Input.get_axis("ui_up","ui_down")
 
-	if x_direction == -1:
+	if h_direction == -1:
 		player_sprite.flip_h = true
-	elif x_direction == 1:
+	elif h_direction == 1:
 		player_sprite.flip_h = false
-
-	if velocity == Vector2.ZERO:
-		player_anim.play("Idle")
-	else:
+	if h_direction or v_direction:
 		player_anim.play("Move")
-	velocity.x = x_direction * SPEED * 0.5
-	
-	if v_direction:
-		velocity.y = v_direction * SPEED * 0.5
+		if h_direction:
+			velocity.x = h_direction * SPEED * 0.5
+			velocity.y = 0
+		if v_direction:
+			velocity.y = v_direction * SPEED * 0.5
+			#velocity.x = 0
 	else:
-		velocity.y = move_toward(0, velocity.y, 35)
+		player_anim.play("Idle")
+		velocity.x = move_toward(velocity.x, 0, 30)
+		velocity.y = move_toward(0, velocity.y, 10)
 	move_and_slide()

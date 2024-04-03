@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cpnexjo1clvx4"
+path="res://.godot/imported/033_Denied_03.wav-6bdcde28f6098c009def323f2c4722e8.sample"
+
+[deps]
+
+source_file="res://andrei/sounds/UI_sound effects/10_UI_Menu_SFX/033_Denied_03.wav"
+dest_files=["res://.godot/imported/033_Denied_03.wav-6bdcde28f6098c009def323f2c4722e8.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

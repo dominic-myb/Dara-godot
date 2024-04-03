@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://x5o8ta4bxklw"
+path="res://.godot/imported/Voice_Female_V1_Effort_Mono_25.wav-f7e78751443890697119079036b09804.sample"
+
+[deps]
+
+source_file="res://andrei/mobs/Sea/Octopus/Ailes/effect sound/Voice_Female_Effort/Voice_Female_V1_Effort_Mono_25.wav"
+dest_files=["res://.godot/imported/Voice_Female_V1_Effort_Mono_25.wav-f7e78751443890697119079036b09804.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

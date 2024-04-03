@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cwsv4gupe6rg"
+path="res://.godot/imported/JDSherbert - Ultimate UI SFX Pack - Select - 2.mp3-83b0a720c3b4541fbd44f14eb3ded6ba.mp3str"
+
+[deps]
+
+source_file="res://andrei/mobs/Sea/Octopus/Ailes/effect sound/mp3/JDSherbert - Ultimate UI SFX Pack - Select - 2.mp3"
+dest_files=["res://.godot/imported/JDSherbert - Ultimate UI SFX Pack - Select - 2.mp3-83b0a720c3b4541fbd44f14eb3ded6ba.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
