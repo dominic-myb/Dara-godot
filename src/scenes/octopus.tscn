@@ -204,7 +204,7 @@ size = Vector2(79, 61)
 radius = 457.832
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wm0vf"]
-size = Vector2(57, 20)
+size = Vector2(32, 26)
 
 [node name="Octopus" type="CharacterBody2D"]
 script = ExtResource("1_n72ad")
@@ -224,12 +224,12 @@ shape = SubResource("RectangleShape2D_0meqc")
 position = Vector2(0, -45)
 shape = SubResource("CircleShape2D_ap22a")
 
-[node name="PlayerDeath" type="Area2D" parent="."]
+[node name="Hitbox" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDeath"]
-position = Vector2(0, -74)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(-24, -71)
 shape = SubResource("RectangleShape2D_wm0vf")
 
 [connection signal="body_entered" from="PlayerDetection" to="." method="_on_player_detection_body_entered"]
 [connection signal="body_exited" from="PlayerDetection" to="." method="_on_player_detection_body_exited"]
-[connection signal="body_entered" from="PlayerDeath" to="." method="_on_player_death_body_entered"]
+[connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]
