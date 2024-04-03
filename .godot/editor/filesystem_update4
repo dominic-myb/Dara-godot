@@ -1,11 +1,5 @@
-res://src/collectibles/gold.tscn
-res://src/scripts/BG.gd
-res://src/scenes/player.tscn
-res://src/scenes/world.tscn
-res://src/scenes/octopus.tscn
-res://src/scripts/player.gd
 res://src/scenes/sea_world.tscn
-res://src/scenes/BG.tscn
+res://src/scripts/BG.gd
 res://src/scenes/main.tscn
-res://src/scripts/main.gd
-res://src/scripts/octopus.gd
+res://src/scenes/player.tscn
+res://src/scenes/octopus.tscn
