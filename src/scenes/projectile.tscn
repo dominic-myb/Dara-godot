@@ -1,0 +1,68 @@
+[gd_scene load_steps=10 format=3 uid="uid://hatr5htcgql8"]
+
+[ext_resource type="Script" path="res://src/scripts/projectile.gd" id="1_dgbtn"]
+[ext_resource type="Texture2D" uid="uid://bfv8xx8kmqgs" path="res://andrei/Attack_Animation/water.attack.png" id="1_i6fiq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mgbel"]
+radius = 6.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tc5qr"]
+atlas = ExtResource("1_i6fiq")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r3pry"]
+atlas = ExtResource("1_i6fiq")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x810c"]
+atlas = ExtResource("1_i6fiq")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d42sk"]
+atlas = ExtResource("1_i6fiq")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_erml3"]
+atlas = ExtResource("1_i6fiq")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xgql8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tc5qr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r3pry")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x810c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d42sk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_erml3")
+}],
+"loop": false,
+"name": &"Move",
+"speed": 5.0
+}]
+
+[node name="Projectile" type="CharacterBody2D"]
+position = Vector2(65, 32)
+script = ExtResource("1_dgbtn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_mgbel")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_xgql8")
+animation = &"Move"
+frame = 1
+frame_progress = 0.238757
+
+[node name="Timer" type="Timer" parent="."]
+process_callback = 0
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

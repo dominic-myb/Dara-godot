@@ -1,5 +1,6 @@
-res://src/scenes
 res://src/scripts
+res://src/scenes
+res://andrei/Attack_Animation
 res://src/art/player
 res://src/art/items
 res://src/collectibles

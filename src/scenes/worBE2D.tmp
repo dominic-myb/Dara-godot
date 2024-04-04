@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://ckwwn5bcc01lh"]
+[gd_scene load_steps=19 format=3 uid="uid://ckwwn5bcc01lh"]
 
 [ext_resource type="PackedScene" uid="uid://damdmm2lesire" path="res://src/scenes/player_on_sea.tscn" id="1_hu2jj"]
 [ext_resource type="PackedScene" uid="uid://wiuee4t3i30c" path="res://src/scenes/octopus.tscn" id="2_dqlx3"]
@@ -10,8 +10,9 @@
 [ext_resource type="Texture2D" uid="uid://b0t6ouo62xhdb" path="res://src/art/tilesets/black.png" id="9_40lws"]
 [ext_resource type="Script" path="res://src/scripts/joystick.gd" id="10_05xks"]
 [ext_resource type="PackedScene" uid="uid://m6h4nls8g088" path="res://src/scenes/joystick.tscn" id="10_rj1te"]
+[ext_resource type="PackedScene" uid="uid://bdpuvck4b6r2o" path="res://src/scenes/attack.tscn" id="10_xv46w"]
 [ext_resource type="Texture2D" uid="uid://dc5n3dcmgba01" path="res://src/art/ui/joystick-outer.png" id="11_08ub7"]
-[ext_resource type="Texture2D" uid="uid://b3yulltlt4nda" path="res://src/art/ui/attack-btn.png" id="12_8lvpq"]
+[ext_resource type="Texture2D" uid="uid://bnwfjc1cha5mi" path="res://src/art/ui/joystick-inner.png" id="12_nt018"]
 [ext_resource type="Script" path="res://src/scripts/inner.gd" id="13_jh0hs"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yr6xr"]
@@ -3555,24 +3556,26 @@ layer_3/tile_data = PackedInt32Array()
 position = Vector2(186, 487)
 scale = Vector2(1.5, 1.5)
 
-[node name="Attack" type="Node2D" parent="CanvasLayer"]
+[node name="Attack" parent="CanvasLayer" instance=ExtResource("10_xv46w")]
+
+[node name="Attack" type="Node2D" parent="."]
+visible = false
 position = Vector2(912, 481)
 script = ExtResource("10_05xks")
 
-[node name="outer" type="Sprite2D" parent="CanvasLayer/Attack"]
+[node name="outer" type="Sprite2D" parent="Attack"]
 texture = ExtResource("11_08ub7")
 
-[node name="inner" type="Sprite2D" parent="CanvasLayer/Attack"]
-texture = ExtResource("12_8lvpq")
+[node name="inner" type="Sprite2D" parent="Attack"]
+texture = ExtResource("12_nt018")
 script = ExtResource("13_jh0hs")
 
-[node name="button" type="Button" parent="CanvasLayer/Attack"]
+[node name="button" type="Button" parent="Attack"]
 modulate = Color(1, 1, 1, 0)
 offset_left = -55.0
 offset_top = -54.0
 offset_right = 54.0
 offset_bottom = 54.0
-metadata/_edit_use_anchors_ = true
 
-[connection signal="button_down" from="CanvasLayer/Attack/button" to="CanvasLayer/Attack/inner" method="_on_button_button_down"]
-[connection signal="button_up" from="CanvasLayer/Attack/button" to="CanvasLayer/Attack/inner" method="_on_button_button_up"]
+[connection signal="button_down" from="Attack/button" to="Attack/inner" method="_on_button_button_down"]
+[connection signal="button_up" from="Attack/button" to="Attack/inner" method="_on_button_button_up"]

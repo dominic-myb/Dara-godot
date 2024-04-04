@@ -6,7 +6,6 @@ var pressing = false
 @export var deadzone = 5
 func _ready():
 	max_length *= parent.scale.x
-	pass
 func _process(delta):
 	if pressing:
 		if get_global_mouse_position().distance_to(parent.global_position) <= max_length:
@@ -29,3 +28,8 @@ func _on_button_button_down():
 
 func _on_button_button_up():
 	pressing = false
+func handle_press():
+	if pressing:
+		return true
+	else:
+		return false

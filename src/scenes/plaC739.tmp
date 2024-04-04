@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=3 uid="uid://damdmm2lesire"]
+[gd_scene load_steps=49 format=3 uid="uid://damdmm2lesire"]
 
 [ext_resource type="Script" path="res://src/scripts/player_sea.gd" id="1_4ka6u"]
 [ext_resource type="Texture2D" uid="uid://b2swycx4tkvpr" path="res://src/art/player/dara_sprite.png" id="3_64cs2"]
@@ -361,6 +361,21 @@ _data = {
 "RESET": SubResource("Animation_rclep")
 }
 
+[sub_resource type="GDScript" id="GDScript_08wnt"]
+script/source = "extends Marker2D
+
+# Assuming 'Attack' is a Node2D or a subclass of it
+@onready var attack = $CanvasLayer/Attack
+
+func _process(delta):
+	if attack:
+		var input_vector = attack.global_position - global_position
+		var rotation_angle = input_vector.angle()
+		rotation = rotation_angle
+	else:
+		print(\"Attack node not found.\")
+"
+
 [node name="PlayerOnSea" type="CharacterBody2D"]
 position = Vector2(224, -168)
 script = ExtResource("1_4ka6u")
@@ -387,12 +402,13 @@ libraries = {
 }
 autoplay = "Idle"
 
-[node name="Aim" type="Node2D" parent="."]
+[node name="Node2D" type="Node2D" parent="."]
 rotation = 6.28319
 
-[node name="Marker2D" type="Marker2D" parent="Aim"]
+[node name="Marker2D" type="Marker2D" parent="Node2D"]
 position = Vector2(48, 0)
+script = SubResource("GDScript_08wnt")
 
-[node name="Sprite2D" type="Sprite2D" parent="Aim/Marker2D"]
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/Marker2D"]
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("4_m7ss5")
