@@ -11,7 +11,7 @@
 [ext_resource type="Script" path="res://src/scripts/joystick.gd" id="10_05xks"]
 [ext_resource type="PackedScene" uid="uid://m6h4nls8g088" path="res://src/scenes/joystick.tscn" id="10_rj1te"]
 [ext_resource type="Texture2D" uid="uid://dc5n3dcmgba01" path="res://src/art/ui/joystick-outer.png" id="11_08ub7"]
-[ext_resource type="Texture2D" uid="uid://b3yulltlt4nda" path="res://src/art/ui/attack-btn.png" id="12_8lvpq"]
+[ext_resource type="Texture2D" uid="uid://bnwfjc1cha5mi" path="res://src/art/ui/joystick-inner.png" id="12_nt018"]
 [ext_resource type="Script" path="res://src/scripts/inner.gd" id="13_jh0hs"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yr6xr"]
@@ -3563,7 +3563,7 @@ script = ExtResource("10_05xks")
 texture = ExtResource("11_08ub7")
 
 [node name="inner" type="Sprite2D" parent="CanvasLayer/Attack"]
-texture = ExtResource("12_8lvpq")
+texture = ExtResource("12_nt018")
 script = ExtResource("13_jh0hs")
 
 [node name="button" type="Button" parent="CanvasLayer/Attack"]
@@ -3572,7 +3572,6 @@ offset_left = -55.0
 offset_top = -54.0
 offset_right = 54.0
 offset_bottom = 54.0
-metadata/_edit_use_anchors_ = true
 
 [connection signal="button_down" from="CanvasLayer/Attack/button" to="CanvasLayer/Attack/inner" method="_on_button_button_down"]
 [connection signal="button_up" from="CanvasLayer/Attack/button" to="CanvasLayer/Attack/inner" method="_on_button_button_up"]
