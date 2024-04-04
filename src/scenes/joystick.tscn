@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://m6h4nls8g088"]
+
+[ext_resource type="Script" path="res://src/scripts/joystick.gd" id="1_cwk4q"]
+[ext_resource type="Texture2D" uid="uid://dc5n3dcmgba01" path="res://src/art/ui/joystick-outer.png" id="2_5wx6s"]
+[ext_resource type="Texture2D" uid="uid://bnwfjc1cha5mi" path="res://src/art/ui/joystick-inner.png" id="3_mghdr"]
+[ext_resource type="Script" path="res://src/scripts/inner.gd" id="4_uyesk"]
+
+[node name="joystick" type="Node2D"]
+script = ExtResource("1_cwk4q")
+
+[node name="outer" type="Sprite2D" parent="."]
+texture = ExtResource("2_5wx6s")
+
+[node name="inner" type="Sprite2D" parent="."]
+texture = ExtResource("3_mghdr")
+script = ExtResource("4_uyesk")
+
+[node name="button" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = -55.0
+offset_top = -54.0
+offset_right = 54.0
+offset_bottom = 54.0
+
+[connection signal="button_down" from="button" to="inner" method="_on_button_button_down"]
+[connection signal="button_up" from="button" to="inner" method="_on_button_button_up"]

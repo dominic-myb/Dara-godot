@@ -40,7 +40,7 @@ action = "ui_down"
 
 [node name="Up" type="TouchScreenButton" parent="."]
 modulate = Color(1, 1, 1, 0.392157)
-position = Vector2(158, 325)
+position = Vector2(160, 325)
 scale = Vector2(5, 5)
 texture_normal = ExtResource("7_rs5ir")
 texture_pressed = ExtResource("8_hia54")

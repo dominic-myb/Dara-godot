@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
-@onready var player = $"../../Player/Player"
+@onready var player = $"../../Player/PlayerOnSea"
 @onready var anim = $AnimatedSprite2D
 @onready var hitbox = $Hitbox
 @onready var collider = $CollisionShape2D
@@ -27,15 +27,15 @@ func _physics_process(_delta):
 	move_and_slide()
 
 func _on_player_detection_body_entered(body):
-	if body.name == "Player":
+	if body.name == "PlayerOnSea":
 		in_range = true
 
 func _on_player_detection_body_exited(body):
-	if body.name == "Player":
+	if body.name == "PlayerOnSea":
 		in_range = false
 
 func _on_hitbox_body_entered(body):
-	if body.name == "Player":
+	if body.name == "PlayerOnSea":
 		death()
 		
 func take_damage(damage):

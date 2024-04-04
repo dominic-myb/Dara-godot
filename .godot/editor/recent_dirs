@@ -1,9 +1,9 @@
 res://src/scenes
 res://src/scripts
+res://src/art/player
 res://src/art/items
 res://src/collectibles
 res://src/art/background
 res://global
 res://src/art/enemies
 res://src/art/ui
-res://src/art/player
