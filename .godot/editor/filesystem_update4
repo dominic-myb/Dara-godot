@@ -3,9 +3,7 @@ res://src/scripts/BG.gd
 res://src/scripts/player_sea.gd
 res://src/scenes/world_sea.tscn
 res://src/scenes/projectile.tscn
-res://src/scenes/joystick.tscn
-res://src/scripts/projectile.gd
 res://src/scripts/inner.gd
-res://src/scripts/joystick.gd
-res://src/scenes/attack.tscn
-res://src/scripts/aim.gd
+res://src/scripts/projectile.gd
+res://src/scripts/octopus.gd
+res://src/scenes/octopus.tscn

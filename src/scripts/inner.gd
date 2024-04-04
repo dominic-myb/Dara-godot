@@ -23,11 +23,13 @@ func calculate_vector():
 		parent.vector_pos.x = (global_position.x - parent.global_position.x)/max_length
 	if abs((global_position.y - parent.global_position.y)) >= deadzone:
 		parent.vector_pos.y = (global_position.y - parent.global_position.y)/max_length
+
 func _on_button_button_down():
 	pressing = true
 
 func _on_button_button_up():
 	pressing = false
+
 func handle_press():
 	if pressing:
 		return true

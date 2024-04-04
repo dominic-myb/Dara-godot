@@ -3,8 +3,8 @@
 [ext_resource type="Script" path="res://src/scripts/projectile.gd" id="1_dgbtn"]
 [ext_resource type="Texture2D" uid="uid://bfv8xx8kmqgs" path="res://andrei/Attack_Animation/water.attack.png" id="1_i6fiq"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_mgbel"]
-radius = 6.0
+[sub_resource type="CircleShape2D" id="CircleShape2D_7ohsa"]
+radius = 6.08276
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tc5qr"]
 atlas = ExtResource("1_i6fiq")
@@ -54,7 +54,7 @@ position = Vector2(65, 32)
 script = ExtResource("1_dgbtn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_mgbel")
+shape = SubResource("CircleShape2D_7ohsa")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_xgql8")

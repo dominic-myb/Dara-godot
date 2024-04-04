@@ -198,13 +198,13 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0meqc"]
-size = Vector2(79, 61)
+size = Vector2(45.5, 40)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ap22a"]
 radius = 457.832
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wm0vf"]
-size = Vector2(32, 26)
+size = Vector2(76, 34)
 
 [node name="Octopus" type="CharacterBody2D"]
 script = ExtResource("1_n72ad")
@@ -212,10 +212,10 @@ script = ExtResource("1_n72ad")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -48)
 sprite_frames = SubResource("SpriteFrames_jmruu")
-animation = &"Idle"
+animation = &"Death"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -45.5)
+position = Vector2(-16.75, -46)
 shape = SubResource("RectangleShape2D_0meqc")
 
 [node name="PlayerDetection" type="Area2D" parent="."]
@@ -227,7 +227,7 @@ shape = SubResource("CircleShape2D_ap22a")
 [node name="Hitbox" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
-position = Vector2(-24, -71)
+position = Vector2(-20, -75)
 shape = SubResource("RectangleShape2D_wm0vf")
 
 [connection signal="body_entered" from="PlayerDetection" to="." method="_on_player_detection_body_entered"]

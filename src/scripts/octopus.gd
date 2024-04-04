@@ -1,10 +1,11 @@
 extends CharacterBody2D
-
+const PROJECTILE = preload("res://src/scripts/projectile.gd")
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 @onready var player = $"../../Player/PlayerOnSea"
 @onready var anim = $AnimatedSprite2D
 @onready var hitbox = $Hitbox
 @onready var collider = $CollisionShape2D
+
 const SPEED = 150.0
 var in_range = false
 var is_alive = true
@@ -36,20 +37,19 @@ func _on_player_detection_body_exited(body):
 
 func _on_hitbox_body_entered(body):
 	if body.name == "PlayerOnSea":
-		death()
+		print("player enters")
+	if body.name == "Projectile":
+		print("hit!")
 		
 func take_damage(damage):
 	health -= damage
-	#hurt animation
-	#hurt sfx
+	print("HP: ", health)
 	if health <= 0:
-		#loot out
 		death()
 	return health
 
 func death():
 	is_alive = false
-	hitbox.queue_free()
 	anim.play("Death")
 	await anim.animation_finished
 	self.queue_free()
