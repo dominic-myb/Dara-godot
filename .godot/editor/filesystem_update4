@@ -6,3 +6,4 @@ res://src/scenes/projectile.tscn
 res://src/scripts/projectile.gd
 res://src/scripts/octopus.gd
 res://src/scenes/octopus.tscn
+res://src/scripts/inner.gd

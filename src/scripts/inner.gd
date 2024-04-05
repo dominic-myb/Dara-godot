@@ -31,7 +31,4 @@ func _on_button_button_up():
 	pressing = false
 
 func handle_press():
-	if pressing:
-		return true
-	else:
-		return false
+	return pressing

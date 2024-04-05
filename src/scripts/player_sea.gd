@@ -19,13 +19,11 @@ func _physics_process(delta):
 	if not is_on_floor():
 		velocity.y += gravity * delta * 0.5
 	var direction = joystick.vector_pos
-	if direction:
-		velocity = direction * SPEED * 0.5
+	if direction: velocity = direction * SPEED * 0.5
 	else:
 		velocity.x = move_toward(velocity.x, 0, 10)
 		velocity.y = move_toward(0, velocity.y, 10)
-	if inner.pressing:
-		shoot(attack_dir)
+	if inner.pressing: shoot(attack_dir)
 	move_and_slide()
 func _process(delta):
 	if velocity.x > 0: player_sprite.flip_h = false
