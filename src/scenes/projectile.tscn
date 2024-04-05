@@ -3,9 +3,6 @@
 [ext_resource type="Script" path="res://src/scripts/projectile.gd" id="1_dgbtn"]
 [ext_resource type="Texture2D" uid="uid://bfv8xx8kmqgs" path="res://andrei/Attack_Animation/water.attack.png" id="1_i6fiq"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_7ohsa"]
-radius = 6.08276
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_tc5qr"]
 atlas = ExtResource("1_i6fiq")
 region = Rect2(0, 0, 32, 32)
@@ -49,12 +46,12 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_rvjxo"]
+radius = 7.0
+
 [node name="Projectile" type="CharacterBody2D"]
 position = Vector2(65, 32)
 script = ExtResource("1_dgbtn")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_7ohsa")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_xgql8")
@@ -62,7 +59,9 @@ animation = &"Move"
 frame = 1
 frame_progress = 0.238757
 
-[node name="Timer" type="Timer" parent="."]
-process_callback = 0
+[node name="Area2D" type="Area2D" parent="."]
 
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_rvjxo")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

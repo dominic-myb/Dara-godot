@@ -1,9 +1,10 @@
+CollisionShape2D
+Area2D
 Timer
 Sprite2D
 Node2D
 Marker2D
 AnimatedSprite2D
-CollisionShape2D
 CharacterBody2D
 Button
 Camera2D
@@ -11,5 +12,3 @@ CanvasLayer
 TouchScreenButton
 AnimationPlayer
 Panel
-Area2D
-TileMap
