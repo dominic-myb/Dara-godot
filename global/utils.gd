@@ -5,8 +5,13 @@ const SAVE_PATH = "res://savegame.bin"
 func saveGame():
 	var file = FileAccess.open(SAVE_PATH, FileAccess.WRITE)
 	var data: Dictionary = {
-		"player_hp": Game.player_hp,
-		"gold": Game.gold
+		"playerCurrentHP": Game.playerCurrentHP,
+		"playerMaxHP": Game.playerMaxHP,
+		"playerExp": Game.playerExp,
+		"playerMaxExp": Game.playerMaxExp,
+		"playerLvl": Game.playerLvl,
+		"playerGold": Game.playerGold,
+		"lvlToBuff": Game.lvlToBuff
 	}
 	var jstr = JSON.stringify(data)
 	file.store_line(jstr)
@@ -17,5 +22,10 @@ func loadGame():
 		if not file.eof_reached():
 			var current_line = JSON.parse_string(file.get_line())
 			if current_line:
-				Game.player_hp = current_line["player_hp"]
-				Game.gold = current_line["gold"]
+				Game.playerCurrentHP = current_line["playerCurrentHP"]
+				Game.playerMaxHP = current_line["playerMaxHP"]
+				Game.playerExp = current_line["playerExp"]
+				Game.playerMaxExp = current_line["playerMaxExp"]
+				Game.playerLvl = current_line["playerLvl"]
+				Game.playerGold = current_line["playerGold"]
+				Game.lvlToBuff = current_line["lvlToBuff"]

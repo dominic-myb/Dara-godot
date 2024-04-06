@@ -3,35 +3,50 @@ extends CharacterBody2D
 const SPEED = 600.0
 const PROJECTILE_PATH = preload("res://src/scenes/projectile.tscn")
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
-@onready var joystick = $"../../CanvasLayer/joystick"
-@onready var player_sprite = $AnimatedSprite2D
-@onready var player_anim = $AnimationPlayer
-@onready var attack_js = $"../../CanvasLayer/attack"
-@onready var player_aim = $Aim
-@onready var inner = $"../../CanvasLayer/attack/inner"
+@onready var moveJoystick = $"../../CanvasLayer/joystick"
+@onready var attackJoystick = $"../../CanvasLayer/attack"
+@onready var innerAttackJoystick = $"../../CanvasLayer/attack/inner"
+@onready var playerSprite = $AnimatedSprite2D
+@onready var playerAnim = $AnimationPlayer
+@onready var playerAim = $Aim
+var canAttack = true
+var attackCooldown = 5.0
+var attackTimer = 0.0
+var attackDirection
 func _ready():
-	player_anim.play("Idle")
+	playerAnim.play("Idle")
 func _physics_process(delta):
-	var attack_dir = attack_js.vector_pos
-	var angle_rad = atan2(attack_dir.y, attack_dir.x)
-	var angle_deg = rad_to_deg(angle_rad)
-	player_aim.rotation = deg_to_rad(angle_deg)
+	attackDirection = attackJoystick.vector_pos
+	playerAim.rotation = atan2(attackDirection.y, attackDirection.x)
 	if not is_on_floor():
 		velocity.y += gravity * delta * 0.5
-	var direction = joystick.vector_pos
+	var direction = moveJoystick.vector_pos.normalized()
 	if direction: velocity = direction * SPEED * 0.5
 	else:
 		velocity.x = move_toward(velocity.x, 0, 10)
 		velocity.y = move_toward(0, velocity.y, 10)
-	if inner.pressing: shoot(attack_dir)
+	if innerAttackJoystick.pressing and canAttack: shoot(attackDirection)
 	move_and_slide()
 func _process(delta):
-	if velocity.x > 0: player_sprite.flip_h = false
-	elif velocity.x < 0: player_sprite.flip_h = true
-	var direction = joystick.vector_pos
-	player_anim.play("Move" if direction else "Idle")
+	if not canAttack:
+		attackTimer += delta
+		if attackTimer >= attackCooldown:
+			canAttack = true
+			attackTimer = 0.0
+	if velocity.x > 0: playerSprite.flip_h = false
+	elif velocity.x < 0: playerSprite.flip_h = true
+	if innerAttackJoystick.pressing:
+		playerAnim.play("Attack")
+	else:
+		var direction = moveJoystick.vector_pos
+		playerAnim.play("Move" if direction else "Idle")
+		
 func shoot(aim_direction):
-	var proj = PROJECTILE_PATH.instantiate()
-	get_parent().add_child(proj)
-	proj.position = $Aim/Marker2D.global_position
-	proj.velocity = aim_direction
+	if canAttack:
+		var projectile = PROJECTILE_PATH.instantiate()
+		get_parent().add_child(projectile)
+		projectile.position = $Aim/Marker2D.global_position
+		projectile.velocity = aim_direction
+#func _input(event):
+	#if event.is_action_pressed("shoot"):
+		#shoot(attackDirection)

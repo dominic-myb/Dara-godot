@@ -1,6 +1,7 @@
+TouchScreenButton
+Timer
 CollisionShape2D
 Area2D
-Timer
 Sprite2D
 Node2D
 Marker2D
@@ -9,6 +10,5 @@ CharacterBody2D
 Button
 Camera2D
 CanvasLayer
-TouchScreenButton
 AnimationPlayer
 Panel

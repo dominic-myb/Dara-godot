@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://ckwwn5bcc01lh"]
+[gd_scene load_steps=19 format=3 uid="uid://ckwwn5bcc01lh"]
 
 [ext_resource type="PackedScene" uid="uid://damdmm2lesire" path="res://src/scenes/player_on_sea.tscn" id="1_hu2jj"]
 [ext_resource type="PackedScene" uid="uid://wiuee4t3i30c" path="res://src/scenes/octopus.tscn" id="2_dqlx3"]
@@ -12,7 +12,6 @@
 [ext_resource type="PackedScene" uid="uid://m6h4nls8g088" path="res://src/scenes/joystick.tscn" id="10_rj1te"]
 [ext_resource type="Texture2D" uid="uid://dc5n3dcmgba01" path="res://src/art/ui/joystick-outer.png" id="11_08ub7"]
 [ext_resource type="Texture2D" uid="uid://b3yulltlt4nda" path="res://src/art/ui/attack-btn.png" id="12_8lvpq"]
-[ext_resource type="Script" path="res://src/scripts/inner.gd" id="13_jh0hs"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yr6xr"]
 texture = ExtResource("6_jnust")
@@ -3505,12 +3504,49 @@ sources/0 = SubResource("TileSetAtlasSource_yr6xr")
 sources/1 = SubResource("TileSetAtlasSource_6xhyf")
 sources/2 = SubResource("TileSetAtlasSource_3fu8l")
 
+[sub_resource type="GDScript" id="GDScript_54wve"]
+script/source = "extends Sprite2D
+@onready var parent = $\"..\"
+
+var pressing = false
+@export var max_length = 50
+@export var deadzone = 5
+func _ready():
+	max_length *= parent.scale.x
+func _process(delta):
+	if pressing:
+		if get_global_mouse_position().distance_to(parent.global_position) <= max_length:
+			global_position = get_global_mouse_position()
+		else:
+			var angle = parent.global_position.angle_to_point(get_global_mouse_position())
+			global_position.x = parent.global_position.x + cos(angle)*max_length
+			global_position.y = parent.global_position.y + sin(angle)*max_length
+		calculate_vector()
+	else:
+		global_position = lerp(global_position, parent.global_position, delta*10)
+		parent.vector_pos = Vector2(0,0)
+func calculate_vector():
+	if abs((global_position.x - parent.global_position.x)) >= deadzone:
+		parent.vector_pos.x = (global_position.x - parent.global_position.x)/max_length
+	if abs((global_position.y - parent.global_position.y)) >= deadzone:
+		parent.vector_pos.y = (global_position.y - parent.global_position.y)/max_length
+
+func _on_attack_button_pressed():
+	pressing = true
+
+func _on_attack_button_released():
+	pressing = false
+"
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_yc2im"]
+
 [node name="Sea World" type="Node2D"]
 
 [node name="Player" type="Node2D" parent="."]
 
 [node name="PlayerOnSea" parent="Player" instance=ExtResource("1_hu2jj")]
 position = Vector2(269, -438)
+collision_mask = 1
 
 [node name="SeaEnemies" type="Node2D" parent="."]
 
@@ -3564,15 +3600,14 @@ texture = ExtResource("11_08ub7")
 
 [node name="inner" type="Sprite2D" parent="CanvasLayer/attack"]
 texture = ExtResource("12_8lvpq")
-script = ExtResource("13_jh0hs")
+script = SubResource("GDScript_54wve")
 
-[node name="button" type="Button" parent="CanvasLayer/attack"]
+[node name="Attack Button" type="TouchScreenButton" parent="CanvasLayer/attack"]
 modulate = Color(1, 1, 1, 0)
-offset_left = -55.0
-offset_top = -54.0
-offset_right = 54.0
-offset_bottom = 54.0
-metadata/_edit_use_anchors_ = true
+position = Vector2(-54, -54)
+scale = Vector2(108, 108)
+texture_normal = SubResource("CanvasTexture_yc2im")
+action = "shoot"
 
-[connection signal="button_down" from="CanvasLayer/attack/button" to="CanvasLayer/attack/inner" method="_on_button_button_down"]
-[connection signal="button_up" from="CanvasLayer/attack/button" to="CanvasLayer/attack/inner" method="_on_button_button_up"]
+[connection signal="pressed" from="CanvasLayer/attack/Attack Button" to="CanvasLayer/attack/inner" method="_on_attack_button_pressed"]
+[connection signal="released" from="CanvasLayer/attack/Attack Button" to="CanvasLayer/attack/inner" method="_on_attack_button_released"]

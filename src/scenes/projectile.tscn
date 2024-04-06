@@ -1,7 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://hatr5htcgql8"]
+[gd_scene load_steps=11 format=3 uid="uid://hatr5htcgql8"]
 
 [ext_resource type="Script" path="res://src/scripts/projectile.gd" id="1_dgbtn"]
 [ext_resource type="Texture2D" uid="uid://bfv8xx8kmqgs" path="res://andrei/Attack_Animation/water.attack.png" id="1_i6fiq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xtbgq"]
+radius = 5.09902
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tc5qr"]
 atlas = ExtResource("1_i6fiq")
@@ -46,12 +49,17 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_rvjxo"]
-radius = 7.0
+[sub_resource type="CircleShape2D" id="CircleShape2D_qk7c0"]
+radius = 5.0
 
 [node name="Projectile" type="CharacterBody2D"]
 position = Vector2(65, 32)
+collision_layer = 8
+collision_mask = 3
 script = ExtResource("1_dgbtn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_xtbgq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_xgql8")
@@ -60,8 +68,12 @@ frame = 1
 frame_progress = 0.238757
 
 [node name="Area2D" type="Area2D" parent="."]
+collision_layer = 8
+collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-shape = SubResource("CircleShape2D_rvjxo")
+shape = SubResource("CircleShape2D_qk7c0")
 
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[node name="SpawnTimer" type="Timer" parent="."]
+
+[connection signal="timeout" from="SpawnTimer" to="." method="_on_spawn_timer_timeout"]
