@@ -22,7 +22,8 @@ Utils="*res://global/utils.gd"
 
 [display]
 
-window/stretch/mode="canvas_items"
+window/stretch/mode="viewport"
+window/stretch/aspect="expand"
 
 [dotnet]
 
@@ -50,7 +51,9 @@ pointing/emulate_touch_from_mouse=true
 2d_physics/layer_2="Enemies"
 2d_physics/layer_3="Player"
 2d_physics/layer_4="Projectiles"
+2d_physics/layer_5="Collectibles"
 
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
+textures/vram_compression/import_etc2_astc=true

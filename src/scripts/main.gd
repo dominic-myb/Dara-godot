@@ -12,7 +12,7 @@ func _on_play_pressed():
 func _on_load_pressed():
 	get_node("AnimationPlayer").play("Load")
 	await get_node("AnimationPlayer").animation_finished
-	pass
+	#add here the scene for load game
 
 func _on_quit_pressed():
 	get_node("AnimationPlayer").play("Quit")

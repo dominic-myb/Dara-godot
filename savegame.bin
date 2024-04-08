@@ -1,1 +1,1 @@
-{"lvlToBuff":5,"playerCurrentHP":10,"playerExp":0,"playerGold":0,"playerLvl":1,"playerMaxExp":100,"playerMaxHP":10}
+{"enemyDamage":2,"enemyHP":10,"enemyLvl":1,"enemyMaxHP":10,"enemySpeed":150,"lvlToBuff":5,"playerCurrentHP":10,"playerDamage":2,"playerExp":1000,"playerGold":0,"playerLvl":1,"playerMaxExp":100,"playerMaxHP":10}

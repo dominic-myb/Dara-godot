@@ -6,29 +6,28 @@
 script/source = "extends Area2D
 
 func _on_body_entered(body):
-	if body.name == \"Player\":
-		Game.gold += 5
+	if get_collision_layer_value(3):
+		Game.playerGold += 5
 		queue_free()
 "
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xndiy"]
-radius = 20.025
+radius = 8.06226
 
-[sub_resource type="GDScript" id="GDScript_sumpk"]
+[sub_resource type="GDScript" id="GDScript_et4eo"]
 script/source = "extends CharacterBody2D
-
+@onready var parent = $\"..\"
 var gravity = ProjectSettings.get_setting(\"physics/2d/default_gravity\")
-@onready var anim = $AnimatedSprite2D
-func _ready():
+@onready var anim = $\"AnimatedSprite2D\"
+func _process(_delta):
 	anim.play(\"default\")
 func _physics_process(delta):
 	if not is_on_floor():
-		velocity.y += gravity * delta
-	move_and_slide()
+		velocity.y += gravity * delta * 0.5
+	parent.position.y = velocity.y
 "
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_w8dwr"]
-radius = 0.0
+[sub_resource type="CircleShape2D" id="CircleShape2D_k4rqt"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_g23ul"]
 atlas = ExtResource("1_tkgbi")
@@ -74,16 +73,18 @@ animations = [{
 }]
 
 [node name="Area2D" type="Area2D"]
+collision_layer = 16
+collision_mask = 5
 script = SubResource("GDScript_6b53g")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_xndiy")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-script = SubResource("GDScript_sumpk")
+script = SubResource("GDScript_et4eo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-shape = SubResource("CircleShape2D_w8dwr")
+shape = SubResource("CircleShape2D_k4rqt")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 sprite_frames = SubResource("SpriteFrames_5a2pk")

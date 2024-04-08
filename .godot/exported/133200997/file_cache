@@ -1,0 +1,13 @@
+res://src/collectibles/gold.tscn::32f11b7251c7883d7dcc843667d23ca2::1712423321::res://.godot/exported/133200997/export-9cb9db35a6a3f07a95cebeb166d734f9-gold.scn
+res://src/scenes/attack.tscn::fa06aa89fcba21ca84419709c9dd5181::1712423321::res://.godot/exported/133200997/export-d1bcde8830b6a575a373be97e4fe6398-attack.scn
+res://src/scenes/BG.tscn::992f7ad2ba1c9638c318801708495537::1712569168::res://.godot/exported/133200997/export-176735f2f9aac7d2dde055c377f9d06e-BG.scn
+res://src/scenes/joystick.tscn::7a460827c51dd0651ff155fa2ccd5867::1712564805::res://.godot/exported/133200997/export-79b7efaa9c42a37f0ee39e43545a8de6-joystick.scn
+res://src/scenes/main.tscn::f693170f56af8ee2f6919c85c48e61bd::1712572621::res://.godot/exported/133200997/export-50078d5482f56611697bd90d3b1710af-main.scn
+res://src/scenes/mobile_controller.tscn::2a58459626cbaab04ada01bfd8bb8ff5::1712423321::res://.godot/exported/133200997/export-6d103d3c8b1a6e239ea3b188325ffe25-mobile_controller.scn
+res://src/scenes/octopus.tscn::e4288710e6d85a629efcdd67460d58bd::1712564805::res://.godot/exported/133200997/export-81a95e8ae93fc9a9b09089f37a693813-octopus.scn
+res://src/scenes/player_on_land.tscn::718265827f90a845f5bffbb1797ce2ae::1712423321::res://.godot/exported/133200997/export-1f3cefb82b14e248f2fb8749d29de8a6-player_on_land.scn
+res://src/scenes/player_on_sea.tscn::a0daffad4eb9962dc6052f60b7715da0::1712564805::res://.godot/exported/133200997/export-db27fb98adc3f2a8e11b6cb3038067ec-player_on_sea.scn
+res://src/scenes/projectile.tscn::3803279d72d4c1bb8f1ce53d8bc9d282::1712553196::res://.godot/exported/133200997/export-f0c10fb20c23e56f8cf222073a9e0583-projectile.scn
+res://src/scenes/sea_controller.tscn::0735d51a426ce6f2591162649808a843::1712423321::res://.godot/exported/133200997/export-cc381af644569e22f0fe80b82937dc28-sea_controller.scn
+res://src/scenes/world_earth.tscn::2c9b9679494d662f16f973e71be6dc8e::1712423321::res://.godot/exported/133200997/export-9cf57d4ced70c60fda23d7a6280a83a5-world_earth.scn
+res://src/scenes/world_sea.tscn::dd69376f991694e51ffd40d5d4ae4a47::1712569168::res://.godot/exported/133200997/export-b5ef4ad8fdd55fee1a68995b016c311f-world_sea.scn

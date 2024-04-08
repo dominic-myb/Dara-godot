@@ -551,7 +551,6 @@ libraries = {
 autoplay = "Idle"
 
 [node name="Aim" type="Node2D" parent="."]
-rotation = 6.28319
 
 [node name="Marker2D" type="Marker2D" parent="Aim"]
 position = Vector2(48, 0)
@@ -559,7 +558,3 @@ position = Vector2(48, 0)
 [node name="Sprite2D" type="Sprite2D" parent="Aim/Marker2D"]
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("4_m7ss5")
-
-[node name="Attack Cooldown" type="Timer" parent="."]
-
-[connection signal="timeout" from="Attack Cooldown" to="." method="_on_attack_cooldown_timeout"]

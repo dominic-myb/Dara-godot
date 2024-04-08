@@ -1,4 +1,4 @@
-[gd_scene load_steps=83 format=3 uid="uid://ct264jpfayvc0"]
+[gd_scene load_steps=82 format=3 uid="uid://ct264jpfayvc0"]
 
 [ext_resource type="Texture2D" uid="uid://cnmvcmm6kqfcv" path="res://src/art/tilesets/water-tile.png" id="1_fddb5"]
 [ext_resource type="Texture2D" uid="uid://b05wyn4roccbb" path="res://src/art/tilesets/tileset.png" id="1_p7c6p"]
@@ -6,7 +6,6 @@
 [ext_resource type="Script" path="res://src/scripts/player_earth.gd" id="3_lqoqk"]
 [ext_resource type="Texture2D" uid="uid://br3vd2elc0ryr" path="res://src/art/player/dara_attack.png" id="4_o5i5m"]
 [ext_resource type="Texture2D" uid="uid://b2swycx4tkvpr" path="res://src/art/player/dara_sprite.png" id="5_idlqu"]
-[ext_resource type="PackedScene" uid="uid://wiuee4t3i30c" path="res://src/scenes/octopus.tscn" id="5_qxbrh"]
 [ext_resource type="Texture2D" uid="uid://b051ioerhoypo" path="res://src/art/background/bg-1.png" id="5_qyudc"]
 [ext_resource type="Texture2D" uid="uid://chjh0e1s1frpu" path="res://src/art/player/dara_move.png" id="6_oj51q"]
 [ext_resource type="Script" path="res://src/scripts/moving_layer.gd" id="7_43duq"]
@@ -569,14 +568,14 @@ _data = {
 script/source = "extends Label
 
 func _process(_delta):
-	text = \"HP: \" + str(Game.player_hp)
+	text = \"HP: \" + str(Game.playerCurrentHP)
 "
 
 [sub_resource type="GDScript" id="GDScript_suar2"]
 script/source = "extends Label
 
 func _process(_delta):
-	text = \"Gold: \" + str(Game.gold)
+	text = \"Gold: \" + str(Game.playerGold)
 "
 
 [sub_resource type="GDScript" id="GDScript_hwbfv"]
@@ -588,9 +587,10 @@ func _on_timer_timeout():
 	var goldTemp = Gold.instantiate()
 	var rng = RandomNumberGenerator.new()
 	var ranint = rng.randi_range(10, 400)
-	goldTemp.position = Vector2(ranint, 780)
-	get_node(\"GameItems\").add_child(goldTemp)
+	goldTemp.position = Vector2(ranint, 500)
+	$GameItems.add_child(goldTemp)
 func gold_drop():
+	# random range for gold
 	pass
 "
 
@@ -606,6 +606,8 @@ layer_0/tile_data = PackedInt32Array(3407872, 327681, 3, 3407873, 327681, 3, 340
 
 [node name="Player" type="CharacterBody2D" parent="Player"]
 position = Vector2(653, 683)
+collision_layer = 4
+collision_mask = 17
 script = ExtResource("3_lqoqk")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player/Player"]
@@ -631,15 +633,6 @@ autoplay = "Idle"
 root_node = NodePath("../AnimationPlayer")
 
 [node name="Enemies" type="Node2D" parent="."]
-
-[node name="Octopus" parent="Enemies" instance=ExtResource("5_qxbrh")]
-position = Vector2(890, 235)
-
-[node name="Octopus2" parent="Enemies" instance=ExtResource("5_qxbrh")]
-position = Vector2(998, 379)
-
-[node name="Octopus3" parent="Enemies" instance=ExtResource("5_qxbrh")]
-position = Vector2(747, 359)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = 2

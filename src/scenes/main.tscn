@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://dimmeotfqtbf1"]
+[gd_scene load_steps=18 format=3 uid="uid://dimmeotfqtbf1"]
 
 [ext_resource type="Texture2D" uid="uid://bwycwdfpchkf0" path="res://src/art/ui/play-btn.png" id="1_h885i"]
 [ext_resource type="Script" path="res://src/scripts/main.gd" id="1_hhic2"]
@@ -7,7 +7,18 @@
 [ext_resource type="Texture2D" uid="uid://d3frh1r8wnjdl" path="res://src/art/ui/load-btn.png" id="4_t2l5p"]
 [ext_resource type="Texture2D" uid="uid://dcprpugk7kdc4" path="res://src/art/ui/quit-press.png" id="5_fp7hj"]
 [ext_resource type="Texture2D" uid="uid://yj78vfs58sda" path="res://src/art/ui/load-press.png" id="5_x84w5"]
-[ext_resource type="PackedScene" uid="uid://q1wt5q2gmwqc" path="res://src/scenes/BG.tscn" id="6_18ywi"]
+[ext_resource type="Texture2D" uid="uid://cxlou3itf1ucr" path="res://src/art/background/bg-0.png" id="9_x766h"]
+[ext_resource type="Texture2D" uid="uid://b051ioerhoypo" path="res://src/art/background/bg-1.png" id="10_h70q1"]
+[ext_resource type="Texture2D" uid="uid://bpuycuqfj534r" path="res://src/art/background/bg-3.png" id="11_ja4b4"]
+[ext_resource type="Texture2D" uid="uid://ckmchucfnc55l" path="res://src/art/background/bg-2.png" id="12_t2d1a"]
+
+[sub_resource type="GDScript" id="GDScript_v6faf"]
+script/source = "extends CanvasLayer
+
+func _ready():
+	#get_viewport().size = DisplayServer.screen_get_size()
+	pass
+"
 
 [sub_resource type="Animation" id="Animation_2kgiw"]
 resource_name = "Load"
@@ -100,35 +111,102 @@ _data = {
 "Quit": SubResource("Animation_2gysk")
 }
 
+[sub_resource type="GDScript" id="GDScript_f7c4b"]
+script/source = "extends ParallaxBackground
+
+var scrolling_speed = 100
+@onready var layer1 = $layer1
+@onready var bg1 = $layer1/bg
+@onready var layer2 = $layer2
+@onready var bg2 = $layer2/bg
+@onready var layer3 = $layer3
+@onready var bg3 = $layer3/bg
+@onready var layer4 = $layer4
+@onready var bg4 = $layer4/bg
+func _ready():
+	layer1.motion_mirroring.x = bg1.texture.get_size().x
+	layer2.motion_mirroring.x = bg2.texture.get_size().x
+	layer3.motion_mirroring.x = bg3.texture.get_size().x
+	layer4.motion_mirroring.x = bg4.texture.get_size().x
+func _process(delta):
+	scroll_offset.x -= scrolling_speed * delta
+"
+
 [node name="Main" type="Node2D"]
 script = ExtResource("1_hhic2")
 
-[node name="Play" type="TouchScreenButton" parent="."]
-position = Vector2(410, 159)
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = SubResource("GDScript_v6faf")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -596.0
+offset_top = -344.0
+offset_right = -556.0
+offset_bottom = -304.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Play" type="TouchScreenButton" parent="CanvasLayer/HBoxContainer"]
+position = Vector2(430, 179)
 scale = Vector2(4, 4)
 texture_normal = ExtResource("1_h885i")
 texture_pressed = ExtResource("2_7hwm5")
 
-[node name="Load" type="TouchScreenButton" parent="."]
-position = Vector2(410, 270)
+[node name="Load" type="TouchScreenButton" parent="CanvasLayer/HBoxContainer"]
+position = Vector2(430, 290)
 scale = Vector2(4, 4)
 texture_normal = ExtResource("4_t2l5p")
 texture_pressed = ExtResource("5_x84w5")
 
-[node name="Quit" type="TouchScreenButton" parent="."]
-position = Vector2(408, 380)
+[node name="Quit" type="TouchScreenButton" parent="CanvasLayer/HBoxContainer"]
+position = Vector2(430, 400)
 scale = Vector2(4, 4)
 texture_normal = ExtResource("4_kabnj")
 texture_pressed = ExtResource("5_fp7hj")
 
-[node name="BG" parent="." instance=ExtResource("6_18ywi")]
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-root_node = NodePath("../Play")
+root_node = NodePath("../CanvasLayer/HBoxContainer/Play")
 libraries = {
 "": SubResource("AnimationLibrary_ysl6n")
 }
 
-[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
-[connection signal="pressed" from="Load" to="." method="_on_load_pressed"]
-[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
+[node name="BG" type="ParallaxBackground" parent="."]
+script = SubResource("GDScript_f7c4b")
+
+[node name="layer1" type="ParallaxLayer" parent="BG"]
+motion_mirroring = Vector2(1152, 0)
+
+[node name="bg" type="Sprite2D" parent="BG/layer1"]
+position = Vector2(960, 542)
+texture = ExtResource("9_x766h")
+
+[node name="layer2" type="ParallaxLayer" parent="BG"]
+motion_mirroring = Vector2(1152, 0)
+
+[node name="bg" type="Sprite2D" parent="BG/layer2"]
+position = Vector2(963, 573)
+texture = ExtResource("10_h70q1")
+
+[node name="layer3" type="ParallaxLayer" parent="BG"]
+motion_mirroring = Vector2(1152, 0)
+
+[node name="bg" type="Sprite2D" parent="BG/layer3"]
+position = Vector2(960, 553)
+texture = ExtResource("11_ja4b4")
+
+[node name="layer4" type="ParallaxLayer" parent="BG"]
+motion_mirroring = Vector2(1152, 0)
+
+[node name="bg" type="Sprite2D" parent="BG/layer4"]
+position = Vector2(960, 644)
+texture = ExtResource("12_t2d1a")
+
+[connection signal="pressed" from="CanvasLayer/HBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="CanvasLayer/HBoxContainer/Load" to="." method="_on_load_pressed"]
+[connection signal="pressed" from="CanvasLayer/HBoxContainer/Quit" to="." method="_on_quit_pressed"]

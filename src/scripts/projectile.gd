@@ -2,7 +2,7 @@ extends CharacterBody2D
 @onready var spawnTimer = $SpawnTimer
 @onready var projectileSprite = $AnimatedSprite2D
 const SPEED = 1000
-var damage = 10
+var damage = Game.playerDamage
 func _ready():
 	spawnTimer.start(3)
 func _physics_process(delta):

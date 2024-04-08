@@ -3,14 +3,14 @@ extends CharacterBody2D
 const SPEED = 600.0
 const PROJECTILE_PATH = preload("res://src/scenes/projectile.tscn")
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
-@onready var moveJoystick = $"../../CanvasLayer/joystick"
-@onready var attackJoystick = $"../../CanvasLayer/attack"
-@onready var innerAttackJoystick = $"../../CanvasLayer/attack/inner"
+@onready var moveJoystick = $"../../CanvasLayer/HBoxContainer/joystick"
+@onready var attackJoystick = $"../../CanvasLayer/HBoxContainer2/attack"
+@onready var innerAttackJoystick = $"../../CanvasLayer/HBoxContainer2/attack/inner"
 @onready var playerSprite = $AnimatedSprite2D
 @onready var playerAnim = $AnimationPlayer
 @onready var playerAim = $Aim
 var canAttack = true
-var attackCooldown = 5.0
+var attackCooldown = 0.5
 var attackTimer = 0.0
 var attackDirection
 func _ready():
@@ -36,6 +36,8 @@ func _process(delta):
 	if velocity.x > 0: playerSprite.flip_h = false
 	elif velocity.x < 0: playerSprite.flip_h = true
 	if innerAttackJoystick.pressing:
+		if attackDirection.x > 0: playerSprite.flip_h = false
+		elif attackDirection.x < 0: playerSprite.flip_h = true
 		playerAnim.play("Attack")
 	else:
 		var direction = moveJoystick.vector_pos
@@ -47,6 +49,7 @@ func shoot(aim_direction):
 		get_parent().add_child(projectile)
 		projectile.position = $Aim/Marker2D.global_position
 		projectile.velocity = aim_direction
+		canAttack = false
 #func _input(event):
 	#if event.is_action_pressed("shoot"):
 		#shoot(attackDirection)

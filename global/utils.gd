@@ -11,7 +11,13 @@ func saveGame():
 		"playerMaxExp": Game.playerMaxExp,
 		"playerLvl": Game.playerLvl,
 		"playerGold": Game.playerGold,
-		"lvlToBuff": Game.lvlToBuff
+		"lvlToBuff": Game.lvlToBuff,
+		"playerDamage": Game.playerDamage,
+		"enemyHP": Game.enemyHP,
+		"enemyMaxHP": Game.enemyMaxHP,
+		"enemyDamage": Game.enemyDamage,
+		"enemyLvl": Game.enemyLvl,
+		"enemySpeed": Game.enemySpeed
 	}
 	var jstr = JSON.stringify(data)
 	file.store_line(jstr)
@@ -29,3 +35,9 @@ func loadGame():
 				Game.playerLvl = current_line["playerLvl"]
 				Game.playerGold = current_line["playerGold"]
 				Game.lvlToBuff = current_line["lvlToBuff"]
+				Game.playerDamage = current_line["playerDamage"]
+				Game.enemyHP = current_line["enemyHP"]
+				Game.enemyMaxHP = current_line["enemyMaxHP"]
+				Game.enemyDamage = current_line["enemyDamage"]
+				Game.enemyLvl = current_line["enemyLvl"]
+				Game.enemySpeed = current_line["enemySpeed"]
