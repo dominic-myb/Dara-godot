@@ -1,10 +1,10 @@
 extends CharacterBody2D
-@onready var spawnTimer = $SpawnTimer
-@onready var projectileSprite = $AnimatedSprite2D
+@onready var spawn_timer = $SpawnTimer
+@onready var projectile_sprite = $AnimatedSprite2D
 const SPEED = 1000
-var damage = Game.playerDamage
+var damage = Game.player_damage
 func _ready():
-	spawnTimer.start(3)
+	spawn_timer.start(3)
 func _physics_process(delta):
 	var collisionInfo = move_and_collide(velocity.normalized() * delta * SPEED)
 	if collisionInfo:
@@ -13,6 +13,6 @@ func _physics_process(delta):
 			collider.take_damage(damage)
 		queue_free()
 func _process(_delta):
-	projectileSprite.play("Move")
+	projectile_sprite.play("Move")
 func _on_spawn_timer_timeout():
 	self.queue_free()

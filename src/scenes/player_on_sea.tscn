@@ -1,8 +1,9 @@
-[gd_scene load_steps=68 format=3 uid="uid://damdmm2lesire"]
+[gd_scene load_steps=74 format=3 uid="uid://damdmm2lesire"]
 
 [ext_resource type="Script" path="res://src/scripts/player_sea.gd" id="1_4ka6u"]
 [ext_resource type="Texture2D" uid="uid://br3vd2elc0ryr" path="res://src/art/player/dara_attack.png" id="2_lef2u"]
 [ext_resource type="Texture2D" uid="uid://b2swycx4tkvpr" path="res://src/art/player/dara_sprite.png" id="3_64cs2"]
+[ext_resource type="Texture2D" uid="uid://bkbd580jk23ui" path="res://src/art/player/dara_hurt.png" id="3_tpqpo"]
 [ext_resource type="Texture2D" uid="uid://chjh0e1s1frpu" path="res://src/art/player/dara_move.png" id="4_7erm1"]
 [ext_resource type="Texture2D" uid="uid://baecl2hfmdcx5" path="res://src/art/ui/attack_button-sheet.png" id="4_m7ss5"]
 
@@ -77,6 +78,22 @@ region = Rect2(2400, 0, 150, 150)
 [sub_resource type="AtlasTexture" id="AtlasTexture_1qyc1"]
 atlas = ExtResource("2_lef2u")
 region = Rect2(2550, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b5tem"]
+atlas = ExtResource("3_tpqpo")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lm70n"]
+atlas = ExtResource("3_tpqpo")
+region = Rect2(150, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_662vp"]
+atlas = ExtResource("3_tpqpo")
+region = Rect2(300, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_drlms"]
+atlas = ExtResource("3_tpqpo")
+region = Rect2(450, 0, 150, 150)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3vovu"]
 atlas = ExtResource("3_64cs2")
@@ -289,6 +306,23 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_b5tem")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lm70n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_662vp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_drlms")
+}],
+"loop": true,
+"name": &"Hurt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_3vovu")
 }, {
 "duration": 1.0,
@@ -441,6 +475,34 @@ tracks/1/keys = {
 "values": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
 }
 
+[sub_resource type="Animation" id="Animation_vt8x0"]
+resource_name = "Hurt"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Hurt"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [1, 2, 3]
+}
+
 [sub_resource type="Animation" id="Animation_1pfp3"]
 resource_name = "Idle"
 length = 1.8
@@ -517,6 +579,7 @@ tracks/0/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_lv8u1"]
 _data = {
 "Attack": SubResource("Animation_r20b1"),
+"Hurt": SubResource("Animation_vt8x0"),
 "Idle": SubResource("Animation_1pfp3"),
 "Move": SubResource("Animation_rbryg"),
 "RESET": SubResource("Animation_rclep")
@@ -531,7 +594,7 @@ script = ExtResource("1_4ka6u")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(1, 0)
 sprite_frames = SubResource("SpriteFrames_m1q7o")
-animation = &"Attack"
+animation = &"Hurt"
 frame = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -551,6 +614,7 @@ libraries = {
 autoplay = "Idle"
 
 [node name="Aim" type="Node2D" parent="."]
+rotation = -6.28319
 
 [node name="Marker2D" type="Marker2D" parent="Aim"]
 position = Vector2(48, 0)

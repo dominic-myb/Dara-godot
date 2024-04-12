@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b2swycx4tkvpr"
-path="res://.godot/imported/dara_sprite.png-c2a9af648fbc7658ef6860a27ba52b54.ctex"
+uid="uid://bkbd580jk23ui"
+path="res://.godot/imported/dara_hurt.png-891da77f5ad872f811d3d0408af04f2e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/art/player/dara_sprite.png"
-dest_files=["res://.godot/imported/dara_sprite.png-c2a9af648fbc7658ef6860a27ba52b54.ctex"]
+source_file="res://src/art/player/dara_hurt.png"
+dest_files=["res://.godot/imported/dara_hurt.png-891da77f5ad872f811d3d0408af04f2e.ctex"]
 
 [params]
 

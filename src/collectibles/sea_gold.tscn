@@ -9,7 +9,7 @@ func _process(_delta):
 	anim.play(\"default\")
 func _on_body_entered(_body):
 	if get_collision_mask_value(3):
-		Game.playerGold += 5
+		Game.player_gold += 5
 		queue_free()
 "
 

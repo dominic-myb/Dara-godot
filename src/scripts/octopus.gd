@@ -1,94 +1,51 @@
 extends CharacterBody2D
+class_name OctoEnemy
 const PROJECTILE = preload("res://src/scripts/projectile.gd")
 var GOLD = preload("res://src/collectibles/sea_gold.tscn")
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
-@onready var player = $"../../Player/PlayerOnSea"
-@onready var enemySprite = $AnimatedSprite2D
+@onready var player = $"../../Player/Player"
+@onready var enemy_sprite = $AnimatedSprite2D
 @onready var anim = $AnimationPlayer
 @onready var collider = $CollisionShape2D
-@onready var attackRange = $AttackRange/CollisionShape2D
-var health = Game.enemyHP
-var speed = Game.enemySpeed
-var inRange = false
-var isAlive = true
-var isHurt = false
-var inAttackRange = false
-var canAttack = true
-var attackCooldown = 0.0
-var attackTimer = 0.0
-func _ready():
-	anim.play("Idle")
+var health = Game.enemy_hp
+var speed = Game.enemy_speed
+var damage = Game.enemy_damage
+var in_range = false
+var is_alive = true
+var is_hurt = false
+var in_attack_range = false
+var can_attack = true
+var attack_cooldown = 3.0
+var attack_timer = 0.0
 func _physics_process(_delta):
-	if isAlive and inRange:
-		var direction = (player.position - self.position).normalized()
-		velocity = direction * speed
-	else:
-		# you can change this to patrol
-		velocity = Vector2.ZERO
 	move_and_slide()
-func _process(delta):
-	if isAlive:
-		if velocity.x > 0: 
-			enemySprite.flip_h = false
-		elif velocity.x < 0:
-			enemySprite.flip_h = true
-			collider.position.x = -collider.position.x
-			attackRange.position.x = -attackRange.position.x
+	#if velocity.length() > 0:
+		#$AnimationPlayer.play("move")
+	if velocity.x > 0:
+		$AnimatedSprite2D.flip_h = false
+	elif velocity.x < 0:
+		$AnimatedSprite2D.flip_h = true
 
-		if not canAttack:
-			attackTimer += delta
-			if attackTimer>=attackCooldown:
-				canAttack = true
-				attackTimer = 0.0
-
-		if inAttackRange and canAttack:
-			anim.play("Attack")
-			await anim.animation_finished
-			canAttack = false
-
-		if isHurt:
-			anim.play("Hurt")
-			await anim.animation_finished
-			isHurt = false
-
-		if inRange:
-			anim.play("Move")
-		else:
-			anim.play("Idle")
-
-func take_damage(damage: int):
-	isHurt = true
-	health -= damage
+func take_damage(amount):
+	is_hurt = true
+	health -= amount
 	if health <= 0: 
 		death()
 	else: 
 		return health
 
 func death():
-	isAlive = false
+	is_alive = false
 	velocity = Vector2.ZERO #stays where the object is
 	collider.disabled = true # collider off, can't detect projectiles
-	anim.play("Death")
+	anim.play("death")
 	await anim.animation_finished
 	enemy_loot()
-	Game.playerExp += 1000
+	Game.player_exp += 1000
 	Utils.saveGame()
 	queue_free()
+
 func enemy_loot():
-	var goldTemp = GOLD.instantiate()
-	goldTemp.position = $".".position
-	$"../../Collectibles".add_child(goldTemp)
-func _on_player_detection_body_entered(_body):
-	if get_collision_mask_value(3): inRange = true
-
-func _on_player_detection_body_exited(_body):
-	if get_collision_mask_value(3): inRange = false
-
-func _on_attack_range_body_entered(_body):
-	if get_collision_mask_value(3): inAttackRange = true
-
-func _on_attack_range_body_exited(_body):
-	if get_collision_mask_value(3): inAttackRange = false
-
-func _on_attack_area_2d_body_entered(_body):
-	if get_collision_mask_value(3): print("player hit")
+	var gold_temp = GOLD.instantiate()
+	gold_temp.position = $".".position
+	$"../../Collectibles".add_child(gold_temp)

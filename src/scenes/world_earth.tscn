@@ -1,11 +1,10 @@
-[gd_scene load_steps=82 format=3 uid="uid://ct264jpfayvc0"]
+[gd_scene load_steps=81 format=3 uid="uid://ct264jpfayvc0"]
 
 [ext_resource type="Texture2D" uid="uid://cnmvcmm6kqfcv" path="res://src/art/tilesets/water-tile.png" id="1_fddb5"]
 [ext_resource type="Texture2D" uid="uid://b05wyn4roccbb" path="res://src/art/tilesets/tileset.png" id="1_p7c6p"]
 [ext_resource type="Texture2D" uid="uid://cxlou3itf1ucr" path="res://src/art/background/bg-0.png" id="3_a47o8"]
 [ext_resource type="Script" path="res://src/scripts/player_earth.gd" id="3_lqoqk"]
 [ext_resource type="Texture2D" uid="uid://br3vd2elc0ryr" path="res://src/art/player/dara_attack.png" id="4_o5i5m"]
-[ext_resource type="Texture2D" uid="uid://b2swycx4tkvpr" path="res://src/art/player/dara_sprite.png" id="5_idlqu"]
 [ext_resource type="Texture2D" uid="uid://b051ioerhoypo" path="res://src/art/background/bg-1.png" id="5_qyudc"]
 [ext_resource type="Texture2D" uid="uid://chjh0e1s1frpu" path="res://src/art/player/dara_move.png" id="6_oj51q"]
 [ext_resource type="Script" path="res://src/scripts/moving_layer.gd" id="7_43duq"]
@@ -142,79 +141,60 @@ atlas = ExtResource("4_o5i5m")
 region = Rect2(2550, 0, 150, 150)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_imqbk"]
-atlas = ExtResource("5_idlqu")
 region = Rect2(0, 0, 150, 150)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_i35yn"]
-atlas = ExtResource("5_idlqu")
 region = Rect2(150, 0, 150, 150)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_k7iqf"]
-atlas = ExtResource("5_idlqu")
 region = Rect2(300, 0, 150, 150)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_i4y7j"]
-atlas = ExtResource("5_idlqu")
 region = Rect2(450, 0, 150, 150)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nasj6"]
-atlas = ExtResource("5_idlqu")
 region = Rect2(600, 0, 150, 150)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hoiy8"]
-atlas = ExtResource("5_idlqu")
 region = Rect2(750, 0, 150, 150)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wt15t"]
-atlas = ExtResource("5_idlqu")
 region = Rect2(900, 0, 150, 150)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_p738a"]
-atlas = ExtResource("5_idlqu")
 region = Rect2(1050, 0, 150, 150)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_r6v4n"]
-atlas = ExtResource("5_idlqu")
 region = Rect2(1200, 0, 150, 150)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_u4onm"]
-atlas = ExtResource("5_idlqu")
 region = Rect2(1350, 0, 150, 150)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4afvk"]
-atlas = ExtResource("5_idlqu")
 region = Rect2(1500, 0, 150, 150)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cm1rj"]
-atlas = ExtResource("5_idlqu")
 region = Rect2(1650, 0, 150, 150)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1xw0n"]
-atlas = ExtResource("5_idlqu")
 region = Rect2(1800, 0, 150, 150)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yfid1"]
-atlas = ExtResource("5_idlqu")
 region = Rect2(1950, 0, 150, 150)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_36fq1"]
-atlas = ExtResource("5_idlqu")
 region = Rect2(2100, 0, 150, 150)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4afcc"]
-atlas = ExtResource("5_idlqu")
 region = Rect2(2250, 0, 150, 150)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gi8kj"]
-atlas = ExtResource("5_idlqu")
 region = Rect2(2400, 0, 150, 150)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_267v3"]
-atlas = ExtResource("5_idlqu")
 region = Rect2(2550, 0, 150, 150)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jvpaw"]
-atlas = ExtResource("5_idlqu")
 region = Rect2(2700, 0, 150, 150)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_no3dd"]
@@ -568,14 +548,14 @@ _data = {
 script/source = "extends Label
 
 func _process(_delta):
-	text = \"HP: \" + str(Game.playerCurrentHP)
+	text = \"HP: \" + str(Game.player_hp)
 "
 
 [sub_resource type="GDScript" id="GDScript_suar2"]
 script/source = "extends Label
 
 func _process(_delta):
-	text = \"Gold: \" + str(Game.playerGold)
+	text = \"Gold: \" + str(Game.player_gold)
 "
 
 [sub_resource type="GDScript" id="GDScript_hwbfv"]

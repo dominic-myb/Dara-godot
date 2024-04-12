@@ -7,7 +7,7 @@ script/source = "extends Area2D
 
 func _on_body_entered(body):
 	if get_collision_layer_value(3):
-		Game.playerGold += 5
+		Game.player_gold += 5
 		queue_free()
 "
 

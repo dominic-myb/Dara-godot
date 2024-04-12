@@ -1,12 +1,13 @@
+res://src/scripts/states
+res://src/art/player
+res://src/scenes
+res://src/art/enemies
 res://src/collectibles
 res://src/art/items
 res://src/art
 C:/GodotProjects/Dara
 C:/Program Files/Java/jdk-22/bin
-res://src/art/enemies
-res://src/art/player
 res://src/scripts
-res://src/scenes
 res://andrei/Attack_Animation
 res://src/art/background
 res://global
