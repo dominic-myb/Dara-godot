@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://df2fj8fel7qtf"
-path="res://.godot/imported/Retro Impact Water 03.wav-b2eec8e96b51b2e1ef34293d0d2fd974.sample"
+path="res://.godot/imported/Retro Impact Water 03.wav-48c50144cac5e87bab60725808f0bf1b.sample"
 
 [deps]
 
-source_file="res://ailes/effect sound/Retro Impact Water 03.wav"
-dest_files=["res://.godot/imported/Retro Impact Water 03.wav-b2eec8e96b51b2e1ef34293d0d2fd974.sample"]
+source_file="res://Ailes/effect sound/Retro Impact Water 03.wav"
+dest_files=["res://.godot/imported/Retro Impact Water 03.wav-48c50144cac5e87bab60725808f0bf1b.sample"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://bxnqn475u7jf"
-path="res://.godot/imported/gate-of-heaven-128130.mp3-f79ed41792b7c50677157210be0152d7.mp3str"
+path="res://.godot/imported/gate-of-heaven-128130.mp3-937985f6b2ad0b81e357ae65159d7b97.mp3str"
 
 [deps]
 
-source_file="res://ailes/effect sound/gate-of-heaven-128130.mp3"
-dest_files=["res://.godot/imported/gate-of-heaven-128130.mp3-f79ed41792b7c50677157210be0152d7.mp3str"]
+source_file="res://Ailes/effect sound/gate-of-heaven-128130.mp3"
+dest_files=["res://.godot/imported/gate-of-heaven-128130.mp3-937985f6b2ad0b81e357ae65159d7b97.mp3str"]
 
 [params]
 

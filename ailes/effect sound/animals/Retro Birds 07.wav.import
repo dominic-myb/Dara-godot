@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://xcm3rbumqchn"
-path="res://.godot/imported/Retro Birds 07.wav-937d1e8ab9988a54daee06e4fc30d99c.sample"
+path="res://.godot/imported/Retro Birds 07.wav-aa35a3e711d755ad661ecc3471579dce.sample"
 
 [deps]
 
-source_file="res://ailes/effect sound/animals/Retro Birds 07.wav"
-dest_files=["res://.godot/imported/Retro Birds 07.wav-937d1e8ab9988a54daee06e4fc30d99c.sample"]
+source_file="res://Ailes/effect sound/animals/Retro Birds 07.wav"
+dest_files=["res://.godot/imported/Retro Birds 07.wav-aa35a3e711d755ad661ecc3471579dce.sample"]
 
 [params]
 

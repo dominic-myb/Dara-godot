@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://wmtmfmbeuhi7"
-path="res://.godot/imported/Splash_Sound_Effect(128k).mp3-72e71dad1f721bee198ec5d072809b52.mp3str"
+path="res://.godot/imported/Splash_Sound_Effect(128k).mp3-f637574615daebb753f2f2b98fc9bb3d.mp3str"
 
 [deps]
 
-source_file="res://ailes/Splash_Sound_Effect(128k).mp3"
-dest_files=["res://.godot/imported/Splash_Sound_Effect(128k).mp3-72e71dad1f721bee198ec5d072809b52.mp3str"]
+source_file="res://Ailes/Splash_Sound_Effect(128k).mp3"
+dest_files=["res://.godot/imported/Splash_Sound_Effect(128k).mp3-f637574615daebb753f2f2b98fc9bb3d.mp3str"]
 
 [params]
 

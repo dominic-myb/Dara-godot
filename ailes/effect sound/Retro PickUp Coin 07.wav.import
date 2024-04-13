@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cte1qh8pnp4mc"
-path="res://.godot/imported/Retro PickUp Coin 07.wav-1860ebcec0eec6f738debd48f5e51dc5.sample"
+path="res://.godot/imported/Retro PickUp Coin 07.wav-0c0eeed08fd8ee64bf85502a3a868c0c.sample"
 
 [deps]
 
-source_file="res://ailes/effect sound/Retro PickUp Coin 07.wav"
-dest_files=["res://.godot/imported/Retro PickUp Coin 07.wav-1860ebcec0eec6f738debd48f5e51dc5.sample"]
+source_file="res://Ailes/effect sound/Retro PickUp Coin 07.wav"
+dest_files=["res://.godot/imported/Retro PickUp Coin 07.wav-0c0eeed08fd8ee64bf85502a3a868c0c.sample"]
 
 [params]
 

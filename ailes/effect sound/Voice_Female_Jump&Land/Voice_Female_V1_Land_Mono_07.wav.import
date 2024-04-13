@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://ion78e5fpwax"
-path="res://.godot/imported/Voice_Female_V1_Land_Mono_07.wav-f6fdb1a4ffa4fc03979e7649fa21f92d.sample"
+path="res://.godot/imported/Voice_Female_V1_Land_Mono_07.wav-63ae537226812c39e8a82f98c7ee6095.sample"
 
 [deps]
 
-source_file="res://ailes/effect sound/Voice_Female_Jump&Land/Voice_Female_V1_Land_Mono_07.wav"
-dest_files=["res://.godot/imported/Voice_Female_V1_Land_Mono_07.wav-f6fdb1a4ffa4fc03979e7649fa21f92d.sample"]
+source_file="res://Ailes/effect sound/Voice_Female_Jump&Land/Voice_Female_V1_Land_Mono_07.wav"
+dest_files=["res://.godot/imported/Voice_Female_V1_Land_Mono_07.wav-63ae537226812c39e8a82f98c7ee6095.sample"]
 
 [params]
 

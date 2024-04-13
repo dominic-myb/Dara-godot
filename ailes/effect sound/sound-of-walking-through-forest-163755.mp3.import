@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://dyj70vvv4xlg4"
-path="res://.godot/imported/sound-of-walking-through-forest-163755.mp3-5c66f915777bde2ceb2dd846d12aa987.mp3str"
+path="res://.godot/imported/sound-of-walking-through-forest-163755.mp3-f6cea5451fc5c4621d5a7ba630d423f0.mp3str"
 
 [deps]
 
-source_file="res://ailes/effect sound/sound-of-walking-through-forest-163755.mp3"
-dest_files=["res://.godot/imported/sound-of-walking-through-forest-163755.mp3-5c66f915777bde2ceb2dd846d12aa987.mp3str"]
+source_file="res://Ailes/effect sound/sound-of-walking-through-forest-163755.mp3"
+dest_files=["res://.godot/imported/sound-of-walking-through-forest-163755.mp3-f6cea5451fc5c4621d5a7ba630d423f0.mp3str"]
 
 [params]
 
