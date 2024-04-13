@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://vpapv8dyedta"
-path="res://.godot/imported/48_Speed_up_02.wav-46d94bc83a91431f06dbcb65b225db5d.sample"
+path="res://.godot/imported/48_Speed_up_02.wav-29f82cd328504486a1c3faf2a0acbc96.sample"
 
 [deps]
 
-source_file="res://ailes/effect sound/48_Speed_up_02.wav"
-dest_files=["res://.godot/imported/48_Speed_up_02.wav-46d94bc83a91431f06dbcb65b225db5d.sample"]
+source_file="res://Ailes/effect sound/48_Speed_up_02.wav"
+dest_files=["res://.godot/imported/48_Speed_up_02.wav-29f82cd328504486a1c3faf2a0acbc96.sample"]
 
 [params]
 

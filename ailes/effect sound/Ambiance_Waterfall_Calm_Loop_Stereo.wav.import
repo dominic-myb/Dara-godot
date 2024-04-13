@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://dghl7ayhvdnsj"
-path="res://.godot/imported/Ambiance_Waterfall_Calm_Loop_Stereo.wav-4946c1c566a5285fedb702367d67888c.sample"
+path="res://.godot/imported/Ambiance_Waterfall_Calm_Loop_Stereo.wav-bf8f94299604b1641b8df21d16c3e4fe.sample"
 
 [deps]
 
-source_file="res://ailes/effect sound/Ambiance_Waterfall_Calm_Loop_Stereo.wav"
-dest_files=["res://.godot/imported/Ambiance_Waterfall_Calm_Loop_Stereo.wav-4946c1c566a5285fedb702367d67888c.sample"]
+source_file="res://Ailes/effect sound/Ambiance_Waterfall_Calm_Loop_Stereo.wav"
+dest_files=["res://.godot/imported/Ambiance_Waterfall_Calm_Loop_Stereo.wav-bf8f94299604b1641b8df21d16c3e4fe.sample"]
 
 [params]
 

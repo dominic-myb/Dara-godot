@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://dcde0atqlvpi1"
-path="res://.godot/imported/Ambiance_Forest_Birds_Loop_Stereo.wav-b38ab9961a7d4cf57dc6a53cad0ec4fa.sample"
+path="res://.godot/imported/Ambiance_Forest_Birds_Loop_Stereo.wav-d495bcca5694dc313f7eb0490504ab54.sample"
 
 [deps]
 
-source_file="res://ailes/effect sound/Ambiance_Forest_Birds_Loop_Stereo.wav"
-dest_files=["res://.godot/imported/Ambiance_Forest_Birds_Loop_Stereo.wav-b38ab9961a7d4cf57dc6a53cad0ec4fa.sample"]
+source_file="res://Ailes/effect sound/Ambiance_Forest_Birds_Loop_Stereo.wav"
+dest_files=["res://.godot/imported/Ambiance_Forest_Birds_Loop_Stereo.wav-d495bcca5694dc313f7eb0490504ab54.sample"]
 
 [params]
 

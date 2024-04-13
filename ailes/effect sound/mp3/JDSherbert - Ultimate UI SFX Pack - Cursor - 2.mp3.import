@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://c1b6qym5ohcal"
-path="res://.godot/imported/JDSherbert - Ultimate UI SFX Pack - Cursor - 2.mp3-52016fe0479fba4a8338f1b967302dba.mp3str"
+path="res://.godot/imported/JDSherbert - Ultimate UI SFX Pack - Cursor - 2.mp3-2d9382ce7384774ba322a12311e82a90.mp3str"
 
 [deps]
 
-source_file="res://ailes/effect sound/mp3/JDSherbert - Ultimate UI SFX Pack - Cursor - 2.mp3"
-dest_files=["res://.godot/imported/JDSherbert - Ultimate UI SFX Pack - Cursor - 2.mp3-52016fe0479fba4a8338f1b967302dba.mp3str"]
+source_file="res://Ailes/effect sound/mp3/JDSherbert - Ultimate UI SFX Pack - Cursor - 2.mp3"
+dest_files=["res://.godot/imported/JDSherbert - Ultimate UI SFX Pack - Cursor - 2.mp3-2d9382ce7384774ba322a12311e82a90.mp3str"]
 
 [params]
 
