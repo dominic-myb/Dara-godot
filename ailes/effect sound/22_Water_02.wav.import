@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://clp0emx0grofn"
-path="res://.godot/imported/22_Water_02.wav-2021f2799b69641696fa41673fcbb45a.sample"
+path="res://.godot/imported/22_Water_02.wav-0704d63c5dce2e0a9141e2f3d777a84a.sample"
 
 [deps]
 
-source_file="res://Ailes/effect sound/22_Water_02.wav"
-dest_files=["res://.godot/imported/22_Water_02.wav-2021f2799b69641696fa41673fcbb45a.sample"]
+source_file="res://ailes/effect sound/22_Water_02.wav"
+dest_files=["res://.godot/imported/22_Water_02.wav-0704d63c5dce2e0a9141e2f3d777a84a.sample"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cjtkb6npgdc1y"
-path="res://.godot/imported/Ambiance_Nature_Meadow_Birds_Flies_Calm_Loop_Stereo.wav-1046ce6bcc5cdfa37fa9fc8bacf70e7c.sample"
+path="res://.godot/imported/Ambiance_Nature_Meadow_Birds_Flies_Calm_Loop_Stereo.wav-592be9a2af88a3465c3ae90a34d39b80.sample"
 
 [deps]
 
-source_file="res://Ailes/effect sound/Ambiance_Nature_Meadow_Birds_Flies_Calm_Loop_Stereo.wav"
-dest_files=["res://.godot/imported/Ambiance_Nature_Meadow_Birds_Flies_Calm_Loop_Stereo.wav-1046ce6bcc5cdfa37fa9fc8bacf70e7c.sample"]
+source_file="res://ailes/effect sound/Ambiance_Nature_Meadow_Birds_Flies_Calm_Loop_Stereo.wav"
+dest_files=["res://.godot/imported/Ambiance_Nature_Meadow_Birds_Flies_Calm_Loop_Stereo.wav-592be9a2af88a3465c3ae90a34d39b80.sample"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://c7x4oguvey04g"
-path="res://.godot/imported/JDSherbert - Ultimate UI SFX Pack - Error - 1.mp3-f28e91b76faa2bc91db5c6177f7b53e6.mp3str"
+path="res://.godot/imported/JDSherbert - Ultimate UI SFX Pack - Error - 1.mp3-bbb1e40b4efd23774cfaa164afa5cf27.mp3str"
 
 [deps]
 
-source_file="res://Ailes/effect sound/mp3/JDSherbert - Ultimate UI SFX Pack - Error - 1.mp3"
-dest_files=["res://.godot/imported/JDSherbert - Ultimate UI SFX Pack - Error - 1.mp3-f28e91b76faa2bc91db5c6177f7b53e6.mp3str"]
+source_file="res://ailes/effect sound/mp3/JDSherbert - Ultimate UI SFX Pack - Error - 1.mp3"
+dest_files=["res://.godot/imported/JDSherbert - Ultimate UI SFX Pack - Error - 1.mp3-bbb1e40b4efd23774cfaa164afa5cf27.mp3str"]
 
 [params]
 

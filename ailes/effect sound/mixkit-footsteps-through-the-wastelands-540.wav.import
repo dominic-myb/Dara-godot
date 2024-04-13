@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://b7dwtthxkrn1d"
-path="res://.godot/imported/mixkit-footsteps-through-the-wastelands-540.wav-36f7e7b705fee7faa8830b1428956f21.sample"
+path="res://.godot/imported/mixkit-footsteps-through-the-wastelands-540.wav-5d8fe1cb97837f61eec587d284da9371.sample"
 
 [deps]
 
-source_file="res://Ailes/effect sound/mixkit-footsteps-through-the-wastelands-540.wav"
-dest_files=["res://.godot/imported/mixkit-footsteps-through-the-wastelands-540.wav-36f7e7b705fee7faa8830b1428956f21.sample"]
+source_file="res://ailes/effect sound/mixkit-footsteps-through-the-wastelands-540.wav"
+dest_files=["res://.godot/imported/mixkit-footsteps-through-the-wastelands-540.wav-5d8fe1cb97837f61eec587d284da9371.sample"]
 
 [params]
 

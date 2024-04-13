@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://dfhikitccqk5l"
-path="res://.godot/imported/wind-2-6196.mp3-ff93f6c1b6fab2f3e587137de90d9645.mp3str"
+path="res://.godot/imported/wind-2-6196.mp3-94dcf7d7088556afc480cfe76b8b9618.mp3str"
 
 [deps]
 
-source_file="res://Ailes/effect sound/wind-2-6196.mp3"
-dest_files=["res://.godot/imported/wind-2-6196.mp3-ff93f6c1b6fab2f3e587137de90d9645.mp3str"]
+source_file="res://ailes/effect sound/wind-2-6196.mp3"
+dest_files=["res://.godot/imported/wind-2-6196.mp3-94dcf7d7088556afc480cfe76b8b9618.mp3str"]
 
 [params]
 

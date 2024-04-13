@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://chj5owj5n1r1h"
-path="res://.godot/imported/mixkit-footsteps-in-the-forest-ground-1230.wav-4a02cb94bcfb09f3ddc06c5d301546f3.sample"
+path="res://.godot/imported/mixkit-footsteps-in-the-forest-ground-1230.wav-b577666e6216d0f868a6be499dee60a6.sample"
 
 [deps]
 
-source_file="res://Ailes/effect sound/mixkit-footsteps-in-the-forest-ground-1230.wav"
-dest_files=["res://.godot/imported/mixkit-footsteps-in-the-forest-ground-1230.wav-4a02cb94bcfb09f3ddc06c5d301546f3.sample"]
+source_file="res://ailes/effect sound/mixkit-footsteps-in-the-forest-ground-1230.wav"
+dest_files=["res://.godot/imported/mixkit-footsteps-in-the-forest-ground-1230.wav-b577666e6216d0f868a6be499dee60a6.sample"]
 
 [params]
 

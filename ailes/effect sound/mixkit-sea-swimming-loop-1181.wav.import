@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cy1yiaedq72s1"
-path="res://.godot/imported/mixkit-sea-swimming-loop-1181.wav-04d49dd170e4a58cbe2252cabff2e4a1.sample"
+path="res://.godot/imported/mixkit-sea-swimming-loop-1181.wav-961db102263c96ec572fe9e2aada1939.sample"
 
 [deps]
 
-source_file="res://Ailes/effect sound/mixkit-sea-swimming-loop-1181.wav"
-dest_files=["res://.godot/imported/mixkit-sea-swimming-loop-1181.wav-04d49dd170e4a58cbe2252cabff2e4a1.sample"]
+source_file="res://ailes/effect sound/mixkit-sea-swimming-loop-1181.wav"
+dest_files=["res://.godot/imported/mixkit-sea-swimming-loop-1181.wav-961db102263c96ec572fe9e2aada1939.sample"]
 
 [params]
 

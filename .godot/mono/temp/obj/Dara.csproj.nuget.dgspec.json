@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GodotProjects\\Dara-godot\\Dara.csproj": {}
+    "C:\\GodotProjects\\Dara\\Dara.csproj": {}
   },
   "projects": {
-    "C:\\GodotProjects\\Dara-godot\\Dara.csproj": {
+    "C:\\GodotProjects\\Dara\\Dara.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GodotProjects\\Dara-godot\\Dara.csproj",
+        "projectUniqueName": "C:\\GodotProjects\\Dara\\Dara.csproj",
         "projectName": "Dara",
-        "projectPath": "C:\\GodotProjects\\Dara-godot\\Dara.csproj",
-        "packagesPath": "C:\\Users\\Rurenzu\\.nuget\\packages\\",
-        "outputPath": "C:\\GodotProjects\\Dara-godot\\.godot\\mono\\temp\\obj\\",
+        "projectPath": "C:\\GodotProjects\\Dara\\Dara.csproj",
+        "packagesPath": "C:\\Users\\stoicy\\.nuget\\packages\\",
+        "outputPath": "C:\\GodotProjects\\Dara\\.godot\\mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Rurenzu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\stoicy\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -32,11 +32,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -70,15 +65,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.28, 6.0.28]"
+              "version": "[6.0.26, 6.0.26]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.28, 6.0.28]"
+              "version": "[6.0.26, 6.0.26]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.28, 6.0.28]"
+              "version": "[6.0.26, 6.0.26]"
             }
           ],
           "frameworkReferences": {
@@ -86,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://ch27omrvbndh2"
-path="res://.godot/imported/mixkit-liquid-bubble-3000.wav-24d080430c46413b092f4c2201d34827.sample"
+path="res://.godot/imported/mixkit-liquid-bubble-3000.wav-2ff3d73849568f7f339a32a20ffc4aeb.sample"
 
 [deps]
 
-source_file="res://Ailes/effect sound/mixkit-liquid-bubble-3000.wav"
-dest_files=["res://.godot/imported/mixkit-liquid-bubble-3000.wav-24d080430c46413b092f4c2201d34827.sample"]
+source_file="res://ailes/effect sound/mixkit-liquid-bubble-3000.wav"
+dest_files=["res://.godot/imported/mixkit-liquid-bubble-3000.wav-2ff3d73849568f7f339a32a20ffc4aeb.sample"]
 
 [params]
 

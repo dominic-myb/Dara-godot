@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://dwfn0t7rpa4xy"
-path="res://.godot/imported/🎵_RPG_Boss_Battle_Music___Hydra(128k).mp3-9d719fa0caddc6313100c801b96a5d2a.mp3str"
+path="res://.godot/imported/🎵_RPG_Boss_Battle_Music___Hydra(128k).mp3-475be9dc5da343b2f1240f19ffd1c656.mp3str"
 
 [deps]
 
-source_file="res://Ailes/🎵_RPG_Boss_Battle_Music___Hydra(128k).mp3"
-dest_files=["res://.godot/imported/🎵_RPG_Boss_Battle_Music___Hydra(128k).mp3-9d719fa0caddc6313100c801b96a5d2a.mp3str"]
+source_file="res://ailes/🎵_RPG_Boss_Battle_Music___Hydra(128k).mp3"
+dest_files=["res://.godot/imported/🎵_RPG_Boss_Battle_Music___Hydra(128k).mp3-475be9dc5da343b2f1240f19ffd1c656.mp3str"]
 
 [params]
 

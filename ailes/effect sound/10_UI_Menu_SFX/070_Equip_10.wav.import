@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bjh5sa4272d8e"
-path="res://.godot/imported/070_Equip_10.wav-95185edd4a1e614d31752ede4e713893.sample"
+path="res://.godot/imported/070_Equip_10.wav-ae4bbfb5bb2213329bc52b783847e3f2.sample"
 
 [deps]
 
-source_file="res://Ailes/effect sound/10_UI_Menu_SFX/070_Equip_10.wav"
-dest_files=["res://.godot/imported/070_Equip_10.wav-95185edd4a1e614d31752ede4e713893.sample"]
+source_file="res://ailes/effect sound/10_UI_Menu_SFX/070_Equip_10.wav"
+dest_files=["res://.godot/imported/070_Equip_10.wav-ae4bbfb5bb2213329bc52b783847e3f2.sample"]
 
 [params]
 

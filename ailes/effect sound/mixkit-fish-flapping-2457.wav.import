@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://84efhpprr0m5"
-path="res://.godot/imported/mixkit-fish-flapping-2457.wav-effbb6201503e8d0b6271c9e42aceb76.sample"
+path="res://.godot/imported/mixkit-fish-flapping-2457.wav-65d4359f109da2f021b693d640ce29e8.sample"
 
 [deps]
 
-source_file="res://Ailes/effect sound/mixkit-fish-flapping-2457.wav"
-dest_files=["res://.godot/imported/mixkit-fish-flapping-2457.wav-effbb6201503e8d0b6271c9e42aceb76.sample"]
+source_file="res://ailes/effect sound/mixkit-fish-flapping-2457.wav"
+dest_files=["res://.godot/imported/mixkit-fish-flapping-2457.wav-65d4359f109da2f021b693d640ce29e8.sample"]
 
 [params]
 

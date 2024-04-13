@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://d1bg4ofoxejex"
-path="res://.godot/imported/001_Hover_01.wav-4fbbc345d5f7901fec6e6a4074a6bb6b.sample"
+path="res://.godot/imported/001_Hover_01.wav-4ef959c10d712cb10c6184b6d646937d.sample"
 
 [deps]
 
-source_file="res://Ailes/effect sound/10_UI_Menu_SFX/001_Hover_01.wav"
-dest_files=["res://.godot/imported/001_Hover_01.wav-4fbbc345d5f7901fec6e6a4074a6bb6b.sample"]
+source_file="res://ailes/effect sound/10_UI_Menu_SFX/001_Hover_01.wav"
+dest_files=["res://.godot/imported/001_Hover_01.wav-4ef959c10d712cb10c6184b6d646937d.sample"]
 
 [params]
 
