@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bm4k77rex1oqk"
-path="res://.godot/imported/mixkit-diving-in-deep-water-1312.wav-3ba351d5eea54f2af30ab1404dd1c499.sample"
+path="res://.godot/imported/mixkit-diving-in-deep-water-1312.wav-6452177068d766e37da4b802923b292a.sample"
 
 [deps]
 
-source_file="res://ailes/effect sound/mixkit-diving-in-deep-water-1312.wav"
-dest_files=["res://.godot/imported/mixkit-diving-in-deep-water-1312.wav-3ba351d5eea54f2af30ab1404dd1c499.sample"]
+source_file="res://Ailes/effect sound/mixkit-diving-in-deep-water-1312.wav"
+dest_files=["res://.godot/imported/mixkit-diving-in-deep-water-1312.wav-6452177068d766e37da4b802923b292a.sample"]
 
 [params]
 

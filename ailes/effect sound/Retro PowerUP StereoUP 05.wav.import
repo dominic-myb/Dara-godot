@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://dgtkoli5286h3"
-path="res://.godot/imported/Retro PowerUP StereoUP 05.wav-57e96c403e43fc4976b5fe33de4b3122.sample"
+path="res://.godot/imported/Retro PowerUP StereoUP 05.wav-96470719674a7ff61c4dd506a40e3ada.sample"
 
 [deps]
 
-source_file="res://ailes/effect sound/Retro PowerUP StereoUP 05.wav"
-dest_files=["res://.godot/imported/Retro PowerUP StereoUP 05.wav-57e96c403e43fc4976b5fe33de4b3122.sample"]
+source_file="res://Ailes/effect sound/Retro PowerUP StereoUP 05.wav"
+dest_files=["res://.godot/imported/Retro PowerUP StereoUP 05.wav-96470719674a7ff61c4dd506a40e3ada.sample"]
 
 [params]
 

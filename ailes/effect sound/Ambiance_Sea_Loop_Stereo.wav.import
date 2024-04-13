@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://4n87wqfarhog"
-path="res://.godot/imported/Ambiance_Sea_Loop_Stereo.wav-4afdafd85602780c01cb29d447a74e0f.sample"
+path="res://.godot/imported/Ambiance_Sea_Loop_Stereo.wav-f66de25928d0df920cedf81347c67e81.sample"
 
 [deps]
 
-source_file="res://ailes/effect sound/Ambiance_Sea_Loop_Stereo.wav"
-dest_files=["res://.godot/imported/Ambiance_Sea_Loop_Stereo.wav-4afdafd85602780c01cb29d447a74e0f.sample"]
+source_file="res://Ailes/effect sound/Ambiance_Sea_Loop_Stereo.wav"
+dest_files=["res://.godot/imported/Ambiance_Sea_Loop_Stereo.wav-f66de25928d0df920cedf81347c67e81.sample"]
 
 [params]
 

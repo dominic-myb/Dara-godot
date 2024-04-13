@@ -1,7 +1,8 @@
-res://src/scenes/world_sea.tscn
+res://src/scenes/octopus.tscn
 res://src/scripts/states/State Machine.gd
 res://src/scripts/BG.gd
-res://src/scenes/octopus.tscn
+res://src/scenes/world_sea.tscn
 res://src/scenes/player.tscn
-res://src/scripts/player_sea.gd
 res://src/scenes/world_earth.tscn
+res://src/scenes/main.tscn
+res://src/scenes/BG.tscn

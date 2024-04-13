@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bbbk2uctqtyhd"
-path="res://.godot/imported/mixkit-completion-of-a-level-2063.wav-7744466e7aa7f85fade385b7ee579481.sample"
+path="res://.godot/imported/mixkit-completion-of-a-level-2063.wav-62146ba59a65de96d71fe3e634d0b58d.sample"
 
 [deps]
 
-source_file="res://ailes/effect sound/mixkit-completion-of-a-level-2063.wav"
-dest_files=["res://.godot/imported/mixkit-completion-of-a-level-2063.wav-7744466e7aa7f85fade385b7ee579481.sample"]
+source_file="res://Ailes/effect sound/mixkit-completion-of-a-level-2063.wav"
+dest_files=["res://.godot/imported/mixkit-completion-of-a-level-2063.wav-62146ba59a65de96d71fe3e634d0b58d.sample"]
 
 [params]
 

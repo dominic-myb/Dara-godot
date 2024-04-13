@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bqmt1envn1ndq"
-path="res://.godot/imported/098_Unpause_04.wav-a70783be4bda962e34bc5b15b77f00ec.sample"
+path="res://.godot/imported/098_Unpause_04.wav-d05c87765746b4a78930fb428e999008.sample"
 
 [deps]
 
-source_file="res://ailes/effect sound/10_UI_Menu_SFX/098_Unpause_04.wav"
-dest_files=["res://.godot/imported/098_Unpause_04.wav-a70783be4bda962e34bc5b15b77f00ec.sample"]
+source_file="res://Ailes/effect sound/10_UI_Menu_SFX/098_Unpause_04.wav"
+dest_files=["res://.godot/imported/098_Unpause_04.wav-d05c87765746b4a78930fb428e999008.sample"]
 
 [params]
 
