@@ -1,5 +1,9 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
+<<<<<<< Updated upstream
 ::res://::1712975477
+=======
+::res://::1712911106
+>>>>>>> Stashed changes
 export_presets.cfg::TextFile::-1::1712572656::0::1::::<><>::
 icon.svg::CompressedTexture2D::2775584441975081412::1711689797::1712975481::1::::<><>::
 README.md::TextFile::-1::1712582211::0::1::::<><>::
@@ -296,12 +300,21 @@ trunk22.png::CompressedTexture2D::7063102752875318758::1712132833::1712132860::1
 trunk23.png::CompressedTexture2D::5161164212040357903::1712132833::1712132860::1::::<><>::
 trunk.3.png::CompressedTexture2D::6005895964951856048::1712132833::1712132860::1::::<><>::
 trunk.png::CompressedTexture2D::1133097560584490047::1712132833::1712132860::1::::<><>::
+<<<<<<< Updated upstream
 ::res://andrei/mobs/::1712975438
 attack.png::CompressedTexture2D::3799397906940835337::1712900545::1712975438::1::::<><>::
 death-sheet.png::CompressedTexture2D::7797974122912286183::1712900545::1712975438::1::::<><>::
 hurt-sheet.png::CompressedTexture2D::4172689707750226268::1712900545::1712975438::1::::<><>::
 idle-sheet.png::CompressedTexture2D::8887906256316036822::1712973694::1712975438::1::::<><>::
 move-sheet.png::CompressedTexture2D::2094316346655540575::1712900545::1712975438::1::::<><>::
+=======
+::res://andrei/mobs/::1712973694
+attack.png::CompressedTexture2D::1627944386636611425::1712900545::1712973697::1::::<><>::
+death-sheet.png::CompressedTexture2D::5353679690485574038::1712900545::1712973697::1::::<><>::
+hurt-sheet.png::CompressedTexture2D::7125145089506733370::1712900545::1712973697::1::::<><>::
+idle-sheet.png::CompressedTexture2D::5064450578065601512::1712973694::1712973697::1::::<><>::
+move-sheet.png::CompressedTexture2D::5083355364360518302::1712900545::1712973697::1::::<><>::
+>>>>>>> Stashed changes
 ::res://andrei/mobs/Land/::1712132833
 ::res://andrei/mobs/Land/Bird/::1712132861
 bird_attack.png::CompressedTexture2D::1796425034824262060::1712132833::1712132860::1::::<><>::
@@ -696,14 +709,22 @@ BG.tscn::PackedScene::1178066625391774618::1712576744::0::1::::<><>::res://src/s
 joystick.tscn::PackedScene::906739341663451943::1712801930::0::1::::<><>::res://src/scripts/joystick.gd<>uid://dc5n3dcmgba01::::res://src/art/ui/joystick-outer.png<>uid://bnwfjc1cha5mi::::res://src/art/ui/joystick-inner.png<>res://src/scripts/inner.gd
 main.tscn::PackedScene::7746281845248589248::1712574928::0::1::::<><>::uid://bwycwdfpchkf0::::res://src/art/ui/play-btn.png<>res://src/scripts/main.gd<>uid://cu7c43em5q3kb::::res://src/art/ui/play-press.png<>uid://ddhlckwdkagr::::res://src/art/ui/quit-btn.png<>uid://d3frh1r8wnjdl::::res://src/art/ui/load-btn.png<>uid://dcprpugk7kdc4::::res://src/art/ui/quit-press.png<>uid://yj78vfs58sda::::res://src/art/ui/load-press.png<>uid://cxlou3itf1ucr::::res://src/art/background/bg-0.png<>uid://b051ioerhoypo::::res://src/art/background/bg-1.png<>uid://bpuycuqfj534r::::res://src/art/background/bg-3.png<>uid://ckmchucfnc55l::::res://src/art/background/bg-2.png
 mobile_controller.tscn::PackedScene::6719026340818894229::1712576744::0::1::::<><>::uid://dwar225ypf70k::::res://src/art/ui/left-button-normal.png<>uid://bkdqpsj0ob5pw::::res://src/art/ui/left-button-pressed.png<>uid://oq8dgy2gbofd::::res://src/art/ui/right-button-normal.png<>uid://d2ji2nrxkig88::::res://src/art/ui/right-button-pressed.png<>uid://0f3fecgxye5n::::res://src/art/ui/close-btn-1.png<>uid://2mc121abrxjq::::res://src/art/ui/close-btn-2.png<>uid://bcgpg22bxh25g::::res://src/art/ui/jump-normal.png<>uid://deh4a5ju13n3v::::res://src/art/ui/jump-pressed.png
+<<<<<<< Updated upstream
 octopus.tscn::PackedScene::1561891320893906276::1712973694::0::1::::<><>::res://src/scripts/octopus.gd<>uid://3qnrpryj2onv::::res://src/art/enemies/octo_attack.png<>uid://bpsjis03udb1s::::res://src/art/enemies/octo_death.png<>uid://bt4a7ggbcqd3b::::res://src/art/enemies/octo_hurt.png<>uid://dnow68a4fh37i::::res://src/art/enemies/octo_idle.png<>uid://bvrno4dnj8lfa::::res://src/art/enemies/octo_move.png<>res://src/scripts/states/State Machine.gd<>res://src/scripts/states/EnemyIdle.gd<>res://src/scripts/states/EnemyFollow.gd
+=======
+octopus.tscn::PackedScene::1561891320893906276::1712973570::0::1::::<><>::res://src/scripts/octopus.gd<>uid://3qnrpryj2onv::::res://src/art/enemies/octo_attack.png<>uid://bpsjis03udb1s::::res://src/art/enemies/octo_death.png<>uid://bt4a7ggbcqd3b::::res://src/art/enemies/octo_hurt.png<>uid://bvrno4dnj8lfa::::res://src/art/enemies/octo_move.png<>uid://dmbvt0yep6q03::::res://src/art/enemies/octo/idle_1.png<>uid://dyktoqdvsdfg5::::res://src/art/enemies/octo/idle_2.png<>res://src/scripts/states/State Machine.gd<>uid://bnblrvovbh3g0::::res://src/art/enemies/octo/idle_3.png<>res://src/scripts/states/EnemyIdle.gd<>uid://bl0d0bu0wyo5c::::res://src/art/enemies/octo/idle_4.png<>uid://3umhrjtluudo::::res://src/art/enemies/octo/idle_5.png<>res://src/scripts/states/EnemyFollow.gd<>uid://cx8r3bmk5fie4::::res://src/art/enemies/octo/idle_6.png
+>>>>>>> Stashed changes
 player.tscn::PackedScene::5463885649058959549::1712898371::0::1::::<><>::res://src/scripts/player_sea.gd<>uid://br3vd2elc0ryr::::res://src/art/player/dara_attack.png<>uid://bo5do0h5kicg5::::res://src/art/player/dara_death.png<>uid://bkbd580jk23ui::::res://src/art/player/dara_hurt.png<>uid://bkkljuu5bcao2::::res://src/art/player/dara_idle.png<>uid://bhftv5g1qltcj::::res://src/art/player/dara_swim.png<>uid://baecl2hfmdcx5::::res://src/art/ui/attack_button-sheet.png
 player_on_land.tscn::PackedScene::3623744462613209893::1712576744::0::1::::<><>::res://src/scripts/player_earth.gd<>uid://br3vd2elc0ryr::::res://src/art/player/dara_attack.png<>uid://b2swycx4tkvpr::::res://src/art/player/dara_sprite.png<>uid://chjh0e1s1frpu::::res://src/art/player/dara_move.png
 player_on_sea.tscn::PackedScene::7184238837128951894::1712735397::0::1::::<><>::res://src/scripts/player_sea.gd<>uid://br3vd2elc0ryr::::res://src/art/player/dara_attack.png<>uid://b2swycx4tkvpr::::res://src/art/player/dara_sprite.png<>uid://bkbd580jk23ui::::res://src/art/player/dara_hurt.png<>uid://chjh0e1s1frpu::::res://src/art/player/dara_move.png<>uid://baecl2hfmdcx5::::res://src/art/ui/attack_button-sheet.png
 projectile.tscn::PackedScene::492507474205508423::1712730490::0::1::::<><>::res://src/scripts/projectile.gd<>uid://bfv8xx8kmqgs::::res://andrei/Attack_Animation/water.attack.png
 sea_controller.tscn::PackedScene::8073010721206221031::1712576744::0::1::::<><>::uid://dwar225ypf70k::::res://src/art/ui/left-button-normal.png<>uid://bkdqpsj0ob5pw::::res://src/art/ui/left-button-pressed.png<>uid://oq8dgy2gbofd::::res://src/art/ui/right-button-normal.png<>uid://d2ji2nrxkig88::::res://src/art/ui/right-button-pressed.png<>uid://gisdrp0vqexo::::res://src/art/ui/down-normal.png<>uid://divo22nhh6xqy::::res://src/art/ui/down-pressed.png<>uid://bcgpg22bxh25g::::res://src/art/ui/jump-normal.png<>uid://deh4a5ju13n3v::::res://src/art/ui/jump-pressed.png
 world_earth.tscn::PackedScene::6164102106777796049::1712898371::0::1::::<><>::uid://cnmvcmm6kqfcv::::res://src/art/tilesets/water-tile.png<>uid://b05wyn4roccbb::::res://src/art/tilesets/tileset.png<>uid://cxlou3itf1ucr::::res://src/art/background/bg-0.png<>res://src/scripts/player_earth.gd<>uid://br3vd2elc0ryr::::res://src/art/player/dara_attack.png<>uid://b051ioerhoypo::::res://src/art/background/bg-1.png<>uid://chjh0e1s1frpu::::res://src/art/player/dara_move.png<>res://src/scripts/moving_layer.gd<>uid://bpuycuqfj534r::::res://src/art/background/bg-3.png<>uid://ckmchucfnc55l::::res://src/art/background/bg-2.png<>uid://c2y0m814g60q0::::res://src/scenes/mobile_controller.tscn
+<<<<<<< Updated upstream
 world_sea.tscn::PackedScene::5521506680857332173::1712973694::0::1::::<><>::uid://wiuee4t3i30c::::res://src/scenes/octopus.tscn<>uid://v7w1m6cnq4l8::::res://src/art/tilesets/background.png<>uid://cj30nsq85f8ar::::res://src/scenes/player.tscn<>uid://cw6i3lv5wmf2::::res://src/art/tilesets/midground.png<>uid://d2wmqv5x6syit::::res://src/art/tilesets/tiles.png<>uid://bcyjh3d3efvc8::::res://src/art/tilesets/props.png<>uid://b0t6ouo62xhdb::::res://src/art/tilesets/black.png<>res://src/scripts/joystick.gd<>uid://bnwfjc1cha5mi::::res://src/art/ui/joystick-inner.png<>uid://dc5n3dcmgba01::::res://src/art/ui/joystick-outer.png<>uid://b3yulltlt4nda::::res://src/art/ui/attack-btn.png
+=======
+world_sea.tscn::PackedScene::5521506680857332173::1712904303::0::1::::<><>::uid://wiuee4t3i30c::::res://src/scenes/octopus.tscn<>uid://v7w1m6cnq4l8::::res://src/art/tilesets/background.png<>uid://cj30nsq85f8ar::::res://src/scenes/player.tscn<>uid://cw6i3lv5wmf2::::res://src/art/tilesets/midground.png<>uid://d2wmqv5x6syit::::res://src/art/tilesets/tiles.png<>uid://bcyjh3d3efvc8::::res://src/art/tilesets/props.png<>uid://b0t6ouo62xhdb::::res://src/art/tilesets/black.png<>res://src/scripts/joystick.gd<>uid://bnwfjc1cha5mi::::res://src/art/ui/joystick-inner.png<>uid://dc5n3dcmgba01::::res://src/art/ui/joystick-outer.png<>uid://b3yulltlt4nda::::res://src/art/ui/attack-btn.png
+>>>>>>> Stashed changes
 ::res://src/scripts/::1712912830
 BG.gd::GDScript::-1::1712912830::0::1::::<>ParallaxBackground<>::
 inner.gd::GDScript::-1::1712417017::0::1::::<>Sprite2D<>::
