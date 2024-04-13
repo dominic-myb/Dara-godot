@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 res://src/scenes/octopus.tscn
 res://src/scripts/states/State Machine.gd
 res://src/scripts/BG.gd
@@ -6,3 +7,10 @@ res://src/scenes/player.tscn
 res://src/scenes/world_earth.tscn
 res://src/scenes/main.tscn
 res://src/scenes/BG.tscn
+=======
+res://src/scenes/main.tscn
+res://src/scripts/states/State Machine.gd
+res://src/scripts/BG.gd
+res://src/scripts/states/EnemyIdle.gd
+res://src/scenes/world_sea.tscn
+>>>>>>> 8e8add0c69b105dfc7c901d13ef7e97cd727aa16

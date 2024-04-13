@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 ﻿53340
 C:/Users/Acer/OneDrive/Documents/Applications/Godot_v4.2.1-stable_mono_win64/Godot_v4.2.1-stable_mono_win64.exe
+=======
+﻿63933
+C:/Users/stoicy/Documents/Applications/Godot_v4.2.1-stable_mono_win64/Godot_v4.2.1-stable_mono_win64.exe
+>>>>>>> 8e8add0c69b105dfc7c901d13ef7e97cd727aa16

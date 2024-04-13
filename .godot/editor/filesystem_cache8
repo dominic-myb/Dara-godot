@@ -166,13 +166,13 @@ Voice_Female_V2_Hit_Short_Mono_07.wav::AudioStreamWAV::7782664904246815967::1712
 Voice_Female_V2_Hit_Short_Mono_08.wav::AudioStreamWAV::8134453706858801069::1712972999::1712973169::1::::<><>::
 Voice_Female_V2_Hit_Short_Mono_09.wav::AudioStreamWAV::1957313588944058424::1712972999::1712973169::1::::<><>::
 Voice_Female_V2_Hit_Short_Mono_10.wav::AudioStreamWAV::7395908522593309455::1712972999::1712973169::1::::<><>::
-::res://Ailes/effect sound/Voice_Female_Jump&Land/::1712973172
+::res://Ailes/effect sound/Voice_Female_Jump&Land/::1712977830
 Voice_Female_V1_Jump_Mono_01.wav::AudioStreamWAV::3401069699757559877::1712972999::1712973169::1::::<><>::
 Voice_Female_V1_Jump_Mono_02.wav::AudioStreamWAV::4376360205578159447::1712972999::1712973169::1::::<><>::
 Voice_Female_V1_Jump_Mono_03.wav::AudioStreamWAV::7881377905347602325::1712972999::1712973169::1::::<><>::
 Voice_Female_V1_Jump_Mono_04.wav::AudioStreamWAV::845499427969446921::1712972999::1712973169::1::::<><>::
 Voice_Female_V1_Jump_Mono_05.wav::AudioStreamWAV::5205366743942227553::1712972999::1712973169::1::::<><>::
-Voice_Female_V1_Jump_Mono_06.wav::AudioStreamWAV::6544614764086084812::1712972999::1712973169::1::::<><>::
+Voice_Female_V1_Jump_Mono_06.wav::AudioStreamWAV::6544614764086084812::1712972999::1712977830::1::::<><>::
 Voice_Female_V1_Jump_Mono_07.wav::AudioStreamWAV::8957864716719541616::1712972999::1712973169::1::::<><>::
 Voice_Female_V1_Jump_Mono_08.wav::AudioStreamWAV::283828489562442132::1712972999::1712973169::1::::<><>::
 Voice_Female_V1_Jump_Mono_09.wav::AudioStreamWAV::4509493127413604189::1712972999::1712973169::1::::<><>::
@@ -227,7 +227,14 @@ Voice_Female_V2_Pain_Mono_02.wav::AudioStreamWAV::8185743706501781339::171297299
 Voice_Female_V2_Pain_Mono_03.wav::AudioStreamWAV::6448421360097033720::1712972999::1712973170::1::::<><>::
 Voice_Female_V2_Pain_Mono_04.wav::AudioStreamWAV::6387018959621010306::1712972999::1712973169::1::::<><>::
 Voice_Female_V2_Pain_Mono_05.wav::AudioStreamWAV::3928433730764846205::1712972999::1712973169::1::::<><>::
-::res://andrei/::1712973003
+::res://andrei/::1712977830
+::res://andrei/attack/::1712977830
+1.png::CompressedTexture2D::5546230024212467150::1712977830::1712977830::1::::<><>::
+2.png::CompressedTexture2D::3031454118945368525::1712977830::1712977830::1::::<><>::
+3.png::CompressedTexture2D::8161605534622979584::1712977830::1712977830::1::::<><>::
+4.png::CompressedTexture2D::4627771877907398589::1712977830::1712977830::1::::<><>::
+5.png::CompressedTexture2D::7418315045773685774::1712977830::1712977830::1::::<><>::
+6.png::CompressedTexture2D::6612554131721802274::1712977830::1712977830::1::::<><>::
 ::res://andrei/Attack_Animation/::1712972999
 water.attack.png::CompressedTexture2D::81845965536066174::1712972999::1712972999::1::::<><>::
 ::res://andrei/background_land/::1712972999
@@ -255,8 +262,18 @@ grassy_mountains_fc.png::CompressedTexture2D::7324772382309686239::1712972999::1
 hill.png::CompressedTexture2D::5349836645415331786::1712972999::1712972999::1::::<><>::
 sky_fc.png::CompressedTexture2D::5672871139139777355::1712972999::1712972999::1::::<><>::
 ::res://andrei/background_land/Grassy_Mountains_Parallax_Background-vnitti/PSD/::1712972999
+::res://andrei/death/::1712977830
+1.png::CompressedTexture2D::5222558887668841592::1712977830::1712977830::1::::<><>::
+2.png::CompressedTexture2D::1989651875937573674::1712977830::1712977830::1::::<><>::
+3.png::CompressedTexture2D::5337630149635209687::1712977830::1712977830::1::::<><>::
+4.png::CompressedTexture2D::8415503247818422347::1712977830::1712977830::1::::<><>::
+5.png::CompressedTexture2D::6188925541335137315::1712977830::1712977830::1::::<><>::
+6.png::CompressedTexture2D::4723426930273456229::1712977830::1712977830::1::::<><>::
 ::res://andrei/Heart/::1712972999
 heart.png::CompressedTexture2D::4855627738114356346::1712972999::1712972999::1::::<><>::
+::res://andrei/hurt/::1712977830
+1.png::CompressedTexture2D::1388947948109056875::1712977830::1712977830::1::::<><>::
+2.png::CompressedTexture2D::6562231204406250598::1712977830::1712977830::1::::<><>::
 ::res://andrei/kalat/::1712973000
 isda.marami2.png::CompressedTexture2D::4015877196898882729::1712973000::1712973000::1::::<><>::
 isda.marami.png::CompressedTexture2D::5989043121019155592::1712973000::1712973000::1::::<><>::
@@ -278,12 +295,12 @@ trunk22.png::CompressedTexture2D::7063102752875318758::1712972999::1712973000::1
 trunk23.png::CompressedTexture2D::5161164212040357903::1712973000::1712973000::1::::<><>::
 trunk.3.png::CompressedTexture2D::6005895964951856048::1712972999::1712972999::1::::<><>::
 trunk.png::CompressedTexture2D::1133097560584490047::1712972999::1712972999::1::::<><>::
-::res://andrei/mobs/::1712973169
-attack.png::CompressedTexture2D::3342673736615821539::1712973001::1712973169::1::::<><>::
-death-sheet.png::CompressedTexture2D::3850219539384989255::1712973001::1712973169::1::::<><>::
-hurt-sheet.png::CompressedTexture2D::4653832166250924662::1712973001::1712973169::1::::<><>::
-idle-sheet.png::CompressedTexture2D::8701590641420096270::1712973001::1712973169::1::::<><>::
-move-sheet.png::CompressedTexture2D::985401853984662465::1712973001::1712973169::1::::<><>::
+::res://andrei/mobs/::1712977830
+attack.png::CompressedTexture2D::6111923045156021091::1712973001::1712977866::1::::<><>::
+death-sheet.png::CompressedTexture2D::1423992585480105096::1712973001::1712977866::1::::<><>::
+hurt-sheet.png::CompressedTexture2D::6334693116143421818::1712973001::1712977866::1::::<><>::
+idle-sheet.png::CompressedTexture2D::6532516925445963915::1712973001::1712977866::1::::<><>::
+move-sheet.png::CompressedTexture2D::3592473376575451643::1712973001::1712977866::1::::<><>::
 ::res://andrei/mobs/Land/::1712973000
 ::res://andrei/mobs/Land/Bird/::1712973000
 bird_attack.png::CompressedTexture2D::1796425034824262060::1712973000::1712973000::1::::<><>::
@@ -343,245 +360,26 @@ Deceased_hurt.png::CompressedTexture2D::1057930169039007260::1712973000::1712973
 Deceased_idle.png::CompressedTexture2D::5723437988065781737::1712973000::1712973000::1::::<><>::
 Deceased_walk.png::CompressedTexture2D::8121728688788629319::1712973000::1712973000::1::::<><>::
 ::res://andrei/mobs/Land/Land_animals/PSD/::1712973000
-::res://andrei/mobs/Sea/::1712973000
-::res://andrei/mobs/Sea/Octopus/::1712973001
-octo.attack-sheet.png::CompressedTexture2D::2740970656864083855::1712973001::1712973001::1::::<><>::
-octo.attack.png::CompressedTexture2D::1829978463685538742::1712973001::1712973001::1::::<><>::
-octo.death.png::CompressedTexture2D::7811922426832308091::1712973001::1712973001::1::::<><>::
-octo.hurt.png::CompressedTexture2D::3786847886996066477::1712973001::1712973001::1::::<><>::
-octo.idle.png::CompressedTexture2D::1558438787949114067::1712973001::1712973001::1::::<><>::
-octo.move.png::CompressedTexture2D::81666329223997285::1712973001::1712973001::1::::<><>::
-::res://andrei/mobs/Sea/Octopus/Ailes/::1712973001
-Cold_wind_sound_effect(128k).mp3::AudioStreamMP3::4215207777893232965::1712973000::1712973000::1::::<><>::
-Splash_Sound_Effect(128k).mp3::AudioStreamMP3::1570102426680830284::1712973000::1712973000::1::::<><>::
-🎵_RPG_Boss_Battle_Music___Hydra(128k).mp3::AudioStreamMP3::8714573513809776554::1712973001::1712973001::1::::<><>::
-::res://andrei/mobs/Sea/Octopus/Ailes/effect sound/::1712973001
-02_Heal_02.wav::AudioStreamWAV::8754070298779569410::1712973000::1712973000::1::::<><>::
-22_Water_02.wav::AudioStreamWAV::3716585819918600176::1712973000::1712973000::1::::<><>::
-48_Speed_up_02.wav::AudioStreamWAV::5649256249379166324::1712973000::1712973000::1::::<><>::
-69_Enemy_death_01.wav::AudioStreamWAV::4821969234894917946::1712973000::1712973000::1::::<><>::
-Ambiance_Forest_Birds_Loop_Stereo.wav::AudioStreamWAV::3582858394668390839::1712973000::1712973000::1::::<><>::
-Ambiance_Nature_Meadow_Birds_Flies_Calm_Loop_Stereo.wav::AudioStreamWAV::7643379658053643216::1712973000::1712973000::1::::<><>::
-Ambiance_River_Moderate_Loop_Stereo.wav::AudioStreamWAV::6072494521907200886::1712973000::1712973000::1::::<><>::
-Ambiance_Sea_Loop_Stereo.wav::AudioStreamWAV::5823400357813840917::1712973000::1712973000::1::::<><>::
-Ambiance_Waterfall_Calm_Loop_Stereo.wav::AudioStreamWAV::4063521311849496318::1712973000::1712973000::1::::<><>::
-bubbling-whirlpool-199420.mp3::AudioStreamMP3::7448654866551731081::1712973001::1712973001::1::::<><>::
-gate-of-heaven-128130.mp3::AudioStreamMP3::3782440880809561137::1712973001::1712973001::1::::<><>::
-mixkit-completion-of-a-level-2063.wav::AudioStreamWAV::1531554409568978248::1712973001::1712973001::1::::<><>::
-mixkit-diving-in-deep-water-1312.wav::AudioStreamWAV::6169707885894481112::1712973001::1712973001::1::::<><>::
-mixkit-fish-flapping-2457.wav::AudioStreamWAV::8730330931224689654::1712973001::1712973001::1::::<><>::
-mixkit-footsteps-in-the-forest-ground-1230.wav::AudioStreamWAV::6245298321516007452::1712973001::1712973001::1::::<><>::
-mixkit-footsteps-through-the-wastelands-540.wav::AudioStreamWAV::5971765321684404605::1712973001::1712973001::1::::<><>::
-mixkit-liquid-bubble-3000.wav::AudioStreamWAV::3095733958761258206::1712973001::1712973001::1::::<><>::
-mixkit-sea-swimming-loop-1181.wav::AudioStreamWAV::8658400883455475721::1712973001::1712973001::1::::<><>::
-Retro Impact Water 03.wav::AudioStreamWAV::7243569716704692078::1712973000::1712973000::1::::<><>::
-Retro PickUp Coin 07.wav::AudioStreamWAV::272340766503967777::1712973000::1712973000::1::::<><>::
-Retro PowerUP StereoUP 05.wav::AudioStreamWAV::3905791883338333108::1712973000::1712973000::1::::<><>::
-sound-of-walking-through-forest-163755.mp3::AudioStreamMP3::83442157044628908::1712973001::1712973001::1::::<><>::
-wind-2-6196.mp3::AudioStreamMP3::6976073692087216511::1712973001::1712973001::1::::<><>::
-::res://andrei/mobs/Sea/Octopus/Ailes/effect sound/10_UI_Menu_SFX/::1712973000
-001_Hover_01.wav::AudioStreamWAV::26428742409773252::1712973000::1712973000::1::::<><>::
-013_Confirm_03.wav::AudioStreamWAV::9150877100034383556::1712973000::1712973000::1::::<><>::
-029_Decline_09.wav::AudioStreamWAV::1584143853529189138::1712973000::1712973000::1::::<><>::
-033_Denied_03.wav::AudioStreamWAV::7341413718586896637::1712973000::1712973000::1::::<><>::
-051_use_item_01.wav::AudioStreamWAV::7252619187235621510::1712973000::1712973000::1::::<><>::
-070_Equip_10.wav::AudioStreamWAV::6662885728727688912::1712973000::1712973000::1::::<><>::
-071_Unequip_01.wav::AudioStreamWAV::4134802948596277773::1712973000::1712973000::1::::<><>::
-079_Buy_sell_01.wav::AudioStreamWAV::2441251180919817880::1712973000::1712973000::1::::<><>::
-092_Pause_04.wav::AudioStreamWAV::7826701389061608268::1712973000::1712973000::1::::<><>::
-098_Unpause_04.wav::AudioStreamWAV::1332107800403931439::1712973000::1712973000::1::::<><>::
-::res://andrei/mobs/Sea/Octopus/Ailes/effect sound/animals/::1712973001
-Retro Birds 07.wav::AudioStreamWAV::1752081172338061833::1712973001::1712973001::1::::<><>::
-::res://andrei/mobs/Sea/Octopus/Ailes/effect sound/mp3/::1712973001
-JDSherbert - Ultimate UI SFX Pack - Cancel - 1.mp3::AudioStreamMP3::5981074344761904094::1712973001::1712973001::1::::<><>::
-JDSherbert - Ultimate UI SFX Pack - Cancel - 2.mp3::AudioStreamMP3::4269697966880659718::1712973001::1712973001::1::::<><>::
-JDSherbert - Ultimate UI SFX Pack - Cursor - 1.mp3::AudioStreamMP3::3852964611045878069::1712973001::1712973001::1::::<><>::
-JDSherbert - Ultimate UI SFX Pack - Cursor - 2.mp3::AudioStreamMP3::6546122160254680381::1712973001::1712973001::1::::<><>::
-JDSherbert - Ultimate UI SFX Pack - Cursor - 3.mp3::AudioStreamMP3::8098260928140874704::1712973001::1712973001::1::::<><>::
-JDSherbert - Ultimate UI SFX Pack - Cursor - 4.mp3::AudioStreamMP3::4430652493105219369::1712973001::1712973001::1::::<><>::
-JDSherbert - Ultimate UI SFX Pack - Cursor - 5.mp3::AudioStreamMP3::5268458481226860861::1712973001::1712973001::1::::<><>::
-JDSherbert - Ultimate UI SFX Pack - Error - 1.mp3::AudioStreamMP3::97497355558990065::1712973001::1712973001::1::::<><>::
-JDSherbert - Ultimate UI SFX Pack - Popup Close - 1.mp3::AudioStreamMP3::8110579465166696321::1712973001::1712973001::1::::<><>::
-JDSherbert - Ultimate UI SFX Pack - Popup Open - 1.mp3::AudioStreamMP3::7365168026673197647::1712973001::1712973001::1::::<><>::
-JDSherbert - Ultimate UI SFX Pack - Select - 1.mp3::AudioStreamMP3::445363359890146977::1712973001::1712973001::1::::<><>::
-JDSherbert - Ultimate UI SFX Pack - Select - 2.mp3::AudioStreamMP3::186925938782106836::1712973001::1712973001::1::::<><>::
-JDSherbert - Ultimate UI SFX Pack - Swipe - 1.mp3::AudioStreamMP3::4257031240554497889::1712973001::1712973001::1::::<><>::
-JDSherbert - Ultimate UI SFX Pack - Swipe - 2.mp3::AudioStreamMP3::2655542450959398078::1712973001::1712973001::1::::<><>::
-::res://andrei/mobs/Sea/Octopus/Ailes/effect sound/Voice_Female_Attack/::1712973000
-Voice_Female_V1_Attack_Mono_01.wav::AudioStreamWAV::8553427160854723701::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Attack_Mono_02.wav::AudioStreamWAV::5964834934375293289::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Attack_Mono_03.wav::AudioStreamWAV::8421784837548615220::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Attack_Mono_04.wav::AudioStreamWAV::4786132899706208230::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Attack_Mono_05.wav::AudioStreamWAV::989762294994389778::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Attack_Mono_06.wav::AudioStreamWAV::2274634175318507966::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Attack_Mono_07.wav::AudioStreamWAV::536165373945132454::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Attack_Mono_08.wav::AudioStreamWAV::2648186601594579727::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Attack_Mono_09.wav::AudioStreamWAV::7449522038821452119::1712973000::1712973000::1::::<><>::
-Voice_Female_V2_Attack_Mono_01.wav::AudioStreamWAV::1629268006812460842::1712973000::1712973000::1::::<><>::
-Voice_Female_V2_Attack_Mono_02.wav::AudioStreamWAV::2848605946140569553::1712973000::1712973000::1::::<><>::
-Voice_Female_V2_Attack_Mono_03.wav::AudioStreamWAV::6840974784273368996::1712973000::1712973000::1::::<><>::
-Voice_Female_V2_Attack_Mono_04.wav::AudioStreamWAV::6183292402712444159::1712973000::1712973000::1::::<><>::
-Voice_Female_V2_Attack_Mono_05.wav::AudioStreamWAV::4856154970309981870::1712973000::1712973000::1::::<><>::
-Voice_Female_V2_Attack_Mono_06.wav::AudioStreamWAV::4052494258845025725::1712973000::1712973000::1::::<><>::
-Voice_Female_V2_Attack_Mono_07.wav::AudioStreamWAV::1065797719351702052::1712973000::1712973000::1::::<><>::
-Voice_Female_V2_Attack_Mono_08.wav::AudioStreamWAV::8443870145181798832::1712973000::1712973000::1::::<><>::
-Voice_Female_V2_Attack_Mono_09.wav::AudioStreamWAV::5975125119567917961::1712973000::1712973000::1::::<><>::
-Voice_Female_V2_Attack_Mono_10.wav::AudioStreamWAV::9190465142676497001::1712973000::1712973000::1::::<><>::
-::res://andrei/mobs/Sea/Octopus/Ailes/effect sound/Voice_Female_Effort/::1712973000
-Voice_Female_V1_Effort_Mono_01.wav::AudioStreamWAV::7248093323154336235::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Effort_Mono_02.wav::AudioStreamWAV::3893094754420872885::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Effort_Mono_03.wav::AudioStreamWAV::6990831997245296719::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Effort_Mono_04.wav::AudioStreamWAV::3357913581949599631::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Effort_Mono_05.wav::AudioStreamWAV::8724486265485788796::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Effort_Mono_06.wav::AudioStreamWAV::668811826620936872::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Effort_Mono_07.wav::AudioStreamWAV::4509772203369117821::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Effort_Mono_08.wav::AudioStreamWAV::5087155727727387585::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Effort_Mono_09.wav::AudioStreamWAV::6735193540213770458::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Effort_Mono_10.wav::AudioStreamWAV::5113192306992971151::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Effort_Mono_11.wav::AudioStreamWAV::1423156392706781433::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Effort_Mono_12.wav::AudioStreamWAV::6638843898940960360::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Effort_Mono_13.wav::AudioStreamWAV::8358322054492840197::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Effort_Mono_14.wav::AudioStreamWAV::606489671044570014::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Effort_Mono_15.wav::AudioStreamWAV::3766514873993579344::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Effort_Mono_16.wav::AudioStreamWAV::3677632470106787797::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Effort_Mono_17.wav::AudioStreamWAV::6048351136733375845::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Effort_Mono_18.wav::AudioStreamWAV::2401044300914364501::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Effort_Mono_19.wav::AudioStreamWAV::739969241515806730::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Effort_Mono_20.wav::AudioStreamWAV::6588673762271187002::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Effort_Mono_21.wav::AudioStreamWAV::2716170900573928868::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Effort_Mono_22.wav::AudioStreamWAV::7706072891926334845::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Effort_Mono_23.wav::AudioStreamWAV::7375764413880668676::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Effort_Mono_24.wav::AudioStreamWAV::7104138146195534639::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Effort_Mono_25.wav::AudioStreamWAV::1677184704657662492::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Effort_Mono_26.wav::AudioStreamWAV::58138880104116830::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Effort_Mono_27.wav::AudioStreamWAV::320358849605058366::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Effort_Mono_28.wav::AudioStreamWAV::3816090582870762921::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Effort_Mono_29.wav::AudioStreamWAV::5047589741336428865::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Effort_Mono_30.wav::AudioStreamWAV::1584297466543975238::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Effort_Mono_31.wav::AudioStreamWAV::4634447955555414193::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Effort_Mono_32.wav::AudioStreamWAV::1438475886193211808::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Effort_Mono_33.wav::AudioStreamWAV::7266081311303652133::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Effort_Mono_34.wav::AudioStreamWAV::4813359360600733421::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Effort_Mono_35.wav::AudioStreamWAV::7647287076427216844::1712973000::1712973000::1::::<><>::
-Voice_Female_V2_Effort_Mono_01.wav::AudioStreamWAV::6901647529794240287::1712973000::1712973000::1::::<><>::
-Voice_Female_V2_Effort_Mono_02.wav::AudioStreamWAV::8506856960182763262::1712973000::1712973000::1::::<><>::
-Voice_Female_V2_Effort_Mono_03.wav::AudioStreamWAV::8987831855686209160::1712973000::1712973000::1::::<><>::
-Voice_Female_V2_Effort_Mono_04.wav::AudioStreamWAV::6836357588761847821::1712973000::1712973000::1::::<><>::
-Voice_Female_V2_Effort_Mono_05.wav::AudioStreamWAV::145631224488210446::1712973000::1712973000::1::::<><>::
-Voice_Female_V2_Effort_Mono_06.wav::AudioStreamWAV::1953931451887738611::1712973000::1712973000::1::::<><>::
-Voice_Female_V2_Effort_Mono_07.wav::AudioStreamWAV::5954057931214405818::1712973000::1712973000::1::::<><>::
-Voice_Female_V2_Effort_Mono_08.wav::AudioStreamWAV::6689335713827255325::1712973000::1712973000::1::::<><>::
-Voice_Female_V2_Effort_Mono_09.wav::AudioStreamWAV::62847644251191933::1712973000::1712973000::1::::<><>::
-Voice_Female_V2_Effort_Mono_10.wav::AudioStreamWAV::3187298984304361288::1712973000::1712973000::1::::<><>::
-Voice_Female_V2_Effort_Mono_11.wav::AudioStreamWAV::6278749267850632717::1712973000::1712973000::1::::<><>::
-Voice_Female_V2_Effort_Mono_12.wav::AudioStreamWAV::1514831669426946767::1712973000::1712973000::1::::<><>::
-::res://andrei/mobs/Sea/Octopus/Ailes/effect sound/Voice_Female_Hit/::1712973001
-Voice_Female_V1_Hit_Mono_01.wav::AudioStreamWAV::1203798724422109843::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Hit_Mono_02.wav::AudioStreamWAV::5826108652561111249::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Hit_Mono_03.wav::AudioStreamWAV::5700476065942998173::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Hit_Short_Mono_01.wav::AudioStreamWAV::6892918803607406696::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Hit_Short_Mono_02.wav::AudioStreamWAV::8470539244273645914::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Hit_Short_Mono_03.wav::AudioStreamWAV::1344717928203447896::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Hit_Short_Mono_04.wav::AudioStreamWAV::8242541477306365890::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Hit_Short_Mono_05.wav::AudioStreamWAV::2171939498006482049::1712973000::1712973000::1::::<><>::
-Voice_Female_V1_Hit_Short_Mono_06.wav::AudioStreamWAV::3437627958887346099::1712973000::1712973001::1::::<><>::
-Voice_Female_V1_Hit_Short_Mono_07.wav::AudioStreamWAV::268945033467150419::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Hit_Short_Mono_08.wav::AudioStreamWAV::7300868750436031199::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Hit_Short_Mono_09.wav::AudioStreamWAV::1338755448246550484::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Hit_Short_Mono_10.wav::AudioStreamWAV::7487683508788054445::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Hit_Short_Mono_11.wav::AudioStreamWAV::3548685959429441310::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Hit_Short_Mono_12.wav::AudioStreamWAV::8904244408678036971::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Hit_Short_Mono_13.wav::AudioStreamWAV::7232551608080075789::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Hit_Short_Mono_14.wav::AudioStreamWAV::2206143333405444013::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Hit_Short_Mono_15.wav::AudioStreamWAV::2409352500346591526::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Hit_Short_Mono_16.wav::AudioStreamWAV::3660265593140734928::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Hit_Short_Mono_17.wav::AudioStreamWAV::2388929734953610666::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Hit_Short_Mono_18.wav::AudioStreamWAV::6813034312071731033::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Hit_Short_Mono_19.wav::AudioStreamWAV::7152598034069328620::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Hit_Short_Mono_20.wav::AudioStreamWAV::9039132169587799901::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Hit_Short_Mono_21.wav::AudioStreamWAV::550922803340749775::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Hit_Short_Mono_22.wav::AudioStreamWAV::8437589117005289012::1712973001::1712973001::1::::<><>::
-Voice_Female_V2_Hit_Mono_01.wav::AudioStreamWAV::6764572369311604120::1712973001::1712973001::1::::<><>::
-Voice_Female_V2_Hit_Mono_02.wav::AudioStreamWAV::8955962890139277584::1712973001::1712973001::1::::<><>::
-Voice_Female_V2_Hit_Mono_03.wav::AudioStreamWAV::4966622100284545678::1712973001::1712973001::1::::<><>::
-Voice_Female_V2_Hit_Mono_04.wav::AudioStreamWAV::356563518252747736::1712973001::1712973001::1::::<><>::
-Voice_Female_V2_Hit_Short_Mono_01.wav::AudioStreamWAV::2140798608502634861::1712973001::1712973001::1::::<><>::
-Voice_Female_V2_Hit_Short_Mono_02.wav::AudioStreamWAV::4047285779473452770::1712973001::1712973001::1::::<><>::
-Voice_Female_V2_Hit_Short_Mono_03.wav::AudioStreamWAV::2339555211961958208::1712973001::1712973001::1::::<><>::
-Voice_Female_V2_Hit_Short_Mono_04.wav::AudioStreamWAV::8750500705221512682::1712973001::1712973001::1::::<><>::
-Voice_Female_V2_Hit_Short_Mono_05.wav::AudioStreamWAV::222152759331054540::1712973001::1712973001::1::::<><>::
-Voice_Female_V2_Hit_Short_Mono_06.wav::AudioStreamWAV::2138263231367079132::1712973001::1712973001::1::::<><>::
-Voice_Female_V2_Hit_Short_Mono_07.wav::AudioStreamWAV::407869583836346302::1712973001::1712973001::1::::<><>::
-Voice_Female_V2_Hit_Short_Mono_08.wav::AudioStreamWAV::4781010624757979964::1712973001::1712973001::1::::<><>::
-Voice_Female_V2_Hit_Short_Mono_09.wav::AudioStreamWAV::4387701288390862409::1712973001::1712973001::1::::<><>::
-Voice_Female_V2_Hit_Short_Mono_10.wav::AudioStreamWAV::792971394636763126::1712973001::1712973001::1::::<><>::
-::res://andrei/mobs/Sea/Octopus/Ailes/effect sound/Voice_Female_Jump&Land/::1712973001
-Voice_Female_V1_Jump_Mono_01.wav::AudioStreamWAV::2284143148505433248::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Jump_Mono_02.wav::AudioStreamWAV::4215417519797589343::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Jump_Mono_03.wav::AudioStreamWAV::1884803759621261623::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Jump_Mono_04.wav::AudioStreamWAV::8287997750611476384::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Jump_Mono_05.wav::AudioStreamWAV::7807905503808974762::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Jump_Mono_06.wav::AudioStreamWAV::1469659702807048066::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Jump_Mono_07.wav::AudioStreamWAV::9066026038291087527::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Jump_Mono_08.wav::AudioStreamWAV::9182160483038288815::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Jump_Mono_09.wav::AudioStreamWAV::1116358045194727047::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Jump_Mono_10.wav::AudioStreamWAV::762728023664258474::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Jump_Mono_11.wav::AudioStreamWAV::5012608637841428428::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Land_Mono_01.wav::AudioStreamWAV::3954179065434596508::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Land_Mono_02.wav::AudioStreamWAV::6257466069399959373::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Land_Mono_03.wav::AudioStreamWAV::6618574589789924883::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Land_Mono_04.wav::AudioStreamWAV::556909133745005989::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Land_Mono_05.wav::AudioStreamWAV::7072699940758024078::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Land_Mono_06.wav::AudioStreamWAV::5653731994086604614::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Land_Mono_07.wav::AudioStreamWAV::1767824945137899973::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Land_Mono_08.wav::AudioStreamWAV::7080870748916075016::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Land_Mono_09.wav::AudioStreamWAV::5415543862150059478::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Land_Mono_10.wav::AudioStreamWAV::6243939962554685289::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Land_Mono_11.wav::AudioStreamWAV::2687617852492418320::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Land_Mono_12.wav::AudioStreamWAV::5775753642725281415::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Land_Mono_13.wav::AudioStreamWAV::6938499415018223112::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Land_Mono_14.wav::AudioStreamWAV::4244511593421405508::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Land_Mono_15.wav::AudioStreamWAV::3565483126358014999::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Land_Mono_16.wav::AudioStreamWAV::1360264669162871188::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Land_Mono_17.wav::AudioStreamWAV::7230717162348180741::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Land_Mono_18.wav::AudioStreamWAV::7410952509015046572::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Land_Mono_19.wav::AudioStreamWAV::5378209533234093514::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Land_Mono_20.wav::AudioStreamWAV::3253406145433327266::1712973001::1712973001::1::::<><>::
-Voice_Female_V2_Jump_Mono_01.wav::AudioStreamWAV::4192107191800348330::1712973001::1712973001::1::::<><>::
-Voice_Female_V2_Jump_Mono_02.wav::AudioStreamWAV::917172873419149314::1712973001::1712973001::1::::<><>::
-Voice_Female_V2_Jump_Mono_03.wav::AudioStreamWAV::7099586182327376430::1712973001::1712973001::1::::<><>::
-Voice_Female_V2_Jump_Mono_04.wav::AudioStreamWAV::7275048342054117728::1712973001::1712973001::1::::<><>::
-Voice_Female_V2_Jump_Mono_05.wav::AudioStreamWAV::908817878649958907::1712973001::1712973001::1::::<><>::
-Voice_Female_V2_Jump_Mono_06.wav::AudioStreamWAV::8895956976397514972::1712973001::1712973001::1::::<><>::
-Voice_Female_V2_Jump_Mono_07.wav::AudioStreamWAV::2526063036216629324::1712973001::1712973001::1::::<><>::
-Voice_Female_V2_Jump_Mono_08.wav::AudioStreamWAV::7154733933179608417::1712973001::1712973001::1::::<><>::
-Voice_Female_V2_Land_Mono_01.wav::AudioStreamWAV::5219031716003439621::1712973001::1712973001::1::::<><>::
-Voice_Female_V2_Land_Mono_02.wav::AudioStreamWAV::6817732857758221365::1712973001::1712973001::1::::<><>::
-Voice_Female_V2_Land_Mono_03.wav::AudioStreamWAV::4077497693153540406::1712973001::1712973001::1::::<><>::
-Voice_Female_V2_Land_Mono_04.wav::AudioStreamWAV::782726905922092636::1712973001::1712973001::1::::<><>::
-Voice_Female_V2_Land_Mono_05.wav::AudioStreamWAV::1421734788824027595::1712973001::1712973001::1::::<><>::
-Voice_Female_V2_Land_Mono_06.wav::AudioStreamWAV::4176171352510275494::1712973001::1712973001::1::::<><>::
-Voice_Female_V2_Land_Mono_07.wav::AudioStreamWAV::2557325053781037018::1712973001::1712973001::1::::<><>::
-::res://andrei/mobs/Sea/Octopus/Ailes/effect sound/Voice_Female_Jump&Land/Voice_Female_Pain/::1712973001
-Voice_Female_V1_Pain_Mono_01.wav::AudioStreamWAV::2452270942239001243::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Pain_Mono_02.wav::AudioStreamWAV::1556138948805743741::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Pain_Mono_03.wav::AudioStreamWAV::2308478043914411674::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Pain_Mono_04.wav::AudioStreamWAV::8174444594940206376::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Pain_Mono_05.wav::AudioStreamWAV::3046437177190970545::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Pain_Mono_06.wav::AudioStreamWAV::9167215642268613773::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Pain_Mono_07.wav::AudioStreamWAV::4191643543808422985::1712973001::1712973001::1::::<><>::
-Voice_Female_V1_Pain_Mono_08.wav::AudioStreamWAV::4974443815023773784::1712973001::1712973001::1::::<><>::
-Voice_Female_V2_Pain_Mono_01.wav::AudioStreamWAV::5961964377144755139::1712973001::1712973001::1::::<><>::
-Voice_Female_V2_Pain_Mono_02.wav::AudioStreamWAV::6546149130588341169::1712973001::1712973001::1::::<><>::
-Voice_Female_V2_Pain_Mono_03.wav::AudioStreamWAV::524755028636866876::1712973001::1712973001::1::::<><>::
-Voice_Female_V2_Pain_Mono_04.wav::AudioStreamWAV::438423841477264855::1712973001::1712973001::1::::<><>::
-Voice_Female_V2_Pain_Mono_05.wav::AudioStreamWAV::1718707643766495022::1712973001::1712973001::1::::<><>::
+::res://andrei/mobs/Sea/::1712977830
+::res://andrei/mobs/Sea/Octopus/::1712977830
+attack.png::CompressedTexture2D::-1::1712977830::1712977830::1::::<><>::
+death-sheet.png::CompressedTexture2D::-1::1712977830::1712977830::1::::<><>::
+hurt-sheet.png::CompressedTexture2D::-1::1712977830::1712977830::1::::<><>::
+idle-sheet.png::CompressedTexture2D::-1::1712977830::1712977830::1::::<><>::
+move-sheet.png::CompressedTexture2D::-1::1712977830::1712977830::1::::<><>::
 ::res://andrei/mobs/Shark/::1712973001
 Death-sheet.png::CompressedTexture2D::5181506009194134558::1712973001::1712973001::1::::<><>::
 shark_attack.png::CompressedTexture2D::2722151187975880281::1712973001::1712973001::1::::<><>::
 shark_death.png::CompressedTexture2D::1153451537467327069::1712973001::1712973001::1::::<><>::
 shark_hurt.png::CompressedTexture2D::1886878762540282067::1712973001::1712973001::1::::<><>::
 shark_walk.png::CompressedTexture2D::6378527849883829816::1712973001::1712973001::1::::<><>::
+::res://andrei/move/::1712977830
+1.png::CompressedTexture2D::3180845486612447037::1712977830::1712977830::1::::<><>::
+2.png::CompressedTexture2D::1741695838258418751::1712977830::1712977830::1::::<><>::
+3.png::CompressedTexture2D::715508537439067830::1712977830::1712977830::1::::<><>::
+4.png::CompressedTexture2D::7914535683014619545::1712977830::1712977830::1::::<><>::
+5.png::CompressedTexture2D::6776554683154612069::1712977830::1712977830::1::::<><>::
+6.png::CompressedTexture2D::2060544133054845244::1712977830::1712977830::1::::<><>::
 ::res://andrei/sounds/::1712973002
 ::res://andrei/sounds/animals/::1712973002
 Retro Birds 07.wav::AudioStreamWAV::2465355464894842500::1712973002::1712973002::1::::<><>::
@@ -891,22 +689,22 @@ water_attack3.png::CompressedTexture2D::6760352650605348173::1712973003::1712973
 ::res://src/collectibles/::1712973003
 gold.tscn::PackedScene::6557806090230227183::1712973003::0::1::::<><>::uid://6e4ts04ttna8::::res://src/art/items/coin.png
 sea_gold.tscn::PackedScene::8515685265873305411::1712973003::0::1::::<><>::uid://6e4ts04ttna8::::res://src/art/items/coin.png
-::res://src/scenes/::1712973416
+::res://src/scenes/::1712977786
 attack.tscn::PackedScene::5112132949733838312::1712973003::0::1::::<><>::res://src/scripts/joystick.gd<>uid://dc5n3dcmgba01::::res://src/art/ui/joystick-outer.png<>uid://bnwfjc1cha5mi::::res://src/art/ui/joystick-inner.png<>res://src/scripts/inner.gd
-BG.tscn::PackedScene::1178066625391774618::1712973416::0::1::::<><>::res://src/scripts/BG.gd<>uid://cxlou3itf1ucr::::res://src/art/background/bg-0.png<>uid://b051ioerhoypo::::res://src/art/background/bg-1.png<>uid://bpuycuqfj534r::::res://src/art/background/bg-3.png<>uid://ckmchucfnc55l::::res://src/art/background/bg-2.png
+BG.tscn::PackedScene::1178066625391774618::1712976832::0::1::::<><>::res://src/scripts/BG.gd<>uid://cxlou3itf1ucr::::res://src/art/background/bg-0.png<>uid://b051ioerhoypo::::res://src/art/background/bg-1.png<>uid://bpuycuqfj534r::::res://src/art/background/bg-3.png<>uid://ckmchucfnc55l::::res://src/art/background/bg-2.png
 joystick.tscn::PackedScene::906739341663451943::1712973003::0::1::::<><>::res://src/scripts/joystick.gd<>uid://dc5n3dcmgba01::::res://src/art/ui/joystick-outer.png<>uid://bnwfjc1cha5mi::::res://src/art/ui/joystick-inner.png<>res://src/scripts/inner.gd
-main.tscn::PackedScene::7746281845248589248::1712973416::0::1::::<><>::uid://bwycwdfpchkf0::::res://src/art/ui/play-btn.png<>res://src/scripts/main.gd<>uid://cu7c43em5q3kb::::res://src/art/ui/play-press.png<>uid://ddhlckwdkagr::::res://src/art/ui/quit-btn.png<>uid://d3frh1r8wnjdl::::res://src/art/ui/load-btn.png<>uid://dcprpugk7kdc4::::res://src/art/ui/quit-press.png<>uid://yj78vfs58sda::::res://src/art/ui/load-press.png<>uid://cxlou3itf1ucr::::res://src/art/background/bg-0.png<>uid://b051ioerhoypo::::res://src/art/background/bg-1.png<>uid://bpuycuqfj534r::::res://src/art/background/bg-3.png<>uid://ckmchucfnc55l::::res://src/art/background/bg-2.png
+main.tscn::PackedScene::7746281845248589248::1712976832::0::1::::<><>::uid://bwycwdfpchkf0::::res://src/art/ui/play-btn.png<>res://src/scripts/main.gd<>uid://cu7c43em5q3kb::::res://src/art/ui/play-press.png<>uid://ddhlckwdkagr::::res://src/art/ui/quit-btn.png<>uid://d3frh1r8wnjdl::::res://src/art/ui/load-btn.png<>uid://dcprpugk7kdc4::::res://src/art/ui/quit-press.png<>uid://yj78vfs58sda::::res://src/art/ui/load-press.png<>uid://cxlou3itf1ucr::::res://src/art/background/bg-0.png<>uid://b051ioerhoypo::::res://src/art/background/bg-1.png<>uid://bpuycuqfj534r::::res://src/art/background/bg-3.png<>uid://ckmchucfnc55l::::res://src/art/background/bg-2.png
 mobile_controller.tscn::PackedScene::6719026340818894229::1712973003::0::1::::<><>::uid://dwar225ypf70k::::res://src/art/ui/left-button-normal.png<>uid://bkdqpsj0ob5pw::::res://src/art/ui/left-button-pressed.png<>uid://oq8dgy2gbofd::::res://src/art/ui/right-button-normal.png<>uid://d2ji2nrxkig88::::res://src/art/ui/right-button-pressed.png<>uid://0f3fecgxye5n::::res://src/art/ui/close-btn-1.png<>uid://2mc121abrxjq::::res://src/art/ui/close-btn-2.png<>uid://bcgpg22bxh25g::::res://src/art/ui/jump-normal.png<>uid://deh4a5ju13n3v::::res://src/art/ui/jump-pressed.png
-octopus.tscn::PackedScene::1561891320893906276::1712973415::0::1::::<><>::res://src/scripts/octopus.gd<>uid://3qnrpryj2onv::::res://src/art/enemies/octo_attack.png<>uid://bpsjis03udb1s::::res://src/art/enemies/octo_death.png<>uid://bt4a7ggbcqd3b::::res://src/art/enemies/octo_hurt.png<>uid://dnow68a4fh37i::::res://src/art/enemies/octo_idle.png<>uid://bvrno4dnj8lfa::::res://src/art/enemies/octo_move.png<>res://src/scripts/states/State Machine.gd<>res://src/scripts/states/EnemyIdle.gd<>res://src/scripts/states/EnemyFollow.gd
-player.tscn::PackedScene::5463885649058959549::1712973416::0::1::::<><>::res://src/scripts/player_sea.gd<>uid://br3vd2elc0ryr::::res://src/art/player/dara_attack.png<>uid://bo5do0h5kicg5::::res://src/art/player/dara_death.png<>uid://bkbd580jk23ui::::res://src/art/player/dara_hurt.png<>uid://bkkljuu5bcao2::::res://src/art/player/dara_idle.png<>uid://bhftv5g1qltcj::::res://src/art/player/dara_swim.png<>uid://baecl2hfmdcx5::::res://src/art/ui/attack_button-sheet.png
+octopus.tscn::PackedScene::1561891320893906276::1712976831::0::1::::<><>::res://src/scripts/octopus.gd<>uid://3qnrpryj2onv::::res://src/art/enemies/octo_attack.png<>uid://bpsjis03udb1s::::res://src/art/enemies/octo_death.png<>uid://bt4a7ggbcqd3b::::res://src/art/enemies/octo_hurt.png<>uid://dnow68a4fh37i::::res://src/art/enemies/octo_idle.png<>uid://bvrno4dnj8lfa::::res://src/art/enemies/octo_move.png<>res://src/scripts/states/State Machine.gd<>res://src/scripts/states/EnemyIdle.gd<>res://src/scripts/states/EnemyFollow.gd
+player.tscn::PackedScene::5463885649058959549::1712976831::0::1::::<><>::res://src/scripts/player_sea.gd<>uid://br3vd2elc0ryr::::res://src/art/player/dara_attack.png<>uid://bo5do0h5kicg5::::res://src/art/player/dara_death.png<>uid://bkbd580jk23ui::::res://src/art/player/dara_hurt.png<>uid://bkkljuu5bcao2::::res://src/art/player/dara_idle.png<>uid://bhftv5g1qltcj::::res://src/art/player/dara_swim.png<>uid://baecl2hfmdcx5::::res://src/art/ui/attack_button-sheet.png
 player_on_land.tscn::PackedScene::3623744462613209893::1712973003::0::1::::<><>::res://src/scripts/player_earth.gd<>uid://br3vd2elc0ryr::::res://src/art/player/dara_attack.png<>uid://b2swycx4tkvpr::::res://src/art/player/dara_sprite.png<>uid://chjh0e1s1frpu::::res://src/art/player/dara_move.png
 player_on_sea.tscn::PackedScene::7184238837128951894::1712973003::0::1::::<><>::res://src/scripts/player_sea.gd<>uid://br3vd2elc0ryr::::res://src/art/player/dara_attack.png<>uid://b2swycx4tkvpr::::res://src/art/player/dara_sprite.png<>uid://bkbd580jk23ui::::res://src/art/player/dara_hurt.png<>uid://chjh0e1s1frpu::::res://src/art/player/dara_move.png<>uid://baecl2hfmdcx5::::res://src/art/ui/attack_button-sheet.png
 projectile.tscn::PackedScene::492507474205508423::1712973003::0::1::::<><>::res://src/scripts/projectile.gd<>uid://bfv8xx8kmqgs::::res://andrei/Attack_Animation/water.attack.png
 sea_controller.tscn::PackedScene::8073010721206221031::1712973003::0::1::::<><>::uid://dwar225ypf70k::::res://src/art/ui/left-button-normal.png<>uid://bkdqpsj0ob5pw::::res://src/art/ui/left-button-pressed.png<>uid://oq8dgy2gbofd::::res://src/art/ui/right-button-normal.png<>uid://d2ji2nrxkig88::::res://src/art/ui/right-button-pressed.png<>uid://gisdrp0vqexo::::res://src/art/ui/down-normal.png<>uid://divo22nhh6xqy::::res://src/art/ui/down-pressed.png<>uid://bcgpg22bxh25g::::res://src/art/ui/jump-normal.png<>uid://deh4a5ju13n3v::::res://src/art/ui/jump-pressed.png
-world_earth.tscn::PackedScene::6164102106777796049::1712973416::0::1::::<><>::uid://cnmvcmm6kqfcv::::res://src/art/tilesets/water-tile.png<>uid://b05wyn4roccbb::::res://src/art/tilesets/tileset.png<>uid://cxlou3itf1ucr::::res://src/art/background/bg-0.png<>res://src/scripts/player_earth.gd<>uid://br3vd2elc0ryr::::res://src/art/player/dara_attack.png<>uid://b051ioerhoypo::::res://src/art/background/bg-1.png<>uid://chjh0e1s1frpu::::res://src/art/player/dara_move.png<>res://src/scripts/moving_layer.gd<>uid://bpuycuqfj534r::::res://src/art/background/bg-3.png<>uid://ckmchucfnc55l::::res://src/art/background/bg-2.png<>uid://c2y0m814g60q0::::res://src/scenes/mobile_controller.tscn
-world_sea.tscn::PackedScene::5521506680857332173::1712973416::0::1::::<><>::uid://wiuee4t3i30c::::res://src/scenes/octopus.tscn<>uid://v7w1m6cnq4l8::::res://src/art/tilesets/background.png<>uid://cj30nsq85f8ar::::res://src/scenes/player.tscn<>uid://cw6i3lv5wmf2::::res://src/art/tilesets/midground.png<>uid://d2wmqv5x6syit::::res://src/art/tilesets/tiles.png<>uid://bcyjh3d3efvc8::::res://src/art/tilesets/props.png<>uid://b0t6ouo62xhdb::::res://src/art/tilesets/black.png<>res://src/scripts/joystick.gd<>uid://bnwfjc1cha5mi::::res://src/art/ui/joystick-inner.png<>uid://dc5n3dcmgba01::::res://src/art/ui/joystick-outer.png<>uid://b3yulltlt4nda::::res://src/art/ui/attack-btn.png
-::res://src/scripts/::1712973322
-BG.gd::GDScript::-1::1712973322::0::1::::<>ParallaxBackground<>::
+world_earth.tscn::PackedScene::6164102106777796049::1712976832::0::1::::<><>::uid://cnmvcmm6kqfcv::::res://src/art/tilesets/water-tile.png<>uid://b05wyn4roccbb::::res://src/art/tilesets/tileset.png<>uid://cxlou3itf1ucr::::res://src/art/background/bg-0.png<>res://src/scripts/player_earth.gd<>uid://br3vd2elc0ryr::::res://src/art/player/dara_attack.png<>uid://b051ioerhoypo::::res://src/art/background/bg-1.png<>uid://chjh0e1s1frpu::::res://src/art/player/dara_move.png<>res://src/scripts/moving_layer.gd<>uid://bpuycuqfj534r::::res://src/art/background/bg-3.png<>uid://ckmchucfnc55l::::res://src/art/background/bg-2.png<>uid://c2y0m814g60q0::::res://src/scenes/mobile_controller.tscn
+world_sea.tscn::PackedScene::5521506680857332173::1712977786::0::1::::<><>::uid://wiuee4t3i30c::::res://src/scenes/octopus.tscn<>uid://v7w1m6cnq4l8::::res://src/art/tilesets/background.png<>uid://cj30nsq85f8ar::::res://src/scenes/player.tscn<>uid://cw6i3lv5wmf2::::res://src/art/tilesets/midground.png<>uid://d2wmqv5x6syit::::res://src/art/tilesets/tiles.png<>uid://bcyjh3d3efvc8::::res://src/art/tilesets/props.png<>uid://b0t6ouo62xhdb::::res://src/art/tilesets/black.png<>res://src/scripts/joystick.gd<>uid://bnwfjc1cha5mi::::res://src/art/ui/joystick-inner.png<>uid://dc5n3dcmgba01::::res://src/art/ui/joystick-outer.png<>uid://b3yulltlt4nda::::res://src/art/ui/attack-btn.png
+::res://src/scripts/::1712973502
+BG.gd::GDScript::-1::1712973502::0::1::::<>ParallaxBackground<>::
 inner.gd::GDScript::-1::1712973003::0::1::::<>Sprite2D<>::
 joystick.gd::GDScript::-1::1712973003::0::1::::<>Node2D<>::
 main.gd::GDScript::-1::1712973003::0::1::::<>Node2D<>::
@@ -915,9 +713,9 @@ octopus.gd::GDScript::-1::1712973003::0::1::::OctoEnemy<>CharacterBody2D<>::
 player_earth.gd::GDScript::-1::1712973003::0::1::::<>CharacterBody2D<>::
 player_sea.gd::GDScript::-1::1712973003::0::1::::<>CharacterBody2D<>::
 projectile.gd::GDScript::-1::1712973003::0::1::::<>CharacterBody2D<>::
-::res://src/scripts/states/::1712973322
+::res://src/scripts/states/::1712977830
 EnemyAttack.gd::GDScript::-1::1712973003::0::1::::EnemyAttack<>State<>::
 EnemyFollow.gd::GDScript::-1::1712973003::0::1::::EnemyFollow<>State<>::
-EnemyIdle.gd::GDScript::-1::1712973003::0::1::::EnemyIdle<>State<>::
-State Machine.gd::GDScript::-1::1712973322::0::1::::<>Node<>::
+EnemyIdle.gd::GDScript::-1::1712977830::0::1::::EnemyIdle<>State<>::
+State Machine.gd::GDScript::-1::1712973502::0::1::::<>Node<>::
 State.gd::GDScript::-1::1712973003::0::1::::State<>Node<>::
